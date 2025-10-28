@@ -15,7 +15,7 @@ const router: Router_Type[] = [
     /* Exemple d’accès à la première route : {router[0].path} */
     {
         path: "/",
-        element: <h1>Accueil PowerWatt34 sous React</h1>,
+        element: <h1>Accueil PowerWatt34</h1>,
     },
 ];
 
