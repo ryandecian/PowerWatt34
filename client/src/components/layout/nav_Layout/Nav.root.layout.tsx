@@ -1,3 +1,6 @@
+/* Import des Components */
+import NavPC_Layout from "./nav-pc/NavPC.layout";
+
 /* Import des Hooks */
 import useMediaQueriesWidth_rem from "../../../hook/useMediaQueriesWidth_rem.utils.hook";
 
@@ -12,7 +15,7 @@ function Nav_root_Layout() {
             )}
             {/* MediaQuery maison 800px */}
             {viewportWidth >= 50 && (
-                <p>Nav PC</p>
+                <NavPC_Layout />
             )}
         </>
     )

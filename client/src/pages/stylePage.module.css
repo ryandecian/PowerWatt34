@@ -13,6 +13,6 @@
 }
 
 /* Il faudra faire 100vh - la taille du Header */
-/* .Main {
+.Main {
     min-height: calc(100vh - 23.15625rem);
-} */
+}
