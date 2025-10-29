@@ -1,5 +1,6 @@
 type SubMenuNavPC_Type = {
-    nameSubMenu: string;
+    nameMenu: string;
+    nameSubMenu: string[];
 }
 
 export type { SubMenuNavPC_Type };
