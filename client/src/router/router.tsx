@@ -5,6 +5,7 @@ import type { Router_Type } from "../types/router/router.type";
 /* Page Frontend verrouillée */
 
 /* Page Frontend public */
+import HomePage from "../pages/public/home_Page/home.page";
 
 /**
  * Utilisation :
@@ -15,7 +16,7 @@ const router: Router_Type[] = [
     /* Exemple d’accès à la première route : {router[0].path} */
     {
         path: "/",
-        element: <h1>Accueil PowerWatt34</h1>,
+        element: <HomePage />,
     },
 ];
 
