@@ -5,7 +5,7 @@ import type { Router_Type } from "../types/router/router.type";
 /* Page Frontend verrouillée */
 
 /* Page Frontend public */
-import HomePage from "../pages/public/home_Page/home.page";
+import HomePage from "../pages/public/home_Page/Home.page";
 
 /**
  * Utilisation :
