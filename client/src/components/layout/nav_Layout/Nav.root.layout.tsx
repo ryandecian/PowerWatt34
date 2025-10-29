@@ -1,7 +1,7 @@
 /* Import des Hooks */
 import useMediaQueriesWidth_rem from "../../../hook/useMediaQueriesWidth_rem.utils.hook";
 
-function Nav_Layout() {
+function Nav_root_Layout() {
     const viewportWidth: number = useMediaQueriesWidth_rem();
 
     return (
@@ -18,4 +18,4 @@ function Nav_Layout() {
     )
 }
 
-export default Nav_Layout;
+export default Nav_root_Layout;

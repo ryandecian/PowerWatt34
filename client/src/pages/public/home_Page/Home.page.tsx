@@ -2,13 +2,13 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import Nav_Layout from "../../../components/layout/nav_Layout/Nav.layout";
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 
 function HomePage() {
     return (
         <section className={`Home_Page ${style.Page}`}>
             <header id="top" className={style.Header}>
-                <Nav_Layout />
+                <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <p>main</p>
