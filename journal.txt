@@ -1,0 +1,4 @@
+Faire la liste des pages à développer pour le front
+
+Ajouter la double authentification sur gmail et créer le mot de passe application
+
