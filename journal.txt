@@ -1,4 +1,10 @@
+
+----------------------------------------------------------------
+Le 29/10/2025
+Faire la page home et la page contact
+----------------------------------------------------------------
 Faire la liste des pages à développer pour le front
 
 Ajouter la double authentification sur gmail et créer le mot de passe application
 
+----------------------------------------------------------------
