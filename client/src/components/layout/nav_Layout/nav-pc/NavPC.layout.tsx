@@ -13,7 +13,7 @@ function NavPC_Layout() {
             <div className={css.ContainerLogoNavPC}>
                 <p className={css.TitleNavPC}>
                     <Link to="/" >
-                        PowerWatt34
+                        POWERWATT34
                     </Link>
                 </p>
             </div>
