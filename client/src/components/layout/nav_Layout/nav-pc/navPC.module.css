@@ -54,13 +54,13 @@
 }
 
 .PowerSpan {
-    color: black;
+    color: var(--ColorTextBlack);
 }
 
 .WattSpan {
-    color: red;
+    color: var(--ColorTextRed);
 }
 
 .NumberSpan {
-    color: red;
+    color: var(--ColorTextRed);
 }
