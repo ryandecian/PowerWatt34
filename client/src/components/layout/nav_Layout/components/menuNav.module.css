@@ -190,13 +190,13 @@
     padding: 0.25rem 1rem; /* 4px 16px 4px 16px */
     background-color: var(--ColorBackgroundNavRootGrey);
 }
-.SubMenuLiTarget1PC,
+.SubMenuLiTopPC,
 .SubMenuLiTarget2PC {
     border-top: 0.09375rem solid var(--ColorBackgroundNavRootWhite); /* 1.5px */
     border-left: 0.09375rem solid var(--ColorBackgroundNavRootWhite); /* 1.5px */
     border-right: 0.09375rem solid var(--ColorBackgroundNavRootWhite); /* 1.5px */
 }
-.SubMenuLiTarget3PC {
+.SubMenuLiBottomPC {
     border: 0.09375rem solid var(--ColorBackgroundNavRootWhite); /* 1.5px */
 }
 

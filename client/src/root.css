@@ -4,12 +4,14 @@
     /* ✨ Couleur des textes */
         /* Couleur des textes général Restructuration */
             --ColorTextBlack: rgb(0, 0, 0);
+            --ColorTextPink: #ff0080;
 
     /* ✨ Couleur des textes */
         /* Couleur des backgrounds général */
             --ColorBackgourndBlack: rgb(0, 0, 0);
             --ColorBackgroundWhite: rgb(255, 255, 255);
             --ColorBackgroundGrey: rgb(240, 240, 240);
+            --ColorBackgroundGray_Option1: rgba(218, 216, 216, 0.882);
 
     /* ✨ Logique taille police d'écriture site*/
         --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/
