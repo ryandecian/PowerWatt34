@@ -12,7 +12,7 @@ import type { SubMenuNavPC_Type } from "../../../../../types/layout/nav/subMenuN
 
 function MenuNavPC_Layout() {
     const menuProduits: SubMenuNavPC_Type = {
-        nameMenu: "Produits",
+        nameMenu: "PRODUITS",
         nameSubMenu: [
             { title: "Trotinettes", link: "#" },
             { title: "Vélos", link: "#" },
@@ -21,7 +21,7 @@ function MenuNavPC_Layout() {
     };
 
     const menuServices: SubMenuNavPC_Type = {
-        nameMenu: "Services",
+        nameMenu: "SERVICES",
         nameSubMenu: [
             { title: "Réparation", link: "#" },
             { title: "Entretien", link: "#" },
@@ -32,7 +32,7 @@ function MenuNavPC_Layout() {
     return (
         <ul className={css.MenuUlPC}>
             <SubMenuPC_Element dataMenu={menuProduits} />
-            
+
             <SubMenuPC_Element dataMenu={menuServices} />
 
             <li className={css.MenuLiPC}>
