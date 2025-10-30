@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 /* Import des Types */
 import type { SubMenuNavPC_Type } from "../../../../../../types/layout/nav/subMenuNavPC.type";
 
-function SubMenuPC_Element({ nameMenu, nameSubMenu }: SubMenuNavPC_Type) {
+function SubMenuPC_Element(dataMenu: SubMenuNavPC_Type) {
     const [subMenuOpen, setSubMenuOpen] = useState(false);
 
     return (
-        <li className={`${nameMenu} ${css.MenuLiPC}`} onClick={() => setSubMenuOpen(!subMenuOpen)}>
+        <li className={`${dataMenu.nameMenu} ${css.MenuLiPC}`} onClick={() => setSubMenuOpen(!subMenuOpen)}>
             <button
                 type="button"
                 className={`${css.Openbtn} ${style.Button}`}
@@ -22,7 +22,7 @@ function SubMenuPC_Element({ nameMenu, nameSubMenu }: SubMenuNavPC_Type) {
                 aria-controls="Ouverture du sous menu des produits"
                 aria-haspopup="true"
             >
-                {nameMenu} <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
+                {dataMenu.nameMenu} <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
             </button>
 
             {subMenuOpen && (
@@ -31,7 +31,7 @@ function SubMenuPC_Element({ nameMenu, nameSubMenu }: SubMenuNavPC_Type) {
                     <button 
                         type="button" 
                         className={`${css.ButtonSubMenuPC} ${style.Button}`}
-                        aria-label={`Fermer le sous menu des ${nameMenu}`}
+                        aria-label={`Fermer le sous menu des ${dataMenu.nameMenu}`}
                         onClick={() => setSubMenuOpen(!subMenuOpen)}
                     >
                         Fermer
@@ -39,17 +39,17 @@ function SubMenuPC_Element({ nameMenu, nameSubMenu }: SubMenuNavPC_Type) {
 
                     <ul className={css.SubMenuUlPC}>
                         {/* Si il n'y a qu'un seul subMenu */}
-                        {nameSubMenu.length === 1 && (
+                        {dataMenu.nameSubMenu.length === 1 && (
                             <li className={`${css.SubMenuLiPC} ${css.SubMenuLiTopPC} ${css.SubMenuLiBottomPC}`}>
-                                <Link to={nameSubMenu[0].link}>{nameSubMenu[0].title}</Link>
+                                <Link to={dataMenu.nameSubMenu[0].link}>{dataMenu.nameSubMenu[0].title}</Link>
                             </li>
                         )}
 
                         {/* Si il 2 ou plusieurs subMenus */}
-                        {nameSubMenu.length > 1 && (
-                            nameSubMenu.map((item, index) => {
-                                const isLast = index === nameSubMenu.length - 1; /* isLast étant le dernier élément du tableau */
-                                
+                        {dataMenu.nameSubMenu.length > 1 && (
+                            dataMenu.nameSubMenu.map((item, index) => {
+                                const isLast = index === dataMenu.nameSubMenu.length - 1; /* isLast étant le dernier élément du tableau */
+
                                 /* Styles selon la position */
                                 const liClass = isLast
                                     ? `${css.SubMenuLiPC} ${css.SubMenuLiBottomPC}` /* Si c'est le dernier élément */
