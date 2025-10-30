@@ -13,7 +13,9 @@ function NavPC_Layout() {
             <div className={css.ContainerLogoNavPC}>
                 <p className={css.TitleNavPC}>
                     <Link to="/" >
-                        POWERWATT34
+                        <span>POWER</span>
+                        <span>WATT</span>
+                        <span>34</span>
                     </Link>
                 </p>
             </div>

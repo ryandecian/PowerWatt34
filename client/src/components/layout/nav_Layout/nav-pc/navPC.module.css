@@ -52,8 +52,8 @@
 
 .TitleNavPC > a {
     font-size: var(--h1);
-    color: var(--ColorTextNavRootBlack);
-    font-family: AnneSignature;
+    color: var(--ColorTextBlack);
+    font-family: "Farsan", cursive;
     font-weight: 300;
     font-style: normal;
     font-display: swap;
