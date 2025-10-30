@@ -8,3 +8,6 @@ Faire la liste des pages à développer pour le front
 Ajouter la double authentification sur gmail et créer le mot de passe application
 
 ----------------------------------------------------------------
+Intégrer le hover pour les subMenu de la nav
+Changer la couleur rose des hovers
+Puis création de la page contact
