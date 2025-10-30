@@ -1,4 +1,10 @@
+/* Import des modules CSS */
 import css from "./NavPC.module.css";
+
+/* Import des Components */
+import { MenuNavPC_Layout } from "./components/MenuNavPC.layout";
+
+/* Import des composants React */
 import { Link } from "react-router-dom";
 
 function NavPC_Layout() {
@@ -11,26 +17,9 @@ function NavPC_Layout() {
                     </Link>
                 </p>
             </div>
-            {/* <div className={css.ContainerNavigationNavPC}>
-                <MenuNavRoot
-                    moduleMenuUl={style.MenuUlPC}
-                    moduleMenuLi={style.MenuLiPC}
-                    moduleMenuLink={style.MenuLinkPC}
-                    moduleSubMenuUl={style.SubMenuUlPC}
-                    moduleSubMenuLi={style.SubMenuLiPC}
-                    moduleSubMenuLink={style.SubMenuLinkPC}
-                    moduleSpanPortraits={style.SpanPortraitsPC}
-                          
-                    moduleSubMenuPortraits={style.SubMenuPortraitsPC}
-
-                    moduleButtonSubMenu={style.ButtonSubMenuPC}
-                    moduleSubMenuLiTarget1={style.SubMenuLiTarget1PC}
-                    moduleSubMenuLiTarget2={style.SubMenuLiTarget2PC}
-                    moduleSubMenuLiTarget3={style.SubMenuLiTarget3PC}
-                />
-            </div> */}
+            <MenuNavPC_Layout />
         </nav>
     )
 }
 
-export default NavPC_Layout;
+export { NavPC_Layout };
