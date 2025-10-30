@@ -1,6 +1,7 @@
 /* Import des Types */
+import type { MenuData_Type } from "../../../../types/layout/nav/menu.data.type";
 
-const menu_Data = {
+const menu_Data: MenuData_Type = {
     dataSubMenu: [
         {
             nameMenu: "PRODUITS",
@@ -39,12 +40,12 @@ const menu_Data = {
     ],
     dataMenu: [
         {
-            nameMenu: "ACCUEIL",
-            link: "/"
+            nameMenu: "CONTACT",
+            link: "#"
         },
         {
-            nameMenu: "PRODUITS",
-            link: "/products"
+            nameMenu: "COMPTE",
+            link: "#"
         }
     ]
 }
