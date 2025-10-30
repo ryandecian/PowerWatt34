@@ -22,7 +22,8 @@ function MenuNavPC_Layout() {
 
     return (
         <ul className={css.MenuUlPC}>
-            <SubMenuPC_Element />
+            <SubMenuPC_Element dataMenu={menuProduits} />
+            
             <li className={css.MenuLiPC}>
                 <Link to="#" className={css.MenuLinkPC}>CONTACT</Link>
             </li>
