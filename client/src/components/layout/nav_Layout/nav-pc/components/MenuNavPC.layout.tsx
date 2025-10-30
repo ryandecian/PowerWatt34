@@ -20,10 +20,21 @@ function MenuNavPC_Layout() {
         ],
     };
 
+    const menuServices: SubMenuNavPC_Type = {
+        nameMenu: "Services",
+        nameSubMenu: [
+            { title: "Réparation", link: "#" },
+            { title: "Entretien", link: "#" },
+            { title: "Assistance", link: "#" },
+        ],
+    };
+
     return (
         <ul className={css.MenuUlPC}>
             <SubMenuPC_Element dataMenu={menuProduits} />
             
+            <SubMenuPC_Element dataMenu={menuServices} />
+
             <li className={css.MenuLiPC}>
                 <Link to="#" className={css.MenuLinkPC}>CONTACT</Link>
             </li>
