@@ -7,7 +7,7 @@ const menu_Data: MenuData_Type = {
             nameMenu: "PRODUITS",
             nameSubMenu: [
                 { 
-                    title: "Trotinettes",
+                    title: "Trottinettes",
                     link: "#" 
                 },
                 { 
