@@ -7,40 +7,23 @@ import { SubMenuPC_Element } from "./elements/SubMenuPC.element";
 /* Import des composants React */
 import { Link } from "react-router-dom";
 
-/* Import des Types */
-import type { SubMenuNavPC_Type } from "../../../../../types/layout/nav/subMenuNavPC.type";
+/* Import des Datas */
+import { menu_Data } from "../menu.data";
 
 function MenuNavPC_Layout() {
-    const menuProduits: SubMenuNavPC_Type = {
-        nameMenu: "PRODUITS",
-        nameSubMenu: [
-            { title: "Trotinettes", link: "#" },
-            { title: "Vélos", link: "#" },
-            { title: "Scooters", link: "#" },
-        ],
-    };
-
-    const menuServices: SubMenuNavPC_Type = {
-        nameMenu: "SERVICES",
-        nameSubMenu: [
-            { title: "Réparation", link: "#" },
-            { title: "Entretien", link: "#" },
-            { title: "Assistance", link: "#" },
-        ],
-    };
 
     return (
         <ul className={css.MenuUlPC}>
-            <SubMenuPC_Element dataMenu={menuProduits} />
+            <SubMenuPC_Element dataMenu={menu_Data.dataSubMenu[0]} />
 
-            <SubMenuPC_Element dataMenu={menuServices} />
+            <SubMenuPC_Element dataMenu={menu_Data.dataSubMenu[1]} />
 
             <li className={css.MenuLiPC}>
-                <Link to="#" className={css.MenuLinkPC}>CONTACT</Link>
+                <Link to="#" className={css.MenuLinkPC}>{menu_Data.dataMenu[0].nameMenu}</Link>
             </li>
 
             <li className={css.MenuLiPC}>
-                <Link to="#" className={css.MenuLinkPC}>COMPTE</Link>
+                <Link to="#" className={css.MenuLinkPC}>{menu_Data.dataMenu[1].nameMenu}</Link>
             </li>
         </ul>
     )
