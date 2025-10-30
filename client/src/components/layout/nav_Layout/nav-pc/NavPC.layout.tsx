@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 
 function NavPC_Layout() {
     return (
-        <nav className={css.NavPC}>
+        <nav className={`NavPC_Layout ${css.NavPC}`}>
             <div className={css.ContainerLogoNavPC}>
                 <p className={css.TitleNavPC}>
                     <Link to="/" >
-                        <span>POWER</span>
-                        <span>WATT</span>
-                        <span>34</span>
+                        <span className={css.PowerSpan}>POWER</span>
+                        <span className={css.WattSpan}>WATT</span>
+                        <span className={css.NumberSpan}>34</span>
                     </Link>
                 </p>
             </div>

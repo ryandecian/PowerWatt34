@@ -53,31 +53,21 @@
 .TitleNavPC > a {
     font-size: var(--h1);
     color: var(--ColorTextBlack);
-    font-family: "Farsan", cursive;
-    font-weight: 300;
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
     text-decoration: none;
     width: 100%;
 }
 
-/* ---------- ---------- ---------- ----------- ----------- */
+.PowerSpan {
+    color: black;
+}
 
-/* Container Navigation */
-.ContainerNavigationNavPC {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 29.875rem; /* 479px */
+.WattSpan {
+    color: red;
 }
-@media (min-width: 52.8125rem) { /* 845px */
-    .ContainerNavigationNavPC {
-        width: calc(100% - 20.625rem); /* 100% - 330px */
-    }
-    
-}
-@media (min-width: 62.5rem) { /* 1000px */
-    .ContainerNavigationNavPC {
-        width: calc(100% - 23.4375rem); /* 100% - 375px */
-    }
+
+.NumberSpan {
+    color: red;
 }
