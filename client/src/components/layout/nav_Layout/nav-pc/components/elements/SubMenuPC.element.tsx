@@ -16,10 +16,10 @@ function SubMenuPC_Element({ dataMenu }: { dataMenu: SubMenuNavPC_Type }) {
         <li className={`${dataMenu.nameMenu} ${css.MenuLiPC}`} onClick={() => setSubMenuOpen(!subMenuOpen)}>
             <button
                 type="button"
-                className={`${css.Openbtn} ${style.Button}`}
+                className={`${css.OpenBtn} ${style.Button}`}
                 onClick={() => setSubMenuOpen(!subMenuOpen)}
                 aria-expanded={subMenuOpen}
-                aria-controls="Ouverture du sous menu des produits"
+                aria-controls={`Ouverture du sous menu des ${dataMenu.nameMenu}`}
                 aria-haspopup="true"
             >
                 {dataMenu.nameMenu} <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>

@@ -53,6 +53,7 @@
     list-style: none;
     margin: 0.5rem 0rem; /* 8px 0px 8px 0px */
     padding: 0rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
 }
 
 .SubMenuLiPC {

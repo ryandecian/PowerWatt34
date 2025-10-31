@@ -13,6 +13,8 @@
         /* Couleur des backgrounds général */
             --ColorBackgourndBlack: rgb(0, 0, 0);
             --ColorBackgroundWhite: rgb(255, 255, 255);
+            --ColorBackgroundRed: rgb(255, 0, 0);
+            --ColorBackgroundYellow: rgb(255, 255, 0);
             --ColorBackgroundGrey: rgb(240, 240, 240);
             --ColorBackgroundGray_Option1: rgba(218, 216, 216, 0.882);
 
