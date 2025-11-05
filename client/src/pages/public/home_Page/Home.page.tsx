@@ -11,6 +11,66 @@ function HomePage() {
                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
+                <p>On est biennnnnnnn !</p>
+                <p>main, test test test test test test test test test test test test test test test test test test test test test test</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
+                <p>main</p>
                 <p>main</p>
             </main>
             <footer className={style.Footer}>
