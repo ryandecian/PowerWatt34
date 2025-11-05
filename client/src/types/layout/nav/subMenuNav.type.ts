@@ -1,4 +1,4 @@
-type SubMenuNavPC_Type = {
+type SubMenuNav_Type = {
     nameMenu: string;
     nameSubMenu: {
         title: string;
@@ -6,4 +6,4 @@ type SubMenuNavPC_Type = {
     }[];
 }
 
-export type { SubMenuNavPC_Type };
+export type { SubMenuNav_Type };
