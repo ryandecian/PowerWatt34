@@ -41,7 +41,7 @@ function SubMenuPC_Element({ dataMenu }: { dataMenu: SubMenuNavPC_Type }) {
                         {/* Si il n'y a qu'un seul subMenu */}
                         {dataMenu.nameSubMenu.length === 1 && (
                             <li className={`${css.SubMenuLiPC} ${css.SubMenuLiTopPC} ${css.SubMenuLiBottomPC}`}>
-                                <Link to={dataMenu.nameSubMenu[0].link}>{dataMenu.nameSubMenu[0].title}</Link>
+                                <Link to={dataMenu.nameSubMenu[0].link} className={css.SubMenuLinkPC}>{dataMenu.nameSubMenu[0].title}</Link>
                             </li>
                         )}
 
@@ -57,7 +57,7 @@ function SubMenuPC_Element({ dataMenu }: { dataMenu: SubMenuNavPC_Type }) {
 
                                 return (
                                     <li key={index} className={liClass}>
-                                        <Link to={item.link}>{item.title}</Link>
+                                        <Link to={item.link} className={css.SubMenuLinkPC}>{item.title}</Link>
                                     </li>
                                 );
                             })

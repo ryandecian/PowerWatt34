@@ -1,4 +1,5 @@
 /* Import des Components */
+import { NavMobile_Layout } from "./nav-mobile/NavMobile.layout";
 import { NavPC_Layout } from "./nav-pc/NavPC.layout";
 
 /* Import des Hooks */
@@ -11,7 +12,7 @@ function Nav_root_Layout() {
         <>
             {/* MediaQuery maison 800px */}
             {viewportWidth < 50 && (
-                <p>Nav Mobile</p>
+                <NavMobile_Layout />
             )}
             {/* MediaQuery maison 800px */}
             {viewportWidth >= 50 && (
