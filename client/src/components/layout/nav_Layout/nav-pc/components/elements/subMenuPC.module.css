@@ -70,3 +70,16 @@
 .SubMenuLiBottomPC {
     border: 0.09375rem solid var(--ColorBackgroundWhite); /* 1.5px */
 }
+
+.SubMenuLinkPC {
+    display: inline-block;
+    font-size: var(--h4);
+    text-decoration: none;
+    color: var(--ColorTextBlack);
+    transition: transform 0.3s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+.SubMenuLinkPC:hover {
+    transform: scale(1.2); /* Augmente légèrement la taille */
+    color: var(--ColorTextPink);
+}
