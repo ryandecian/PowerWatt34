@@ -13,13 +13,30 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem;
 }
 
 .ContainerLogoNavMobile > a {
     font-size: var(--h1);
-    font-family: AnneSignature;
-    font-weight: normal;
+    font-weight: bold;
     text-decoration: none;
+    text-align: center;
     color: var(--ColorTextNavRootBlack);
     margin: 2rem 0rem; /* 32px 0px 32px 0px */
+    width: 100%;
+}
+
+
+.PowerSpan {
+    color: var(--ColorTextBlack);
+}
+
+.WattSpan {
+    color: var(--ColorTextRed);
+}
+
+.NumberSpan {
+    color: var(--ColorTextRed);
 }
