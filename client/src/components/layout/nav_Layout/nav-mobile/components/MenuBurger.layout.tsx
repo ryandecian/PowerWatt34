@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { menu_Data } from "../../nav-pc/menu.data";
+import { SubMenuMobile_Element } from "./elements/SubMenuMobile.element";
 
 function MenuBurger_Layout() {
     const [active, setActive] = useState<boolean>(false)
@@ -52,6 +53,8 @@ function MenuBurger_Layout() {
                 
                 {/* contenue du menu burger */}
                 <ul className={css.MenuUlMobile}>
+                    <SubMenuMobile_Element dataMenu={menu_Data.dataSubMenu[0]} />
+
                     <li className={`${css.MenuLiMobile} ${css.MenuLiTopMobile}`}>
                         <Link to="#" className={css.MenuLinkMobile}>{menu_Data.dataMenu[0].nameMenu}</Link>
                     </li>

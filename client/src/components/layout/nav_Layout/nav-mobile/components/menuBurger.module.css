@@ -119,7 +119,19 @@
 .MenuLinkMobile {
     text-decoration: none;
     color: var(--ColorTextBlack);
+    font-size: var(--h5);
+    font-weight: bold;
     margin: 0rem;
     padding: 0rem;
     border: none;
+}
+@media (min-width: 18.75rem) { /* 300px */
+    .MenuLinkMobile {
+        font-size: var(--h4);
+    }
+}
+@media (min-width: 25rem) { /* 400px */
+    .MenuLinkMobile {
+        font-size: var(--h3);
+    }
 }

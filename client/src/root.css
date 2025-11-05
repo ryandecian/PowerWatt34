@@ -37,6 +37,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    font-family: quicksand, Arial, sans-serif;
 }
 
 body {
