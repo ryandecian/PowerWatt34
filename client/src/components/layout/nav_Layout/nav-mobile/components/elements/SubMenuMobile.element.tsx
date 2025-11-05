@@ -27,7 +27,7 @@ function SubMenuMobile_Element({ dataMenu }: { dataMenu: SubMenuNav_Type }) {
 
             {subMenuOpen && (
                 <>
-                    {/* Bouton de fermeture menu burger */}
+                    {/* Bouton de fermeture du sous menu burger */}
                     <button 
                         type="button" 
                         className={`${css.ButtonSubMenuMobile} ${style.Button}`}
@@ -38,24 +38,14 @@ function SubMenuMobile_Element({ dataMenu }: { dataMenu: SubMenuNav_Type }) {
                     </button>
 
                     <ul className={css.SubMenuUlMobile}>
-                        {/* Si il n'y a qu'un seul subMenu */}
-                        {dataMenu.nameSubMenu.length === 1 && (
-                            <li className={`${css.SubMenuLiMobile} ${css.SubMenuLiTopMobile} ${css.SubMenuLiBottomMobile}`}>
-                                <Link to={dataMenu.nameSubMenu[0].link} className={css.SubMenuLinkMobile}>{dataMenu.nameSubMenu[0].title}</Link>
-                            </li>
-                        )}
+                        {dataMenu.nameSubMenu.map((item, index) => {
 
-                        {/* Si il 2 ou plusieurs subMenus */}
-                        {dataMenu.nameSubMenu.length > 1 && (
-                            dataMenu.nameSubMenu.map((item, index) => {
-
-                                return (
-                                    <li key={index} className={css.SubMenuLiMobile}>
-                                        <Link to={item.link} className={css.SubMenuLinkMobile}>{item.title}</Link>
-                                    </li>
-                                );
-                            })
-                        )}
+                            return (
+                                <li key={index} className={css.SubMenuLiMobile}>
+                                    <Link to={item.link} className={css.SubMenuLinkMobile}>{item.title}</Link>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </>
             )}
