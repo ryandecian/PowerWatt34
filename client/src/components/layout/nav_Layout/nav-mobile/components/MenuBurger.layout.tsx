@@ -14,6 +14,7 @@ function MenuBurger_Layout() {
     const funcActive = () => {
         setActive(!active)
     }
+    const dataMenu = menu_Data();
 
     return (
         <>
@@ -53,16 +54,16 @@ function MenuBurger_Layout() {
                 
                 {/* contenue du menu burger */}
                 <ul className={css.MenuUlMobile}>
-                    <SubMenuMobile_Element dataMenu={menu_Data.dataSubMenu[0]} />
-                    
-                    <SubMenuMobile_Element dataMenu={menu_Data.dataSubMenu[1]} />
+                    <SubMenuMobile_Element dataMenu={dataMenu.dataSubMenu[0]} />
+
+                    <SubMenuMobile_Element dataMenu={dataMenu.dataSubMenu[1]} />
 
                     <li className={`${css.MenuLiMobile}`}>
-                        <Link to={menu_Data.dataMenu[0].link} className={css.MenuLinkMobile}>{menu_Data.dataMenu[0].nameMenu}</Link>
+                        <Link to={dataMenu.dataMenu[0].link} className={css.MenuLinkMobile}>{dataMenu.dataMenu[0].nameMenu}</Link>
                     </li>
 
                     <li className={`${css.MenuLiMobile} ${css.MenuLiBottomMobile}`}>
-                        <Link to={menu_Data.dataMenu[1].link} className={css.MenuLinkMobile}>{menu_Data.dataMenu[1].nameMenu}</Link>
+                        <Link to={dataMenu.dataMenu[1].link} className={css.MenuLinkMobile}>{dataMenu.dataMenu[1].nameMenu}</Link>
                     </li>
                 </ul>
             </div>

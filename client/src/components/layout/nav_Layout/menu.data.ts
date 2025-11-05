@@ -4,7 +4,7 @@ import router from "../../../router/router";
 /* Import des Types */
 import type { MenuData_Type } from "../../../types/layout/nav/menu.data.type";
 
-function data(): MenuData_Type {
+function menu_Data(): MenuData_Type {
     return {
         dataSubMenu: [
             {
@@ -30,7 +30,5 @@ function data(): MenuData_Type {
         ],
     };
 }
-
-const menu_Data: MenuData_Type = data();
 
 export { menu_Data };
