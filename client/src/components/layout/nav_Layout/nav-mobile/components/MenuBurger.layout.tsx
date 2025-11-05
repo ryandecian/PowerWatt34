@@ -54,8 +54,10 @@ function MenuBurger_Layout() {
                 {/* contenue du menu burger */}
                 <ul className={css.MenuUlMobile}>
                     <SubMenuMobile_Element dataMenu={menu_Data.dataSubMenu[0]} />
+                    
+                    <SubMenuMobile_Element dataMenu={menu_Data.dataSubMenu[1]} />
 
-                    <li className={`${css.MenuLiMobile} ${css.MenuLiTopMobile}`}>
+                    <li className={`${css.MenuLiMobile}`}>
                         <Link to="#" className={css.MenuLinkMobile}>{menu_Data.dataMenu[0].nameMenu}</Link>
                     </li>
 
