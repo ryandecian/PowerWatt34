@@ -22,7 +22,7 @@ function Contact_Root() {
             <div className={`${style.ContainerRoot} ${css.ContactContainer}`}>
                 <a href={routerExt.emailPowerWatt34} className={css.ContactItem}>
                     <Mail className={style.IconLucide} />
-                    <span>powerwatt34+app@gmail.com</span>
+                    <span>powerwatt34@gmail.com</span>
                 </a>
                 <a href={routerExt.phonePowerWatt34} className={css.ContactItem}>
                     <Phone className={style.IconLucide} />
