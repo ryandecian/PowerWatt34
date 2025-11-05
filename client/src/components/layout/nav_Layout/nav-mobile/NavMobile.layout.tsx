@@ -1,19 +1,22 @@
 import css from "./NavMobile.module.css";
 import { Link } from "react-router-dom"
-import MenuBurger from "./MenuBurger/MenuBurger.layout";
+// import MenuBurger from "./MenuBurger/MenuBurger.layout";
 
-function NavMobile() {
+function NavMobile_Layout() {
 
     return (
         <nav className={css.NavMobile}>
-            <div className={css.ContainerLogoNavMobile}>
+            <p className={css.ContainerLogoNavMobile}>
                 <Link to="/">
-                        PowerWatt34
+                    <span className={css.PowerSpan}>POWER</span>
+                    <span className={css.WattSpan}>WATT</span>
+                    <span className={css.NumberSpan}>34</span>
                 </Link>
-            </div>
+            </p>
 
-            <MenuBurger />
+            {/* <MenuBurger /> */}
         </nav>
     )
 }
-export default NavMobile;
+
+export { NavMobile_Layout };
