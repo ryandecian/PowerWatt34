@@ -1,6 +1,11 @@
+/* Import des modules CSS */
 import css from "./NavMobile.module.css";
+
+/* Import des Components */
+import { MenuBurger_Layout } from "./components/MenuBurger.layout";
+
+/* Import des composants React */
 import { Link } from "react-router-dom"
-// import MenuBurger from "./MenuBurger/MenuBurger.layout";
 
 function NavMobile_Layout() {
 
@@ -14,7 +19,7 @@ function NavMobile_Layout() {
                 </Link>
             </p>
 
-            {/* <MenuBurger /> */}
+            <MenuBurger_Layout />
         </nav>
     )
 }
