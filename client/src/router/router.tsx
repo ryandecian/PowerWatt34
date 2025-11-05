@@ -5,7 +5,8 @@ import type { Router_Type } from "../types/router/router.type";
 /* Page Frontend verrouillée */
 
 /* Page Frontend public */
-import HomePage from "../pages/public/home_Page/Home.page";
+import Contact_Page from "../pages/public/contact_Page/Contact.page";
+import Home_Page from "../pages/public/home_Page/Home.page";
 
 /**
  * Utilisation :
@@ -13,10 +14,15 @@ import HomePage from "../pages/public/home_Page/Home.page";
  */
 
 const router: Router_Type[] = [
-    /* Exemple d’accès à la première route : {router[0].path} */
+    /* {router[0].path} */
     {
         path: "/",
-        element: <HomePage />,
+        element: <Home_Page />,
+    },
+    /* {router[1].path} */
+    {
+        path: "/contact",
+        element: <Contact_Page />,
     },
 ];
 
