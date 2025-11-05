@@ -8,7 +8,7 @@ import { SubMenuPC_Element } from "./elements/SubMenuPC.element";
 import { Link } from "react-router-dom";
 
 /* Import des Datas */
-import { menu_Data } from "../menu.data";
+import { menu_Data } from "../../menu.data";
 
 function MenuNavPC_Layout() {
 

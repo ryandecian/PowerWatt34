@@ -6,7 +6,7 @@ import style from "../../../../styleRootComponent.module.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { menu_Data } from "../../nav-pc/menu.data";
+import { menu_Data } from "../../menu.data";
 import { SubMenuMobile_Element } from "./elements/SubMenuMobile.element";
 
 function MenuBurger_Layout() {
