@@ -1,5 +1,8 @@
+/* Import des composants Router */
+import router from "../../../router/router";
+
 /* Import des Types */
-import type { MenuData_Type } from "../../../../types/layout/nav/menu.data.type";
+import type { MenuData_Type } from "../../../types/layout/nav/menu.data.type";
 
 const menu_Data: MenuData_Type = {
     dataSubMenu: [
@@ -41,7 +44,7 @@ const menu_Data: MenuData_Type = {
     dataMenu: [
         {
             nameMenu: "CONTACT",
-            link: "#"
+            link: router[1].path
         },
         {
             nameMenu: "COMPTE",

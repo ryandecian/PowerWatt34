@@ -19,11 +19,11 @@ function MenuNavPC_Layout() {
             <SubMenuPC_Element dataMenu={menu_Data.dataSubMenu[1]} />
 
             <li className={css.MenuLiPC}>
-                <Link to="#" className={css.MenuLinkPC}>{menu_Data.dataMenu[0].nameMenu}</Link>
+                <Link to={menu_Data.dataMenu[0].link} className={css.MenuLinkPC}>{menu_Data.dataMenu[0].nameMenu}</Link>
             </li>
 
             <li className={css.MenuLiPC}>
-                <Link to="#" className={css.MenuLinkPC}>{menu_Data.dataMenu[1].nameMenu}</Link>
+                <Link to={menu_Data.dataMenu[1].link} className={css.MenuLinkPC}>{menu_Data.dataMenu[1].nameMenu}</Link>
             </li>
         </ul>
     )
