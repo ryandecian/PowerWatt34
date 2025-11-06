@@ -24,11 +24,6 @@ const router: Router_Type[] = [
         path: "/contact",
         element: <Contact_Page />,
     },
-    /* {router[1].path} */
-    {
-        path: "/contact",
-        element: <Contact_Page />,
-    },
     /* {router[2].path} */
     {
         path: "/user/compte",

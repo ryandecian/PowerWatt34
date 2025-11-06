@@ -10,7 +10,7 @@ function menu_Data(): MenuData_Type {
             {
                 nameMenu: "PRODUITS",
                 nameSubMenu: [
-                    { title: "Trottinettes", link: "#" },
+                    { title: "Trottinettes", link: router[4].path },
                     { title: "Vélos", link: "#" },
                     { title: "Scooters", link: "#" },
                 ],
