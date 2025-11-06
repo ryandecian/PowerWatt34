@@ -3,6 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
+import Home_Root from "../../../components/public/home/home.root";
 
 function Home_Page() {
     return (
@@ -11,12 +12,7 @@ function Home_Page() {
                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <p>On est biennnnnnnn !</p>
-                <p>main, test test test test test test test test test test test test test test test test test test test test test test</p>
-                <p>main</p>
-                <p>main</p>
-                <p>main</p>
-                <p>main</p>
+                <Home_Root />
             </main>
             <footer className={style.Footer}>
                 <p>footer</p>
