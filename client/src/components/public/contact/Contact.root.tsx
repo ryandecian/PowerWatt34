@@ -71,8 +71,13 @@ function Contact_Root() {
                 de votre trottinette, vélo ou scooter électrique, notre équipe vous accompagne avec professionnalisme et 
                 passion.
             </p>
+            
+            <p className={`${style.TextP4} ${css.Subtitle}`}>
+                🔋 Contactez-nous dès aujourd’hui pour un devis ou pour planifier une intervention — PowerWatt34, votre 
+                atelier de confiance pour des deux-roues électriques performants et durables.
+            </p>
 
-            <div className={`${style.ContainerRoot} ${css.ContactContainer}`}>
+            <div className={`${css.ContactContainer}`}>
                 <a href={routerExt.emailPowerWatt34} className={css.ContactItem}>
                     <Mail className={style.IconLucide} />
                     <span>powerwatt34@gmail.com</span>
@@ -85,8 +90,5 @@ function Contact_Root() {
         </section>
     )
 }
-/**
- * ${css.Subtitle}
- */
 
 export default Contact_Root;

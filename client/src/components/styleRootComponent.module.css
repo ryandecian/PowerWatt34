@@ -73,10 +73,19 @@
 
 
 .TitleH1 {
-    font-size: var(--h1); /* 32px */
+    font-size: var(--h3); /* 18px */
     text-align: center;
-    min-height: var(--h1); /* 32px */
     padding: 0rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH1 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH1 {
+        font-size: var(--h1); /* 32px */
+    }
 }
 .TitleH2 {
     font-size: var(--h2); /* 24px */
@@ -117,19 +126,44 @@
     text-align: start;
 }
 .TextP1 {
-    font-size: var(--h1); /* 32px */
-}
-.TextP2 {
     font-size: var(--h2); /* 24px */
 }
+@media (min-width: 25rem) { /* 400px */
+    .TextP1 {
+        font-size: var(--h1); /* 32px */
+    }
+}
+.TextP2 {
+    font-size: var(--h3); /* 18px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP2 {
+        font-size: var(--h2); /* 24px */
+    }
+}
 .TextP3 {
-    font-size: var(--h3); /* 20px */
+    font-size: var(--h4); /* 16px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP3 {
+        font-size: var(--h3); /* 18px */
+    }
 }
 .TextP4 {
-    font-size: var(--h4); /* 18px */
+    font-size: var(--h5); /* 14px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP4 {
+        font-size: var(--h4); /* 16px */
+    }
 }
 .TextP5 {
-    font-size: var(--h5); /* 14px */
+    font-size: var(--h6); /* 11px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP5 {
+        font-size: var(--h5); /* 14px */
+    }
 }
 .TextP6 {
     font-size: var(--h6); /* 11px */

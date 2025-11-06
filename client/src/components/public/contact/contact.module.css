@@ -1,5 +1,19 @@
-.Contact_Root {
-    margin: 4rem 0rem; /* 64px 0px 64px 0px */
+.TitleH1 {
+    color : var(--ColorTextBlack);
+    font-size: var(--h3); /* 32px */
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
+    font-display: swap;
+    text-align: center;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+    border: 0rem;
+}
+@media (min-width: 500px) {
+    .TitleH1 {
+        font-size: var(--h1); /* 32px */
+    }
 }
 
 .Subtitle {
