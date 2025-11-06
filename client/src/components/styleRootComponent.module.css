@@ -7,3 +7,179 @@
     outline: none;      /* Supprime le contour par défaut du bouton */
     cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */
 }
+
+/*--------------------------------------------------*/
+.ContainerRootRacine {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem 1.25rem 1.25rem 1.25rem; /* 24px 0px 20px 0px */
+    border: 0rem;
+    margin: 0rem;
+}
+
+.ContainerUl {
+    display: block;
+    width: 100%;
+    padding: 0rem 0rem 0rem 1.5rem; /* 0px 0px 0px 24px */
+    list-style-position: inside; /* Position des points de la liste */
+    list-style-type: disc; /* Type de point pour les liste. Ici c'est un point rond noir */
+}
+@media (min-width: 28.125rem) { /* 450px */
+    .ContainerUl {
+        padding: 0rem 0rem 0rem 2rem; /* 0px 0px 0px 32px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .ContainerUl {
+        padding: 0rem 0rem 0rem 2.5rem; /* 0px 0px 0px 40px */
+    }
+}
+
+/*--------------------------------------------------*/
+/* Style des container de texte ou titre */
+.ContainerTitle,
+.ContainerText {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+
+/*--------------------------------------------------*/
+/* Style des Title dans un parent Column */
+.TitleH1, 
+.TitleH2,
+.TitleH3,
+.TitleH4, 
+.TitleH5,
+.TitleH6 {
+    color : var(--ColorTextBlack);
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
+    font-display: swap;
+    text-align: start;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem; /* 20px 20px 20px 20px */
+    border: 0rem;
+}
+
+
+.TitleH1 {
+    font-size: var(--h3); /* 18px */
+    text-align: center;
+    padding: 0rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH1 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH1 {
+        font-size: var(--h1); /* 32px */
+    }
+}
+.TitleH2 {
+    font-size: var(--h2); /* 24px */
+    text-align: start;
+}
+.TitleH3 {
+    font-size: var(--h3); /* 20px */
+    text-align: start;
+}
+.TitleH4 {
+    font-size: var(--h4); /* 18px */
+    text-align: start;
+}
+.TitleH5 {
+    font-size: var(--h5); /* 14px */
+    text-align: start;
+}
+.TitleH6 {
+    font-size: var(--h6); /* 11px */
+    text-align: start;
+}
+
+/*--------------------------------------------------*/
+
+/* Style des Textes généraux */
+.TextP1,
+.TextP2,
+.TextP3,
+.TextP4,
+.TextP5,
+.TextP6,
+.TextLiP4 {
+    width: 100%;
+    margin: 0rem;
+    border: 0rem;
+    padding-bottom: 1.25rem; /* 0px 0px 20px 0px */
+    line-height: 1.6; /* Hauteur des lignes de texte */
+    text-align: start;
+}
+.TextP1 {
+    font-size: var(--h2); /* 24px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP1 {
+        font-size: var(--h1); /* 32px */
+    }
+}
+.TextP2 {
+    font-size: var(--h3); /* 18px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP2 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+.TextP3 {
+    font-size: var(--h4); /* 16px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP3 {
+        font-size: var(--h3); /* 18px */
+    }
+}
+.TextP4 {
+    font-size: var(--h5); /* 14px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP4 {
+        font-size: var(--h4); /* 16px */
+    }
+}
+.TextP5 {
+    font-size: var(--h6); /* 11px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP5 {
+        font-size: var(--h5); /* 14px */
+    }
+}
+.TextP6 {
+    font-size: var(--h6); /* 11px */
+}
+.TextLiP4 {
+    font-size: var(--h4); /* 18px */
+    padding-bottom: 0; /* 0px 0px 0px 0px */
+}
+
+/*--------------------------------------------------*/
+/* Text gras */
+.SpanBold {
+    color: var(--ColorTextBlack);
+    font-weight: bold;
+    font-size: var(--p); /* 16px */
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem;
+}

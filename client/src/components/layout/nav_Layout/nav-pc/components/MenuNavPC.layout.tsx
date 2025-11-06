@@ -8,22 +8,23 @@ import { SubMenuPC_Element } from "./elements/SubMenuPC.element";
 import { Link } from "react-router-dom";
 
 /* Import des Datas */
-import { menu_Data } from "../menu.data";
+import { menu_Data } from "../../menu.data";
 
 function MenuNavPC_Layout() {
+    const dataMenu = menu_Data();
 
     return (
         <ul className={css.MenuUlPC}>
-            <SubMenuPC_Element dataMenu={menu_Data.dataSubMenu[0]} />
+            <SubMenuPC_Element dataMenu={dataMenu.dataSubMenu[0]} />
 
-            <SubMenuPC_Element dataMenu={menu_Data.dataSubMenu[1]} />
+            <SubMenuPC_Element dataMenu={dataMenu.dataSubMenu[1]} />
 
             <li className={css.MenuLiPC}>
-                <Link to="#" className={css.MenuLinkPC}>{menu_Data.dataMenu[0].nameMenu}</Link>
+                <Link to={dataMenu.dataMenu[0].link} className={css.MenuLinkPC}>{dataMenu.dataMenu[0].nameMenu}</Link>
             </li>
 
             <li className={css.MenuLiPC}>
-                <Link to="#" className={css.MenuLinkPC}>{menu_Data.dataMenu[1].nameMenu}</Link>
+                <Link to={dataMenu.dataMenu[1].link} className={css.MenuLinkPC}>{dataMenu.dataMenu[1].nameMenu}</Link>
             </li>
         </ul>
     )
