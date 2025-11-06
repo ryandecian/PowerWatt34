@@ -30,6 +30,22 @@
         --h6: calc(var(--font-size-root) - 0.3125rem); /*11px*/
         --h7: calc(var(--font-size-root) - 0.4375rem); /*9px*/
         --h8: calc(var(--font-size-root) - 0.5rem); /*8px*/
+    
+    /* ✨ Attention, les 3 déclarations sont obligatoire pour les titres */
+        /*Logique des Titres*/
+            --font-family-normal: "Quicksand", sans-serif;
+            --font-family-titles: "Saira Condensed", sans-serif;
+
+            --font-weight-normal: none;
+            --font-weight-titles: 600;
+         
+            --font-style-normal: normal;
+            --font-style-titles: normal;
+
+
+            --font-family-title: var(--font-family-titles);
+            --font-weight-title: var(--font-weight-titles);
+            --font-style-title: var(--font-style-titles);
 }
 
 /* Reset universel pour tout le front */
