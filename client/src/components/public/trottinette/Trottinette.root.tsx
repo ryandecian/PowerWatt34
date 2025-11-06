@@ -9,6 +9,12 @@ function Trottinette_Root() {
                     Découvrez toutes les marques de trottinettes électriques proposées par PowerWatt34
                 </h1>
             </header>
+
+            <p>
+                Chez <strong>PowerWatt34</strong>, nous sélectionnons les <strong>meilleures marques de trottinettes électriques </strong>
+                afin de garantir performance, fiabilité et confort de conduite. 
+                Avant de découvrir nos modèles en détail, choisissez la marque qui vous correspond le mieux.
+            </p>
         </section>
     );
 }
