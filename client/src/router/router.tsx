@@ -7,6 +7,7 @@ import type { Router_Type } from "../types/router/router.type";
 /* Page Frontend public */
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
+import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 
 /**
  * Utilisation :
@@ -37,7 +38,7 @@ const router: Router_Type[] = [
     /* {router[4].path} */
     {
         path: "/produits/trottinette",
-        element: <h1>produit trottinette</h1>,
+        element: <Trottinette_Page />,
     },
 ];
 
