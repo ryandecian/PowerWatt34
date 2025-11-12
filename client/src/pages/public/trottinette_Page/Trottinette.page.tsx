@@ -3,16 +3,16 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Home_Root from "../../../components/public/home/home.root";
+import Trottinette_Root from "../../../components/public/trottinette/Trottinette.root";
 
-function Home_Page() {
+function Trottinette_Page() {
     return (
-        <section className={`Home_Page ${style.Page}`}>
+        <section className={`Trottinette_Page ${style.Page}`}>
             <header id="top" className={style.Header}>
                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <Home_Root />
+                <Trottinette_Root />
             </main>
             <footer className={style.Footer}>
                 <p>footer</p>
@@ -21,4 +21,4 @@ function Home_Page() {
     );
 }
 
-export default Home_Page;
+export default Trottinette_Page;
