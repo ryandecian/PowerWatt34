@@ -7,6 +7,7 @@ import type { Router_Type } from "../types/router/router.type";
 /* Page Frontend public */
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
+import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 
 /**
  * Utilisation :
@@ -23,6 +24,21 @@ const router: Router_Type[] = [
     {
         path: "/contact",
         element: <Contact_Page />,
+    },
+    /* {router[2].path} */
+    {
+        path: "/user/compte",
+        element: <h1>compte utilisateur</h1>,
+    },
+    /* {router[3].path} */
+    {
+        path: "/admin/compte",
+        element: <h1>compte admin</h1>,
+    },
+    /* {router[4].path} */
+    {
+        path: "/produits/trottinette",
+        element: <Trottinette_Page />,
     },
 ];
 
