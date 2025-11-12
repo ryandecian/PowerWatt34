@@ -1,13 +1,3 @@
-
-
-.Button {
-    /* Il faudra mettre par défaut margin et padding à 0 */
-    background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */
-    border: none;       /* Supprime les bordures (souvent visibles sur les boutons natifs) */
-    outline: none;      /* Supprime le contour par défaut du bouton */
-    cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */
-}
-
 /*--------------------------------------------------*/
 .ContainerRootRacine {
     display: flex;
@@ -18,6 +8,16 @@
     padding: 1.5rem 1.25rem 1.25rem 1.25rem; /* 24px 0px 20px 0px */
     border: 0rem;
     margin: 0rem;
+}
+
+.ContainerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
 }
 
 .ContainerUl {
@@ -182,4 +182,12 @@
     margin: 0rem;
     border: 0rem;
     padding: 0rem;
+}
+
+.Button {
+    /* Il faudra mettre par défaut margin et padding à 0 */
+    background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */
+    border: none;       /* Supprime les bordures (souvent visibles sur les boutons natifs) */
+    outline: none;      /* Supprime le contour par défaut du bouton */
+    cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */
 }
