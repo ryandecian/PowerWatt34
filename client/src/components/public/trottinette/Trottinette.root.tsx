@@ -1,7 +1,26 @@
 /* Import des modules CSS */
 import style from "../../styleRootComponent.module.css";
+import css from "./trottinette.module.css";
+
+/* Import des composants React */
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
+/* Import des Datas */
+import { trottinetteMarque_Data } from "./trottinetteMarque.data";
+
+/* Import des Types */
+import type { CardsBrand_Type } from "../../../types/produits/cardsBrand.type";
 
 function Trottinette_Root() {
+    const brand: CardsBrand_Type[] = trottinetteMarque_Data();
+
+    const [search, setSearch] = useState("");
+
+    const filtered = brand.filter((p) =>
+        p.title.toLowerCase().includes(search.toLowerCase())
+    );
+
     return (
         <section className={`Trottinette_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
@@ -15,6 +34,31 @@ function Trottinette_Root() {
                 afin de garantir performance, fiabilité et confort de conduite. 
                 Avant de découvrir nos modèles en détail, choisissez la marque qui vous correspond le mieux.
             </p>
+
+            <input
+                type="text"
+                placeholder="Rechercher une marque..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className={css.searchBar}
+            />
+
+            <div className={css.cardsContainer}>
+                {filtered.map((brand) => (
+                    <Link
+                        key={brand.reactKey}
+                        to={`${brand.path}`}
+                        className={css.card}
+                        style={{ backgroundImage: `url(${brand.image})` }}
+                    >
+                        <div className={css.overlay}>
+                            <h3 className={css.cardTitle}>{brand.title}</h3>
+                            <p className={css.cardDescription}>{brand.description}</p>
+                        </div>
+                    </Link>
+                ))}
+            </div>
+            
         </section>
     );
 }
