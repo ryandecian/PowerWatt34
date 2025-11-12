@@ -4,6 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Trottinette_Root from "../../../components/public/trottinette/Trottinette.root";
+import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 function Trottinette_Page() {
     return (
@@ -15,7 +16,7 @@ function Trottinette_Page() {
                 <Trottinette_Root />
             </main>
             <footer className={style.Footer}>
-                <p>footer</p>
+                <Footer_root_layout />
             </footer>
         </section>
     );
