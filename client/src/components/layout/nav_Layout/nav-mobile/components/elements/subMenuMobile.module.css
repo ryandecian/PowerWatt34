@@ -37,7 +37,7 @@
     position: fixed;
     top: 0rem;
     left: 0rem;
-    z-index: 4; /* Place le boutton de fermeture juste en dessous du sous menu */
+    z-index: -4; /* Place le boutton de fermeture juste en dessous du sous menu */
     width: 100vw;
     height: 100vh;
     background-color: transparent;
