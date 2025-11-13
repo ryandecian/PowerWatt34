@@ -166,7 +166,12 @@
     }
 }
 .TextP6 {
-    font-size: var(--h6); /* 11px */
+    font-size: var(--h7); /* 11px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP6 {
+        font-size: var(--h6); /* 11px */
+    }
 }
 .TextLiP4 {
     font-size: var(--h4); /* 18px */
