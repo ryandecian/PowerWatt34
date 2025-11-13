@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 /* Import des Datas */
-import { trottinetteMarque_Data } from "./trottinetteMarque.data";
+import { trottinetteMarque_Data } from "./trottinetteMarque.data.js";
 
 /* Import des Types */
 import type { CardsBrand_Type } from "../../../types/produits/cardsBrand.type";
