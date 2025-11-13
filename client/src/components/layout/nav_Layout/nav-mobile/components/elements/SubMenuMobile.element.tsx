@@ -31,7 +31,7 @@ function SubMenuMobile_Element({ dataMenu }: { dataMenu: SubMenuNav_Type }) {
                     <button 
                         type="button" 
                         className={`${css.ButtonSubMenuMobile} ${style.Button}`}
-                        aria-label={`Fermer le sous menu des ${dataMenu.nameMenu}`}
+                        aria-label={`Fermer le sous menu ${dataMenu.nameMenu}`}
                         onClick={() => setSubMenuOpen(!subMenuOpen)}
                     >
                         Fermer
