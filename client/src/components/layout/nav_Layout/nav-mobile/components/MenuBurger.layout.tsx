@@ -6,15 +6,21 @@ import style from "../../../../styleRootComponent.module.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { menu_Data } from "../../menu.data";
+/* Import des composants d'Elements */
 import { SubMenuMobile_Element } from "./elements/SubMenuMobile.element";
+
+/* Import des Datas */
+import { navMenu_Data } from "../../navMenu.data";
+
+/* Import des Types */
+import type { NavMenu_data_Type } from "../../../../../types/layout/nav/navMenu.data.type";
 
 function MenuBurger_Layout() {
     const [active, setActive] = useState<boolean>(false)
     const funcActive = () => {
         setActive(!active)
     }
-    const dataMenu = menu_Data();
+    const dataMenu: NavMenu_data_Type = navMenu_Data();
 
     return (
         <>
