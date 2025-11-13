@@ -16,34 +16,22 @@ type SubMenuFooterMobile_Type = {
 
 function SubMenuFooterMobile_Element({ dataMenu }: { dataMenu: SubMenuFooterMobile_Type }) {
     const [subMenuOpen, setSubMenuOpen] = useState(false);
+    const idMenu = `submenu-${dataMenu.nameMenu.replace(/\s+/g, "-").toLowerCase()}`;
 
     return (
         <section className={css.SubContainerNavFooter}>
-            {!subMenuOpen && (
-                <button
-                    type="button"
-                    className={`${css.OpenBtnFalse} ${style.Button}`}
-                    onClick={() => setSubMenuOpen(!subMenuOpen)}
-                    aria-expanded={subMenuOpen}
-                    aria-controls={`Ouverture du sous menu des ${dataMenu.nameMenu}`}
-                    aria-haspopup="true"
-                >
-                    <span className={style.TextP3}>{dataMenu.nameMenu}</span> <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
-                </button>
-            )}
-
-            {subMenuOpen && (
-                <button
-                    type="button"
-                    className={`${css.OpenBtnTrue} ${style.Button}`}
-                    onClick={() => setSubMenuOpen(!subMenuOpen)}
-                    aria-expanded={subMenuOpen}
-                    aria-controls={`Ouverture du sous menu des ${dataMenu.nameMenu}`}
-                    aria-haspopup="true"
-                >
-                    <span className={style.TextP3}>{dataMenu.nameMenu}</span> <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
-                </button>
-            )}
+            <button
+                type="button"
+                className={`${subMenuOpen ? css.OpenBtnTrue : css.OpenBtnFalse} ${style.Button}`}
+                onClick={() => setSubMenuOpen(!subMenuOpen)}
+                aria-label={`Ouverture du sous-menu ${dataMenu.nameMenu}`}
+                aria-expanded={subMenuOpen}
+                aria-controls={idMenu}
+                aria-haspopup="true"
+            >
+                <span className={style.TextP3}>{dataMenu.nameMenu}</span>
+                <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
+            </button>
 
             {subMenuOpen && (
                 <>
