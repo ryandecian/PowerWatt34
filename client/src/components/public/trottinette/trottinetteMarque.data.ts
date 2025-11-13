@@ -27,6 +27,14 @@ function trottinetteMarque_Data() {
             image: "/images/produits/brands/langfeite.jpg",
             light: 5,
         },
+        {
+            reactKey: 4,
+            path: "#",
+            title: "Kaabo",
+            description: "La marque de trottinette électrique haut de gamme",
+            image: "/images/produits/brands/kaabo.webp",
+            light: 6,
+        },
     ]
     return (tab);
 }
