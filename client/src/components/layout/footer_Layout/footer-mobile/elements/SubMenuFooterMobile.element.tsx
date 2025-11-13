@@ -1,28 +1,36 @@
 /* Import des modules CSS */
-import css from "./subMenuMobile.module.css";
-import style from "../../../../../styleRootComponent.module.css";
+import css from "./subMenuFooterMobile.module.css";
+import style from "../../../../styleRootComponent.module.css";
 
 /* Import des composants React */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-/* Import des Types */
-import type { SubMenuNav_Type } from "../../../../../../types/layout/nav/subMenuNav.type";
+type SubMenuFooterMobile_Type = {
+    nameMenu: string;
+    nameSubMenu: {
+        title: string;
+        link: string;
+    }[];
+};
 
-function SubMenuMobile_Element({ dataMenu }: { dataMenu: SubMenuNav_Type }) {
+function SubMenuFooterMobile_Element({ dataMenu }: { dataMenu: SubMenuFooterMobile_Type }) {
     const [subMenuOpen, setSubMenuOpen] = useState(false);
+    const idMenu = `submenu-${dataMenu.nameMenu.replace(/\s+/g, "-").toLowerCase()}`;
 
     return (
-        <li className={`${dataMenu.nameMenu} ${css.MenuLiMobile}`} onClick={() => setSubMenuOpen(!subMenuOpen)}>
+        <section className={css.SubContainerNavFooter}>
             <button
                 type="button"
-                className={`${css.OpenBtn} ${style.Button}`}
+                className={`${subMenuOpen ? css.OpenBtnTrue : css.OpenBtnFalse} ${style.Button}`}
                 onClick={() => setSubMenuOpen(!subMenuOpen)}
+                aria-label={`Ouverture du sous-menu ${dataMenu.nameMenu}`}
                 aria-expanded={subMenuOpen}
-                aria-controls={`Ouverture du sous menu des ${dataMenu.nameMenu}`}
+                aria-controls={idMenu}
                 aria-haspopup="true"
             >
-                {dataMenu.nameMenu} <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
+                <span className={style.TextP3}>{dataMenu.nameMenu}</span>
+                <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
             </button>
 
             {subMenuOpen && (
@@ -31,7 +39,7 @@ function SubMenuMobile_Element({ dataMenu }: { dataMenu: SubMenuNav_Type }) {
                     <button 
                         type="button" 
                         className={`${css.ButtonSubMenuMobile} ${style.Button}`}
-                        aria-label={`Fermer le sous menu ${dataMenu.nameMenu}`}
+                        aria-label={`Fermer le sous menu des ${dataMenu.nameMenu}`}
                         onClick={() => setSubMenuOpen(!subMenuOpen)}
                     >
                         Fermer
@@ -47,10 +55,11 @@ function SubMenuMobile_Element({ dataMenu }: { dataMenu: SubMenuNav_Type }) {
                             );
                         })}
                     </ul>
+                    <br />
                 </>
             )}
-        </li>
-    )
+        </section>
+    );
 }
 
-export { SubMenuMobile_Element };
+export { SubMenuFooterMobile_Element };
