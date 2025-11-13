@@ -1,4 +1,4 @@
-type footer_data_Type = {
+type Footer_data_Type = {
     nameMenu: string;
     nameSubMenu: {
         title: string;
@@ -6,4 +6,4 @@ type footer_data_Type = {
     }[];
 }[];
 
-export type { footer_data_Type };
+export type { Footer_data_Type };
