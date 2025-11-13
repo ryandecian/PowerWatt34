@@ -2,9 +2,9 @@
 import router from "../../../router/router";
 
 /* Import des Types */
-import type { footer_data_Type } from "../../../types/layout/footer/footer.data.type";
+import type { Footer_data_Type } from "../../../types/layout/footer/footer.data.type";
 
-function footer_Data(): footer_data_Type {
+function footer_Data(): Footer_data_Type {
     return [
         {
             nameMenu: "A PROPOS",
