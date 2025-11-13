@@ -4,7 +4,7 @@ import style from "../../../../styleRootComponent.module.css";
 
 /* Import des composants React */
 import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 type SubMenuFooterMobile_Type = {
     nameMenu: string;
@@ -29,6 +29,32 @@ function SubMenuFooterMobile_Element({ dataMenu }: { dataMenu: SubMenuFooterMobi
             >
                 <span className={style.TextP3}>{dataMenu.nameMenu}</span> <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
             </button>
+
+            {subMenuOpen && (
+                <>
+                    {/* Bouton de fermeture du sous menu burger */}
+                    <button 
+                        type="button" 
+                        className={`${css.ButtonSubMenuMobile} ${style.Button}`}
+                        aria-label={`Fermer le sous menu des ${dataMenu.nameMenu}`}
+                        onClick={() => setSubMenuOpen(!subMenuOpen)}
+                    >
+                        Fermer
+                    </button>
+
+                    <ul className={css.SubMenuUlMobile}>
+                        {dataMenu.nameSubMenu.map((item, index) => {
+
+                            return (
+                                <li key={index} className={css.SubMenuLiMobile}>
+                                    <Link to={item.link} className={css.SubMenuLinkMobile}>{item.title}</Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                    <br />
+                </>
+            )}
         </section>
     );
 }

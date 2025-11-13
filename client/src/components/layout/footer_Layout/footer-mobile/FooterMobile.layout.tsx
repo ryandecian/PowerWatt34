@@ -23,31 +23,12 @@ function FooterMobile_Layout() {
             <nav className={css.ContainerNavFooter}>
                 {/* Nav 1 : A propos */}
                 <SubMenuFooterMobile_Element dataMenu={dataFooter[0]} />
-                {/* <section className={css.SubContainerNavFooter}>
-                    <header className={css.TitleNavFooter}>
-                        <h3 className={css.SubNav}>
-                            A propos
-                        </h3>
-                    </header>
 
-                    <ul className={css.UlText}>
-                        <li className={css.LiTextLink}>
-                            <Link to={`${router[0].path}#top`} className={css.Link}>
-                                Nos services
-                            </Link>
-                        </li>
-                        <li className={css.LiTextLink}>
-                            <Link to={`${router[0].path}#top`} className={css.Link}>
-                                Nos valeurs
-                            </Link>
-                        </li>
-                        <li className={css.LiTextLink}>
-                            <Link to={`${router[0].path}#top`} className={css.Link}>
-                                Notre atelier
-                            </Link>
-                        </li>
-                    </ul>
-                </section> */}
+                {/* Nav 2 : Réseaux */}
+                <SubMenuFooterMobile_Element dataMenu={dataFooter[1]} />
+
+                {/* Nav 3 : Contact */}
+                <SubMenuFooterMobile_Element dataMenu={dataFooter[2]} />
             </nav>
         </section>
     );

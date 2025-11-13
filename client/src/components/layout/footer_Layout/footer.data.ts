@@ -7,7 +7,7 @@ import type { footer_data_Type } from "../../../types/layout/footer/footer.data.
 function footer_Data(): footer_data_Type {
     return [
         {
-            nameMenu: "À PROPOS",
+            nameMenu: "A PROPOS",
             nameSubMenu: [
                 { title: "Nos services", link: "#" },
                 { title: "Nos valeurs", link: "#" },
@@ -15,7 +15,7 @@ function footer_Data(): footer_data_Type {
             ],
         },
         {
-            nameMenu: "À PROPOS",
+            nameMenu: "RESEAUX",
             nameSubMenu: [
                 { title: "Instagram", link: "#" },
                 { title: "Facebook", link: "#" },
@@ -23,7 +23,7 @@ function footer_Data(): footer_data_Type {
             ],
         },
         {
-            nameMenu: "À PROPOS",
+            nameMenu: "POLITIQUE & TERMES",
             nameSubMenu: [
                 { title: "Contact", link: router[1].path },
                 { title: "Mentions légales", link: "#" },
