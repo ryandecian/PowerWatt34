@@ -8,10 +8,13 @@ import { SubMenuPC_Element } from "./elements/SubMenuPC.element";
 import { Link } from "react-router-dom";
 
 /* Import des Datas */
-import { menu_Data } from "../../menu.data";
+import { navMenu_Data } from "../../navMenu.data";
+
+/* Import des Types */
+import type { NavMenu_data_Type } from "../../../../../types/layout/nav/navMenu.data.type";
 
 function MenuNavPC_Layout() {
-    const dataMenu = menu_Data();
+    const dataMenu: NavMenu_data_Type = navMenu_Data();
 
     return (
         <ul className={css.MenuUlPC}>
