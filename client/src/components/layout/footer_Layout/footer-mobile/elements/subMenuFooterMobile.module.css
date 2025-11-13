@@ -13,7 +13,28 @@
     border-bottom: 0.0625rem solid var(--ColorBackgroundWhite); /* 1px */
 }
 
-.OpenBtn {
+/*--------------------------------------------------*/
+.OpenBtnFalse {
+    display: inline-block; /* */
+    font-size: var(--h5);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--ColorTextBlack);
+    white-space: nowrap;
+    padding: 0rem 0rem 0.125rem 0rem; /* 0px 0px 2px 0px */
+}
+@media (min-width: 18.75rem) { /* 300px */
+    .OpenBtn {
+        font-size: var(--h4);
+    }
+}
+@media (min-width: 25rem) { /* 400px */
+    .OpenBtn {
+        font-size: var(--h3);
+    }
+}
+
+.OpenBtnTrue {
     display: inline-block; /* */
     font-size: var(--h5);
     font-weight: bold;
@@ -33,6 +54,7 @@
     }
 }
 
+/*--------------------------------------------------*/
 .IconOpenBtn {
     position: relative;
     font-size: var(--h6);

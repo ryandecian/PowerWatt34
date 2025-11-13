@@ -19,16 +19,31 @@ function SubMenuFooterMobile_Element({ dataMenu }: { dataMenu: SubMenuFooterMobi
 
     return (
         <section className={css.SubContainerNavFooter}>
-            <button
-                type="button"
-                className={`${css.OpenBtn} ${style.Button}`}
-                onClick={() => setSubMenuOpen(!subMenuOpen)}
-                aria-expanded={subMenuOpen}
-                aria-controls={`Ouverture du sous menu des ${dataMenu.nameMenu}`}
-                aria-haspopup="true"
-            >
-                <span className={style.TextP3}>{dataMenu.nameMenu}</span> <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
-            </button>
+            {!subMenuOpen && (
+                <button
+                    type="button"
+                    className={`${css.OpenBtnFalse} ${style.Button}`}
+                    onClick={() => setSubMenuOpen(!subMenuOpen)}
+                    aria-expanded={subMenuOpen}
+                    aria-controls={`Ouverture du sous menu des ${dataMenu.nameMenu}`}
+                    aria-haspopup="true"
+                >
+                    <span className={style.TextP3}>{dataMenu.nameMenu}</span> <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
+                </button>
+            )}
+
+            {subMenuOpen && (
+                <button
+                    type="button"
+                    className={`${css.OpenBtnTrue} ${style.Button}`}
+                    onClick={() => setSubMenuOpen(!subMenuOpen)}
+                    aria-expanded={subMenuOpen}
+                    aria-controls={`Ouverture du sous menu des ${dataMenu.nameMenu}`}
+                    aria-haspopup="true"
+                >
+                    <span className={style.TextP3}>{dataMenu.nameMenu}</span> <span className={css.IconOpenBtn}>{subMenuOpen ? "▲" : "▼"}</span>
+                </button>
+            )}
 
             {subMenuOpen && (
                 <>
