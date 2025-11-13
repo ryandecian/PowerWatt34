@@ -1,3 +1,11 @@
+.SubContainerNavFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
 .MenuLiMobile {
     list-style: none;
     margin: 0rem;
@@ -5,7 +13,28 @@
     border-bottom: 0.0625rem solid var(--ColorBackgroundWhite); /* 1px */
 }
 
-.OpenBtn {
+/*--------------------------------------------------*/
+.OpenBtnFalse {
+    display: inline-block; /* */
+    font-size: var(--h5);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--ColorTextBlack);
+    white-space: nowrap;
+    padding: 0rem 0rem 0.125rem 0rem; /* 0px 0px 2px 0px */
+}
+@media (min-width: 18.75rem) { /* 300px */
+    .OpenBtn {
+        font-size: var(--h4);
+    }
+}
+@media (min-width: 25rem) { /* 400px */
+    .OpenBtn {
+        font-size: var(--h3);
+    }
+}
+
+.OpenBtnTrue {
     display: inline-block; /* */
     font-size: var(--h5);
     font-weight: bold;
@@ -25,10 +54,11 @@
     }
 }
 
+/*--------------------------------------------------*/
 .IconOpenBtn {
     position: relative;
     font-size: var(--h6);
-    z-index: 5; /* Met le bouton d'ouverture 5 Niv au dessus du menu burger */
+    z-index: 5;
     cursor: pointer;
     padding: 0rem;
 }
@@ -71,6 +101,6 @@
     font-size: var(--h4);
     font-weight: bold;
     text-decoration: none;
-    color: var(--ColorTextBlack);
+    color: var(--ColorTextGrey);
     white-space: nowrap;
 }
