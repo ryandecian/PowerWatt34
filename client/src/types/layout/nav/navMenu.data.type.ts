@@ -1,4 +1,4 @@
-type MenuData_Type = {
+type NavMenu_data_Type = {
     dataSubMenu: {
         nameMenu: string;
         nameSubMenu: {
@@ -12,4 +12,4 @@ type MenuData_Type = {
     }[];
 }
 
-export type { MenuData_Type };
+export type { NavMenu_data_Type };

@@ -2,9 +2,9 @@
 import router from "../../../router/router";
 
 /* Import des Types */
-import type { MenuData_Type } from "../../../types/layout/nav/menu.data.type";
+import type { NavMenu_data_Type } from "../../../types/layout/nav/navMenu.data.type";
 
-function menu_Data(): MenuData_Type {
+function navMenu_Data(): NavMenu_data_Type {
     return {
         dataSubMenu: [
             {
@@ -31,4 +31,4 @@ function menu_Data(): MenuData_Type {
     };
 }
 
-export { menu_Data };
+export { navMenu_Data };
