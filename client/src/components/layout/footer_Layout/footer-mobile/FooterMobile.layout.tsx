@@ -8,8 +8,11 @@ import { SubMenuFooterMobile_Element } from "./elements/SubMenuFooterMobile.elem
 /* Import des Datas */
 import { footer_Data } from "../footer.data";
 
+/* Import des Types */
+import type { Footer_data_Type } from "../../../../types/layout/footer/footer.data.type";
+
 function FooterMobile_Layout() {
-    const dataFooter = footer_Data();
+    const dataFooter: Footer_data_Type = footer_Data();
     return (
         <section className={`FooterMobile_Layout ${css.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
