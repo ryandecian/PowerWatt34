@@ -9,14 +9,32 @@ function trottinetteMarque_Data() {
             title: "Dualtron",
             description: "La marque de trottinette électrique haut de gamme",
             image: "/images/produits/brands/dualtron.webp",
+            light: 4,
         },
         {
             reactKey: 2,
             path: "#",
             title: "Tevenun",
             description: "La marque de trottinette électrique haut de gamme",
-            image: "/images/produits/brands/teverun.webp",
-        }
+            image: "/images/produits/brands/teverunf.webp",
+            light: 3,
+        },
+        {
+            reactKey: 3,
+            path: "#",
+            title: "LANGFEITE",
+            description: "La marque de trottinette électrique haut de gamme",
+            image: "/images/produits/brands/langfeite.jpg",
+            light: 5,
+        },
+        {
+            reactKey: 4,
+            path: "#",
+            title: "Kaabo",
+            description: "La marque de trottinette électrique haut de gamme",
+            image: "/images/produits/brands/kaabo.webp",
+            light: 6,
+        },
     ]
     return (tab);
 }
