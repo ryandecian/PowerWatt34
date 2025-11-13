@@ -48,8 +48,8 @@ function Trottinette_Root() {
                     <Link
                         key={brand.reactKey}
                         to={`${brand.path}`}
-                        className={css.card}
-                        style={{ backgroundImage: `url(${brand.image})` }}
+                        className={`${css.card} ${brand.light && css[`card${brand.light}`]}`}
+                        style={{backgroundImage: `url(${brand.image})`}}
                     >
                         <div className={css.overlay}>
                             <h3 className={css.cardTitle}>{brand.title}</h3>
