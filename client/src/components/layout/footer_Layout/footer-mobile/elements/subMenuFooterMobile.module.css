@@ -1,0 +1,42 @@
+.SubContainerNavFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.MenuLiMobile {
+    list-style: none;
+    margin: 0rem;
+    padding: 0.625rem 1.5rem; /* 10px 24px 10px 24px */
+    border-bottom: 0.0625rem solid var(--ColorBackgroundWhite); /* 1px */
+}
+
+.OpenBtn {
+    display: inline-block; /* */
+    font-size: var(--h5);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--ColorTextBlack);
+    white-space: nowrap;
+    padding: 0rem;
+}
+@media (min-width: 18.75rem) { /* 300px */
+    .OpenBtn {
+        font-size: var(--h4);
+    }
+}
+@media (min-width: 25rem) { /* 400px */
+    .OpenBtn {
+        font-size: var(--h3);
+    }
+}
+
+.IconOpenBtn {
+    position: relative;
+    font-size: var(--h6);
+    z-index: 5;
+    cursor: pointer;
+    padding: 0rem;
+}
