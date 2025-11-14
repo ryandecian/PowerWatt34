@@ -40,6 +40,11 @@ const router: Router_Type[] = [
         path: "/produits/trottinette",
         element: <Trottinette_Page />,
     },
+    /* {router[5].path} */
+    {
+        path: "/produits/trottinette/dualtron",
+        element: <Trottinette_Page />,
+    },
 ];
 
 export default router;
