@@ -1,10 +1,10 @@
 /* Import des modules CSS */
-import style from "../../stylePage.module.css";
+import style from "../../../../stylePage.module.css";
 
 /* Import des Components */
-import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Dualtron_Root from "../../../components/public/dualtron/Dualtron.root";
-import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
+import Nav_root_Layout from "../../../../../components/layout/nav_Layout/Nav.root.layout";
+import Dualtron_Root from "../../../../../components/public/trottinette/brands/dualtron/Dualtron.root";
+import Footer_root_layout from "../../../../../components/layout/footer_Layout/Footer.root.layout";
 
 function Dualtron_Page() {
     return (

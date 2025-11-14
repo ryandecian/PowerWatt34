@@ -234,6 +234,7 @@
 
 .searchBar {
     width: 100%;
+    max-width: 31.25rem; /* 500px */
     margin: 0rem 0rem 2rem 0rem; /* 0px 0px 32px 0px */
     padding: 0.75rem 0rem; /* 12px 16px 12px 16px */
     font-size: 1rem; /* 16px */

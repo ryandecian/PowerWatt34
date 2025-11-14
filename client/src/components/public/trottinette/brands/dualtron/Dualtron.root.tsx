@@ -1,6 +1,6 @@
 /* Import des modules CSS */
 import css from "./dualtron.module.css";
-import style from "../../styleRootComponent.module.css";
+import style from "../../../../styleRootComponent.module.css";
 
 import { useState } from "react";
 

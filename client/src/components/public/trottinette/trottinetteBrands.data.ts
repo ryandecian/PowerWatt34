@@ -4,7 +4,7 @@ import router from "../../../router/router";
 /* Import des Types */
 import type { CardsBrand_Type } from "../../../types/produits/cardsBrand.type";
 
-function trottinetteMarque_Data() {
+function trottinetteBrands_Data() {
     const tab: CardsBrand_Type[] = [
         {
             reactKey: 1,
@@ -74,4 +74,4 @@ function trottinetteMarque_Data() {
     return (tab);
 }
 
-export { trottinetteMarque_Data };
+export { trottinetteBrands_Data };
