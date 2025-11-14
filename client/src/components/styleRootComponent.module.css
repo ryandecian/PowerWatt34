@@ -196,3 +196,48 @@
     outline: none;      /* Supprime le contour par défaut du bouton */
     cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */
 }
+
+.ContainerSearchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+
+.ContainerSearchBar > div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 31.25rem; /* 500px */
+    margin: 0rem 0rem 2rem 0rem; /* 0px 0px 32px 0px */
+    padding: 0rem;
+    border: 0rem;
+}
+
+.ContainerSearchBar > div > label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.ContainerSearchBar > div > input {
+    width: 100%;
+    margin: 0rem;
+    padding: 0.75rem 0rem; /* 12px 16px 12px 16px */
+    font-size: 1rem; /* 16px */
+    border-radius: 8px;
+    border: 0.0625rem solid #ccc; /* 1px */
+}
+
+.searchBar {
+    width: 100%;
+    max-width: 31.25rem; /* 500px */
+    margin: 0rem 0rem 2rem 0rem; /* 0px 0px 32px 0px */
+    padding: 0.75rem 0rem; /* 12px 16px 12px 16px */
+    font-size: 1rem; /* 16px */
+    border-radius: 8px;
+    border: 0.0625rem solid #ccc; /* 1px */
+}
