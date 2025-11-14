@@ -36,11 +36,11 @@ function Trottinette_Root() {
             </p>
 
             <input
-                type="text"
+                type="search"
                 placeholder="Rechercher une marque..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className={css.searchBar}
+                className={style.searchBar}
             />
 
             <div className={css.cardsContainer}>

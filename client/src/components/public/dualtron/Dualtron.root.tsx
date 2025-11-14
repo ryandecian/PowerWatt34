@@ -27,22 +27,23 @@ function Dualtron_Root() {
             </p>
 
             {/* Input de recherche */}
-            <div className={css.ContainerSearch}>
-                <label 
-                    htmlFor="search-dualtron-products" 
-                    className={css.LabelSearch}
-                >
-                    Filtrer les trottinettes Dualtron
-                </label>
+            <div className={style.ContainerSearchBar}>
+                <div>
+                    <label 
+                        htmlFor="search-dualtron-products" 
+                        // className={css.LabelSearch}
+                    >
+                        Filtrer les trottinettes Dualtron
+                    </label>
 
-                <input
-                    id="search-dualtron-products"
-                    type="search"
-                    className={css.InputSearch}
-                    placeholder="Rechercher un modèle Dualtron…"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                />
+                    <input
+                        type="search"
+                        placeholder="Rechercher un modèle Dualtron..."
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        // className={style.searchBar}
+                    />
+                </div>
             </div>
 
             {/* Container des cards (à remplir ensuite) */}
