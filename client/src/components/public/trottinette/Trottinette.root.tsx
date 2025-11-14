@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 /* Import des Datas */
-import { trottinetteMarque_Data } from "./trottinetteMarque.data.js";
+import { trottinetteBrands_Data } from "./trottinetteBrands.data";
 
 /* Import des Types */
 import type { CardsBrand_Type } from "../../../types/produits/cardsBrand.type";
 
 function Trottinette_Root() {
-    const brand: CardsBrand_Type[] = trottinetteMarque_Data();
+    const brand: CardsBrand_Type[] = trottinetteBrands_Data();
 
     const [search, setSearch] = useState("");
 
@@ -36,11 +36,11 @@ function Trottinette_Root() {
             </p>
 
             <input
-                type="text"
+                type="search"
                 placeholder="Rechercher une marque..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className={css.searchBar}
+                className={style.searchBar}
             />
 
             <div className={css.cardsContainer}>
