@@ -1,3 +1,6 @@
+/* Import des composants Router */
+import router from "../../../router/router";
+
 /* Import des Types */
 import type { CardsBrand_Type } from "../../../types/produits/cardsBrand.type";
 
@@ -5,7 +8,7 @@ function trottinetteMarque_Data() {
     const tab: CardsBrand_Type[] = [
         {
             reactKey: 1,
-            path: "#",
+            path: router[5].path,
             title: "Dualtron",
             description: "La marque de trottinette électrique haut de gamme",
             image: "/images/produits/brands/dualtron.webp",

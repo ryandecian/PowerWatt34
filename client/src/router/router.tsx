@@ -8,6 +8,7 @@ import type { Router_Type } from "../types/router/router.type";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
+import Dualtron_Page from "../pages/public/dualtron_Page/Dualtron.page";
 
 /**
  * Utilisation :
@@ -43,7 +44,7 @@ const router: Router_Type[] = [
     /* {router[5].path} */
     {
         path: "/produits/trottinette/dualtron",
-        element: <Trottinette_Page />,
+        element: <Dualtron_Page />,
     },
 ];
 
