@@ -1,11 +1,14 @@
+/* Import des composants Router */
+import router from "../../../router/router";
+
 /* Import des Types */
 import type { CardsBrand_Type } from "../../../types/produits/cardsBrand.type";
 
-function trottinetteMarque_Data() {
+function trottinetteBrands_Data() {
     const tab: CardsBrand_Type[] = [
         {
             reactKey: 1,
-            path: "#",
+            path: router[5].path,
             title: "Dualtron",
             description: "La marque de trottinette électrique haut de gamme",
             image: "/images/produits/brands/dualtron.webp",
@@ -22,21 +25,29 @@ function trottinetteMarque_Data() {
         {
             reactKey: 3,
             path: "#",
-            title: "LANGFEITE",
-            description: "La marque de trottinette électrique haut de gamme",
-            image: "/images/produits/brands/langfeite.jpg",
-            light: 5,
-        },
-        {
-            reactKey: 4,
-            path: "#",
             title: "Kaabo",
             description: "La marque de trottinette électrique haut de gamme",
             image: "/images/produits/brands/kaabo.webp",
             light: 6,
         },
         {
+            reactKey: 4,
+            path: "#",
+            title: "VSETT",
+            description: "La marque de trottinette électrique bas de gamme",
+            image: "/images/produits/brands/vsett.jpg",
+            light: 4,
+        },
+        {
             reactKey: 5,
+            path: "#",
+            title: "LANGFEITE",
+            description: "La marque de trottinette électrique haut de gamme",
+            image: "/images/produits/brands/langfeite.jpg",
+            light: 5,
+        },
+        {
+            reactKey: 6,
             path: "#",
             title: "ETWOW",
             description: "La marque de trottinette électrique bas de gamme",
@@ -44,7 +55,7 @@ function trottinetteMarque_Data() {
             light: 4,
         },
         {
-            reactKey: 6,
+            reactKey: 7,
             path: "#",
             title: "Kuickwheel",
             description: "La marque de trottinette électrique bas de gamme",
@@ -52,15 +63,15 @@ function trottinetteMarque_Data() {
             light: 4,
         },
         {
-            reactKey: 7,
+            reactKey: 8,
             path: "#",
-            title: "VSETT",
+            title: "INMOTION",
             description: "La marque de trottinette électrique bas de gamme",
-            image: "/images/produits/brands/vsett.jpg",
+            image: "/images/produits/brands/inmotion.jpg",
             light: 4,
         },
     ]
     return (tab);
 }
 
-export { trottinetteMarque_Data };
+export { trottinetteBrands_Data };
