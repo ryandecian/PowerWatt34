@@ -1,0 +1,75 @@
+.card {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--ColorTextWhite);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+    width: 15.625rem; /* 250px */
+    height: 17.5rem; /* 280px */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.3) 0 4px 14px;
+}
+
+/*---------------------------------------------------*/
+.overlay {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 80%);
+    padding: 1rem; /* 16px 16px 16px 16px */
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+}
+
+.TextPrice {
+    font-size: calc(var(--h3) - 0.0625rem); /* 17px */
+    font-weight: bold;
+    text-align: end;
+    margin: 0;
+    padding: 0rem;
+    border: 0rem;
+}
+
+.cardTitle {
+    margin: 0;
+    font-size: calc(var(--h3) + 0.0625rem); /* 19px */
+    font-weight: bold;
+}
+
+.ContainerText1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem;
+    padding: 0.5rem 0rem 0.25rem 0rem; /* 8px 0px 4px 0px */
+    border: 0rem;
+}
+
+.ContainerText2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+
+.SubText {
+    font-size: calc(var(--h4) - 0.0625rem); /* 15px */
+    margin: 0;
+}
