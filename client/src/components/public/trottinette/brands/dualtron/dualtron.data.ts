@@ -1,13 +1,14 @@
 /* Import des Types */
-import type { TrottinetteBrandDualtron_data_Type } from "../../../../../types/produits/trottinetteBrandDualtron.data.type";
+import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produits/cardsTrottinetteBrand.data.type";
 
 function dualtron_Data() {
-    const tab: TrottinetteBrandDualtron_data_Type = [
+    const tab: CardsTrottinetteBrand_data_Type = [
         {
             reactKey: 1,
-            image: "",
+            image: "/images/produits/trottinette/dualtron/dualtron-x-ltd/dualtron-x-ltd-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron X LTD",
+            price: "5999 €",
             battery: "84V 60Ah", 
             power: "13300W",
             range: "200 km",

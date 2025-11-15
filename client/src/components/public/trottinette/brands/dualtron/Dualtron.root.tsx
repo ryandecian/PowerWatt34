@@ -3,7 +3,7 @@ import css from "./dualtron.module.css";
 import style from "../../../../styleRootComponent.module.css";
 
 /* Import des composants d'Elements */
-import { CardsProductTrottinette_Element } from "../../../../elements/cards-product-trottinette/cardsProductTrottinette.element";
+import { CardsProductTrottinette_Element } from "../../../../elements/cards-product-trottinette/CardsProductTrottinette.element";
 
 /* Import des composants React */
 import { useState } from "react";
@@ -12,10 +12,10 @@ import { useState } from "react";
 import { dualtron_Data } from "./dualtron.data";
 
 /* Import des Types */
-import type { TrottinetteBrandDualtron_data_Type } from "../../../../../types/produits/trottinetteBrandDualtron.data.type";
+import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produits/cardsTrottinetteBrand.data.type";
 
 function Dualtron_Root() {
-    const dualtronProducts: TrottinetteBrandDualtron_data_Type = dualtron_Data();
+    const dualtronProducts: CardsTrottinetteBrand_data_Type = dualtron_Data();
     
     const [search, setSearch] = useState("");
 
@@ -62,10 +62,11 @@ function Dualtron_Root() {
                 </div>
             </div>
 
-            {/* Container des cards (à remplir ensuite) */}
-            <section className={css.ContainerCards}>
-                {/* tu feras un .map ici */}
-            </section>
+            <div className={css.cardsContainer}>
+                {filtered.map((dataProduct) => (
+                    <CardsProductTrottinette_Element dataProduct={dataProduct} />
+                ))}
+            </div>
 
         </section>
     );
