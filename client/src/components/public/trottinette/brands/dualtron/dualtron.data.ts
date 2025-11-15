@@ -23,6 +23,16 @@ function dualtron_Data() {
             power: "11500W",
             range: "180 km",
         },
+        {
+            reactKey: 3,
+            image: "/images/produits/trottinette/dualtron/dualtron-alien/dualtron-alien-n01-powerwatt34.jpg",
+            path: "#",
+            model: "Dualtron Alien",
+            price: "3999 €",
+            battery: "84V 45Ah", 
+            power: "11200W",
+            range: "125 km",
+        },
     ]
 
     return (tab);
