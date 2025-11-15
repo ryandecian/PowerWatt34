@@ -2,10 +2,26 @@
 import css from "./dualtron.module.css";
 import style from "../../../../styleRootComponent.module.css";
 
+/* Import des composants d'Elements */
+import { CardsProductTrottinette_Element } from "../../../../elements/cards-product-trottinette/cardsProductTrottinette.element";
+
+/* Import des composants React */
 import { useState } from "react";
 
+/* Import des Datas */
+import { dualtron_Data } from "./dualtron.data";
+
+/* Import des Types */
+import type { TrottinetteBrandDualtron_data_Type } from "../../../../../types/produits/trottinetteBrandDualtron.data.type";
+
 function Dualtron_Root() {
+    const dualtronProducts: TrottinetteBrandDualtron_data_Type = dualtron_Data();
+    
     const [search, setSearch] = useState("");
+
+    const filtered = dualtronProducts.filter((p) =>
+        p.model.toLowerCase().includes(search.toLowerCase())
+    );
 
     return (
         <section className={`Dualtron_Root ${style.ContainerRootRacine}`}>

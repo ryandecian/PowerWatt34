@@ -1,14 +1,14 @@
 /* Import des Types */
-import type { TrottinetteBrand_data_Type } from "../../../../../types/produits/trottinetteBrands.data.type";
+import type { TrottinetteBrandDualtron_data_Type } from "../../../../../types/produits/trottinetteBrandDualtron.data.type";
 
 function dualtron_Data() {
-    const tab: TrottinetteBrand_data_Type = [
+    const tab: TrottinetteBrandDualtron_data_Type = [
         {
             reactKey: 1,
             image: "",
             path: "#",
             model: "Dualtron X LTD",
-            battery: "84V 60Ah",
+            battery: "84V 60Ah", 
             power: "13300W",
             range: "200 km",
         }

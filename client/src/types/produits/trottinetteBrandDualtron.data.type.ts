@@ -1,4 +1,4 @@
-type TrottinetteBrand_data_Type = {
+type TrottinetteBrandDualtron_data_Type = {
     reactKey: number;
     image: string;
     path: string;
@@ -8,4 +8,4 @@ type TrottinetteBrand_data_Type = {
     range: string;
 }[]
 
-export type { TrottinetteBrand_data_Type };
+export type { TrottinetteBrandDualtron_data_Type };
