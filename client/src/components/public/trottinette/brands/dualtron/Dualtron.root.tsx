@@ -14,6 +14,9 @@ import { dualtron_Data } from "./dualtron.data";
 /* Import des Types */
 import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produits/cardsTrottinetteBrand.data.type";
 
+/* Import des Utils */
+import { parsePrice_Utils } from "../../../../../utils/parsePrice.utils";
+
 function Dualtron_Root() {
     const dualtronProducts: CardsTrottinetteBrand_data_Type = dualtron_Data();
     
@@ -22,6 +25,10 @@ function Dualtron_Root() {
     const filtered = dualtronProducts.filter((p) =>
         p.model.toLowerCase().includes(search.toLowerCase())
     );
+
+    const sorted = [...filtered].sort((a, b) => {
+        return parsePrice_Utils(b.price) - parsePrice_Utils(a.price);
+    });
 
     return (
         <section className={`Dualtron_Root ${style.ContainerRootRacine}`}>
@@ -63,7 +70,7 @@ function Dualtron_Root() {
             </div>
 
             <div className={css.cardsContainer}>
-                {filtered.map((dataProduct) => (
+                {sorted.map((dataProduct) => (
                     <CardsProductTrottinette_Element dataProduct={dataProduct} />
                 ))}
             </div>
