@@ -16,7 +16,7 @@ function trottinetteBrands_Data() {
         },
         {
             reactKey: 2,
-            path: "#",
+            path: router[6].path,
             title: "Tevenun",
             description: "La marque de trottinette électrique haut de gamme",
             image: "/images/produits/brands/teverun.webp",
