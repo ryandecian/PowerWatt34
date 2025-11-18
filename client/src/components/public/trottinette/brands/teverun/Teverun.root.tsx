@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import css from "./dualtron.module.css";
+import css from "./teverun.module.css";
 import style from "../../../../styleRootComponent.module.css";
 
 /* Import des composants d'Elements */
