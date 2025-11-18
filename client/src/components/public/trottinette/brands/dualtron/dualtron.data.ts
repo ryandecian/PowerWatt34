@@ -243,6 +243,26 @@ function dualtron_Data() {
             power: "2900W",
             range: "40 km",
         },
+        {
+            reactKey: 25,
+            image: "/images/produits/trottinette/dualtron/dualtron-aminia/dualtron-aminia-n01-powerwatt34.jpg",
+            path: "#",
+            model: "Dualtron Aminia",
+            price: "979 €",
+            battery: "52V 17Ah", 
+            power: "1450W",
+            range: "45 km",
+        },
+        {
+            reactKey: 26,
+            image: "/images/produits/trottinette/dualtron/dualtron-aminia/dualtron-aminia-n01-powerwatt34.jpg",
+            path: "#",
+            model: "Dualtron Aminia",
+            price: "749 €",
+            battery: "52V 13Ah", 
+            power: "1450W",
+            range: "35 km",
+        },
     ]
 
     return (tab);
