@@ -5,13 +5,23 @@ function teverun_Data() {
     const tab: CardsTrottinetteBrand_data_Type = [
         {
             reactKey: 1,
-            image: "/images/produits/trottinette/dualtron/dualtron-x-ltd/dualtron-x-ltd-n01-powerwatt34.jpg",
+            image: "/images/produits/trottinette/teverun/teverun-fighter-7260r/teverun-fighter-7260r-n01-powerwatt34.jpg",
             path: "#",
-            model: "Dualtron X LTD",
-            price: "5949 €",
-            battery: "84V 60Ah", 
-            power: "13300W",
-            range: "170 km",
+            model: "Teverun Fighter 7260R Edition 2025 V4",
+            price: "4799 €",
+            battery: "72V 60Ah", 
+            power: "15000W",
+            range: "200 km",
+        },
+        {
+            reactKey: 2,
+            image: "/images/produits/trottinette/teverun/teverun-fighter-mini-pro/teverun-fighter-mini-pro-n01-powerwatt34.jpg",
+            path: "#",
+            model: "Teverun Fighter Mini Pro",
+            price: "1849 €",
+            battery: "60V 25Ah", 
+            power: "3300W",
+            range: "100 km",
         },
     ]
 
