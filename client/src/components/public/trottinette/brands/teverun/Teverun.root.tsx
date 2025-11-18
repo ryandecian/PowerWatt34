@@ -71,7 +71,7 @@ function Teverun_Root() {
 
             <div className={css.cardsContainer}>
                 {sorted.map((dataProduct) => (
-                    <CardsProductTrottinette_Element dataProduct={dataProduct} />
+                    <CardsProductTrottinette_Element key={dataProduct.reactKey} dataProduct={dataProduct} />
                 ))}
             </div>
 
