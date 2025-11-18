@@ -9,6 +9,7 @@ import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/Dualtron.page";
+import Teverun_Page from "../pages/public/trottinette_Page/brands/teverun_Page/Teverun.page";
 
 /**
  * Utilisation :
@@ -45,6 +46,11 @@ const router: Router_Type[] = [
     {
         path: "/produits/trottinette/dualtron",
         element: <Dualtron_Page />,
+    },
+    /* {router[6].path} */
+    {
+        path: "/produits/trottinette/teverun",
+        element: <Teverun_Page />,
     },
 ];
 
