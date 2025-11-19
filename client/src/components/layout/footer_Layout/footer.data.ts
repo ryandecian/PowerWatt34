@@ -26,7 +26,7 @@ function footer_Data(): Footer_data_Type {
             nameMenu: "POLITIQUE & TERMES",
             nameSubMenu: [
                 { title: "Contact", link: router[1].path },
-                { title: "Mentions légales", link: "#" },
+                { title: "Mentions légales", link: router[7].path },
                 { title: "CGV", link: "#" },
             ],
         },
