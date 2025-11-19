@@ -6,10 +6,11 @@ import type { Router_Type } from "../types/router/router.type";
 
 /* Page Frontend public */
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
-import Home_Page from "../pages/public/home_Page/Home.page";
-import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/Dualtron.page";
+import Home_Page from "../pages/public/home_Page/Home.page";
+import MentionsLegales_Page from "../pages/public/mentions-legales_Page/MentionsLegales.page";
 import Teverun_Page from "../pages/public/trottinette_Page/brands/teverun_Page/Teverun.page";
+import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 
 /**
  * Utilisation :
@@ -51,6 +52,11 @@ const router: Router_Type[] = [
     {
         path: "/produits/trottinette/teverun",
         element: <Teverun_Page />,
+    },
+    /* {router[7].path} */
+    {
+        path: "/mentions-legales",
+        element: <MentionsLegales_Page />,
     },
 ];
 
