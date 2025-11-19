@@ -56,6 +56,7 @@
 /* Style des Title dans un parent Column */
 .TitleH1, 
 .TitleH2,
+.TitleH2_00N0,
 .TitleH3,
 .TitleH4, 
 .TitleH5,
@@ -87,10 +88,30 @@
         font-size: var(--h1); /* 32px */
     }
 }
-.TitleH2 {
-    font-size: var(--h2); /* 24px */
+.TitleH2,
+.TitleH2_00N0 {
+    font-size: var(--h4); /* 16px */
     text-align: start;
 }
+@media (min-width: 25rem) { /* 400px */
+    .TitleH2,
+    .TitleH2_00N0 {
+        font-size: var(--h3); /* 18px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH2,
+    .TitleH2_00N0 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+.TitleH2 {
+    padding: 1.25rem 0rem; /* 20px 0px 20px 0px */
+}
+.TitleH2_00N0 {
+    padding: 0.625rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+}
+
 .TitleH3 {
     font-size: var(--h3); /* 20px */
     text-align: start;
@@ -179,16 +200,6 @@
 }
 
 /*--------------------------------------------------*/
-/* Text gras */
-.SpanBold {
-    color: var(--ColorTextBlack);
-    font-weight: bold;
-    font-size: var(--p); /* 16px */
-    margin: 0rem;
-    border: 0rem;
-    padding: 0rem;
-}
-
 .Button {
     /* Il faudra mettre par défaut margin et padding à 0 */
     background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */
@@ -197,6 +208,23 @@
     cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */
 }
 
+.Link {
+    font-weight: bold;
+    color: var(--ColorTextRed);
+}
+
+.LinkHover {
+    display: inline;
+    font-weight: bold;
+    color: var(--ColorTextRed);
+    transition: transform 0.2s ease-in-out; /* Effet fluide */
+}
+.LinkHover:hover {
+    transform: scale(1.05); /* Agrandit légèrement le lien au survol */
+}
+
+/*--------------------------------------------------*/
+/* Barre de recherche (input) */
 .ContainerSearchBar {
     display: flex;
     justify-content: center;
