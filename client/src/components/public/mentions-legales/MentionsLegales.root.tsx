@@ -2,6 +2,9 @@
 import style from "../../styleRootComponent.module.css";
 import css from "./mentionsLegales.module.css";
 
+/* Import des composants Router */
+import routerExt from "../../../router/routerExt.router";
+
 function MentionsLegales_Root() {
     return (
         <section className={style.ContainerRootRacine}>
@@ -11,9 +14,13 @@ function MentionsLegales_Root() {
                 </h1>
             </header>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 1 – Édition du site
             </h2>
+
+            <p className={style.TextP4}>
+                En vertu de <a href={routerExt.loi_01} className={style.Link}>l’article 6 de la loi n° 2004-575 du 21 juin 2004</a> qkjhbz jqfhcbs oqjzcbh oljcbh qjsch  jqdch <a href="">test</a> joHC QLZEJFHB KHEFJB  LJFZHB
+            </p>
         </section>
     )
 }

@@ -56,6 +56,7 @@
 /* Style des Title dans un parent Column */
 .TitleH1, 
 .TitleH2,
+.TitleH2_00N0,
 .TitleH3,
 .TitleH4, 
 .TitleH5,
@@ -108,7 +109,7 @@
     padding: 1.25rem 0rem; /* 20px 0px 20px 0px */
 }
 .TitleH2_00N0 {
-    padding: 0rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+    padding: 0.625rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
 }
 
 .TitleH3 {
@@ -199,16 +200,6 @@
 }
 
 /*--------------------------------------------------*/
-/* Text gras */
-.SpanBold {
-    color: var(--ColorTextBlack);
-    font-weight: bold;
-    font-size: var(--p); /* 16px */
-    margin: 0rem;
-    border: 0rem;
-    padding: 0rem;
-}
-
 .Button {
     /* Il faudra mettre par défaut margin et padding à 0 */
     background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */
@@ -217,6 +208,18 @@
     cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */
 }
 
+.Link {
+    display: inline;
+    font-weight: bold;
+    color: var(--ColorTextRed);
+    transition: transform 0.2s ease-in-out; /* Effet fluide */
+}
+.Link:hover {
+    transform: scale(1.05); /* Agrandit légèrement le lien au survol */
+}
+
+/*--------------------------------------------------*/
+/* Barre de recherche (input) */
 .ContainerSearchBar {
     display: flex;
     justify-content: center;
