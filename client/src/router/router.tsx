@@ -52,6 +52,11 @@ const router: Router_Type[] = [
         path: "/produits/trottinette/teverun",
         element: <Teverun_Page />,
     },
+    /* {router[7].path} */
+    {
+        path: "/mentions-legales",
+        element: <Teverun_Page />,
+    },
 ];
 
 export default router;
