@@ -209,12 +209,17 @@
 }
 
 .Link {
+    font-weight: bold;
+    color: var(--ColorTextRed);
+}
+
+.LinkHover {
     display: inline;
     font-weight: bold;
     color: var(--ColorTextRed);
     transition: transform 0.2s ease-in-out; /* Effet fluide */
 }
-.Link:hover {
+.LinkHover:hover {
     transform: scale(1.05); /* Agrandit légèrement le lien au survol */
 }
 
