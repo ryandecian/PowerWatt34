@@ -23,6 +23,26 @@ function teverun_Data() {
             power: "3300W",
             range: "100 km",
         },
+        {
+            reactKey: 3,
+            image: "/images/produits/trottinette/teverun/teverun-fighter-mini/teverun-fighter-mini-n01-powerwatt34.jpg",
+            path: "#",
+            model: "Teverun Fighter Mini",
+            price: "1549 €",
+            battery: "52V 25Ah", 
+            power: "2950W",
+            range: "80 km",
+        },
+        {
+            reactKey: 4,
+            image: "/images/produits/trottinette/teverun/teverun-blade-mini-ultra/teverun-blade-mini-ultra-n01-powerwatt34.jpg",
+            path: "#",
+            model: "Teverun Blade Mini Ultra",
+            price: "1449 €",
+            battery: "60V 27Ah", 
+            power: "2950W",
+            range: "100 km",
+        },
     ]
 
     return (tab);
