@@ -5,7 +5,12 @@ import style from "../../stylePage.module.css";
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Contact_Root from "../../../components/public/contact/Contact.root";
 
+/* Import des Hooks */
+import { useScrollToHash_utils_Hook } from "../../../hook/useScrollToHash.utils.hook";
+
 function Contact_Page() {
+    useScrollToHash_utils_Hook(); /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    
     return (
         <section className={`Contact_Page ${style.Page}`}>
             <header id="top" className={style.Header}>
