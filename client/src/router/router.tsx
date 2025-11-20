@@ -5,6 +5,7 @@ import type { Router_Type } from "../types/router/router.type";
 /* Page Frontend verrouillée */
 
 /* Page Frontend public */
+import CGV_Page from "../pages/public/cgv_Page/CGV.page";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/Dualtron.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
@@ -60,7 +61,7 @@ const router: Router_Type[] = [
     },
     {
         path: "/cgv",
-        element: <MentionsLegales_Page />,
+        element: <CGV_Page />,
     },
 ];
 
