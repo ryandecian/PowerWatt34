@@ -104,6 +104,48 @@ function MentionsLegales_Root() {
                 Cependant sa responsabilité ne pourra être mise en cause si des données indésirables sont 
                 importées et installées sur son site à son insu.
             </p>
+
+            <p className={style.TextP4}>
+                Des espaces interactifs (espace contact ou commentaires) sont à la disposition des utilisateurs. 
+                PowerWatt34 se réserve le droit de supprimer, sans mise en demeure préalable, tout 
+                contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en 
+                particulier aux dispositions relatives à la protection des données.
+            </p>
+
+            <p className={style.TextP4}>
+                Le cas échéant, PowerWatt34 se réserve également la possibilité de mettre en cause 
+                la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, 
+                injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).
+            </p>
+
+            <h2 className={style.TitleH2}>
+                4 - CNIL et gestion des données personnelles
+            </h2>
+
+            <p className={style.TextP4}>
+                Conformément aux dispositions de la {" "}
+                <span className={style.SpanLink}>
+                    <a href={externalLinks.loi3} target="_blank" rel="noopener noreferrer">
+                        {"loi 78-17 du 6 janvier 1978 modifiée"}
+                    </a>
+                </span>
+                , l’utilisateur du site {" "}
+                <span className={style.SpanBold}>
+                    {"https://atelier-photo-montpellier.fr"}
+                </span>
+                {" "} dispose d’un droit d’accès, de modification et de suppression des informations collectées. 
+                Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : {" "}
+                <span className={style.SpanBold}>
+                    {"ANNE SAUNIER"}
+                </span>
+                {" "} – {" "}
+                <span className={style.SpanLink}>
+                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
+                        {"photo34000@gmail.com"}
+                    </a>
+                </span>
+                {"."}
+            </p>
         </section>
     )
 }
