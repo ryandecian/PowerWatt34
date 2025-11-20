@@ -58,6 +58,10 @@ const router: Router_Type[] = [
         path: "/mentions-legales",
         element: <MentionsLegales_Page />,
     },
+    {
+        path: "/cgv",
+        element: <MentionsLegales_Page />,
+    },
 ];
 
 export default router;
