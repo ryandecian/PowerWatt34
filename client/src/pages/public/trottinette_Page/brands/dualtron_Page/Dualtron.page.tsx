@@ -6,7 +6,12 @@ import Nav_root_Layout from "../../../../../components/layout/nav_Layout/Nav.roo
 import Dualtron_Root from "../../../../../components/public/trottinette/brands/dualtron/Dualtron.root";
 import Footer_root_layout from "../../../../../components/layout/footer_Layout/Footer.root.layout";
 
+/* Import des Hooks */
+import { useScrollToHash_utils_Hook } from "../../../../../hook/useScrollToHash.utils.hook";
+
 function Dualtron_Page() {
+    useScrollToHash_utils_Hook(); /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+
     return (
         <section className={`Dualtron_Page ${style.Page}`}>
             <header id="top" className={style.Header}>
