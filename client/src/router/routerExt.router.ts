@@ -13,6 +13,7 @@ const routerExt: RouterExt_Type = {
     adressInfomaniak: "https://maps.app.goo.gl/NytB3Ns7WESfdVEAA",
 
     loi_01: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164#LEGIARTI000042038977",
+    loi_02: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032655082",
 };
 
 export default routerExt;

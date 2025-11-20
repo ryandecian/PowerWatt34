@@ -33,7 +33,8 @@ function MentionsLegales_Root() {
                 <strong>Propriétaire du site :</strong> PowerWatt34 et ou PowerWatt Mobility – Contact :
                 <A_Element option={3} href={routerExt.emailPowerWatt34} text="powerwatt34@gmail.com" /> ou 
                 <A_Element option={3} href={routerExt.phonePowerWatt34} text="07 56 83 81 81" /> 
-                – Adresse : 122 Chemin de Saint Hubert, 34970 Lattes.
+                – Adresse :
+                <A_Element option={1} href={routerExt.adressPowerWatt34} text="122 Chemin de Saint Hubert, 34970 Lattes." />
             </p>
 
             <p className={style.TextP4}>
@@ -47,10 +48,24 @@ function MentionsLegales_Root() {
             </p>
 
             <p className={style.TextP4}>
-                <strong>Hébergeur :</strong> infomaniak Network SA – Adresse : Rue Eugène-Marziano 25, 1227 Genève, Suisse – 
-                Téléphone :
-                <A_Element option={3} href={routerExt.phoneInfomaniak} text="+41 22 820 35 41" />
+                <strong>Hébergeur :</strong> infomaniak Network SA – Adresse : 
+                <A_Element option={3} href={routerExt.adressInfomaniak} text="Rue Eugène-Marziano 25, 1227 Genève, Suisse" />
+                - Téléphone :
+                <A_Element option={1} href={routerExt.phoneInfomaniak} text="+41 22 820 35 41" />
             </p>
+
+            <p className={style.TextP4}>
+                <strong>Délégué à la protection des données :</strong> Helena PEREZ -  
+                <A_Element option={1} href={routerExt.emailPowerWatt34} text="powerwatt34@gmail.com" />
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Autre contributeurs :</strong>
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                2 - Propriété intellectuelle et contrefaçons
+            </h2>
         </section>
     )
 }
