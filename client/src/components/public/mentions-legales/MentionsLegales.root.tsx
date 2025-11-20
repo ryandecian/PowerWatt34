@@ -1,6 +1,5 @@
 /* Import des modules CSS */
 import style from "../../styleRootComponent.module.css";
-// import css from "./mentionsLegales.module.css";
 
 /* Import des composants d'Elements */
 import { A_Element } from "../../elements/Link/a/a.element";
