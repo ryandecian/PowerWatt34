@@ -59,6 +59,7 @@ const router: Router_Type[] = [
         path: "/mentions-legales",
         element: <MentionsLegales_Page />,
     },
+    /* {router[8].path} */
     {
         path: "/cgv",
         element: <CGV_Page />,
