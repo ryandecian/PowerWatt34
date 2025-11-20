@@ -130,7 +130,13 @@ function MentionsLegales_Root() {
                 dispose d’un droit d’accès, de modification et de suppression des informations collectées. 
                 Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données :
                 <strong> Helena PEREZ</strong> -
-                <A_Element option={3} href={routerExt.emailPowerWatt34} text="powerwatt34@gmail.com." />
+                <A_Element option={1} href={routerExt.emailPowerWatt34} text="powerwatt34@gmail.com." />
+            </p>
+
+            <p className={style.TextP4}>
+                Pour plus d’informations sur la façon dont nous traitons vos données (type de données, finalité, 
+                destinataire…), lisez notre
+                <A_Element option={1} href={routerExt.linkPowerWatt34} text="www.powerwatt34.fr" />
             </p>
         </section>
     )
