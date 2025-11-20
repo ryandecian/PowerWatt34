@@ -45,6 +45,12 @@ function MentionsLegales_Root() {
                 <strong>Directrice de la publication :</strong> Helena PEREZ – Contact : 
                 <A_Element option={3} href={routerExt.phonePowerWatt34} text="07 56 83 81 81" />
             </p>
+
+            <p className={style.TextP4}>
+                <strong>Hébergeur :</strong> infomaniak Network SA – Adresse : Rue Eugène-Marziano 25, 1227 Genève, Suisse – 
+                Téléphone :
+                <A_Element option={3} href={routerExt.phoneInfomaniak} text="+41 22 820 35 41" />
+            </p>
         </section>
     )
 }
