@@ -6,7 +6,12 @@ import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layo
 import MentionsLegales_Root from "../../../components/public/mentions-legales/MentionsLegales.root";
 import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
+/* Import des Hooks */
+import { useScrollToHash_utils_Hook } from "../../../hook/useScrollToHash.utils.hook";
+
 function MentionsLegales_Page() {
+    useScrollToHash_utils_Hook(); /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    
     return (
         <section className={`MentionsLegales_Page ${style.Page}`}>
             <header id="top" className={style.Header}>
