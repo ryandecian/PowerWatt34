@@ -104,6 +104,93 @@ function MentionsLegales_Root() {
                 Cependant sa responsabilité ne pourra être mise en cause si des données indésirables sont 
                 importées et installées sur son site à son insu.
             </p>
+
+            <p className={style.TextP4}>
+                Des espaces interactifs (espace contact ou commentaires) sont à la disposition des utilisateurs. 
+                PowerWatt34 se réserve le droit de supprimer, sans mise en demeure préalable, tout 
+                contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en 
+                particulier aux dispositions relatives à la protection des données.
+            </p>
+
+            <p className={style.TextP4}>
+                Le cas échéant, PowerWatt34 se réserve également la possibilité de mettre en cause 
+                la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, 
+                injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).
+            </p>
+
+            <h2 className={style.TitleH2}>
+                4 - CNIL et gestion des données personnelles
+            </h2>
+
+            <p className={style.TextP4}>
+                Conformément aux dispositions de la
+                <A_Element option={3} href={routerExt.loi_01} text="loi 78-17 du 6 janvier 1978 modifiée" />
+                , l’utilisateur du site
+                <A_Element option={3} href={routerExt.linkPowerWatt34} text="www.powerwatt34.fr" />
+                dispose d’un droit d’accès, de modification et de suppression des informations collectées. 
+                Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données :
+                <strong> Helena PEREZ</strong> -
+                <A_Element option={1} href={routerExt.emailPowerWatt34} text="powerwatt34@gmail.com." />
+            </p>
+
+            <p className={style.TextP4}>
+                Pour plus d’informations sur la façon dont nous traitons vos données (type de données, finalité, 
+                destinataire…), lisez notre
+                <A_Element option={1} href={routerExt.linkPowerWatt34} text="www.powerwatt34.fr" />
+            </p>
+
+            <h2 className={style.TitleH2}>
+                5 - Liens hypertextes et cookies
+            </h2>
+
+            <p className={style.TextP4}>
+                Le site 
+                <A_Element option={3} href={routerExt.linkPowerWatt34} text="www.powerwatt34.fr" />
+                contient des liens hypertextes vers d’autres sites et dégage toute responsabilité à propos de ces 
+                liens externes ou des liens créés par d’autres sites vers {" "}
+                <A_Element option={3} href={routerExt.linkPowerWatt34} text="www.powerwatt34.fr." />
+                La navigation sur le site
+                <A_Element option={3} href={routerExt.linkPowerWatt34} text="www.powerwatt34.fr" />
+                est susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur.
+            </p>
+
+            <p className={style.TextP4}>
+                Un « cookie » est un fichier de petite taille qui enregistre des informations relatives à la navigation 
+                d’un utilisateur sur un site. Les données ainsi obtenues permettent d’obtenir des mesures de fréquentation, 
+                par exemple.
+            </p>
+
+            <p className={style.TextP4}>
+                Ce site utilise uniquement des <strong>cookies strictement nécessaires </strong>à son bon fonctionnement, 
+                notamment pour la gestion des sessions utilisateur et des paiements en ligne.
+                <strong> Aucun cookie publicitaire ou de suivi n’est installé.</strong>
+            </p>
+
+            <p className={style.TextP4}>
+                Ces cookies étant indispensables, leur utilisation est implicite lors de votre navigation sur le site. 
+                Si vous ne souhaitez pas qu’ils soient utilisés, nous vous invitons à quitter le site.
+            </p>
+
+            <p className={style.TextP4}>
+                Les cookies sont conservés pour une durée maximale de 6 mois.
+            </p>
+
+            <p className={style.TextP4}>
+                Pour plus d’informations sur la façon dont nous faisons usage des cookies, nous vous invitons à nous 
+                contacter :
+                <A_Element option={1} href={routerExt.emailPowerWatt34} text="powerwatt34@gmail.com." />
+            </p>
+
+            <h2 className={style.TitleH2}>
+                6 – Droit applicable et attribution de juridiction
+            </h2>
+
+            <p className={style.TextP4}>
+                Tout litige en relation avec l’utilisation du site
+                <A_Element option={3} href={routerExt.linkPowerWatt34} text="www.powerwatt34.fr" />
+                est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution 
+                exclusive de juridiction aux tribunaux compétents de <strong>MONTPELLIER</strong>
+            </p>
         </section>
     )
 }

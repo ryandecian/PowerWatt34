@@ -11,6 +11,7 @@ type RouterExt_Type = {
 
     loi_01: string;
     loi_02: string;
+    loi_03: string;
 };
 
 export type { RouterExt_Type };
