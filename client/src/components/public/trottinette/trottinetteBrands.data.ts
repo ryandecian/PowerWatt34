@@ -8,7 +8,7 @@ function trottinetteBrands_Data() {
     const tab: CardsBrand_Type[] = [
         {
             reactKey: 1,
-            path: router[5].path,
+            path: router[5].path + "#top",
             title: "Dualtron",
             description: "La marque de trottinette électrique haut de gamme",
             image: "/images/produits/brands/dualtron.webp",
@@ -16,7 +16,7 @@ function trottinetteBrands_Data() {
         },
         {
             reactKey: 2,
-            path: router[6].path,
+            path: router[6].path + "#top",
             title: "Tevenun",
             description: "La marque de trottinette électrique haut de gamme",
             image: "/images/produits/brands/teverun.webp",
