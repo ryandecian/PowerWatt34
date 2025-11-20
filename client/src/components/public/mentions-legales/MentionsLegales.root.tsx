@@ -123,28 +123,14 @@ function MentionsLegales_Root() {
             </h2>
 
             <p className={style.TextP4}>
-                Conformément aux dispositions de la {" "}
-                <span className={style.SpanLink}>
-                    <a href={externalLinks.loi3} target="_blank" rel="noopener noreferrer">
-                        {"loi 78-17 du 6 janvier 1978 modifiée"}
-                    </a>
-                </span>
-                , l’utilisateur du site {" "}
-                <span className={style.SpanBold}>
-                    {"https://atelier-photo-montpellier.fr"}
-                </span>
-                {" "} dispose d’un droit d’accès, de modification et de suppression des informations collectées. 
-                Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : {" "}
-                <span className={style.SpanBold}>
-                    {"ANNE SAUNIER"}
-                </span>
-                {" "} – {" "}
-                <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
-                        {"photo34000@gmail.com"}
-                    </a>
-                </span>
-                {"."}
+                Conformément aux dispositions de la
+                <A_Element option={3} href={routerExt.loi_01} text="loi 78-17 du 6 janvier 1978 modifiée" />
+                , l’utilisateur du site
+                <A_Element option={3} href={routerExt.linkPowerWatt34} text="www.powerwatt34.fr" />
+                dispose d’un droit d’accès, de modification et de suppression des informations collectées. 
+                Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données :
+                <strong> Helena PEREZ</strong> -
+                <A_Element option={3} href={routerExt.emailPowerWatt34} text="powerwatt34@gmail.com." />
             </p>
         </section>
     )
