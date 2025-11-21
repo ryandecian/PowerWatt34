@@ -169,6 +169,68 @@ function CGV_Root() {
                 5.3 - Exigibilité du paiement
             </h3>
 
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    Pour toute commande de pièces → acompte de 30 % avant prise en charge.
+                </li>
+                <li className={style.TextLiP4}>
+                    Pour toute prestation ou vente → paiement intégral à la restitution du véhicule ou au retrait du produit.
+                </li>
+            </ul>
+
+            <h2 className={style.TitleH2}>
+                6 - Réparations, prise en charge et gardiennage
+            </h2>
+
+            <h3 className={style.TitleH3}>
+                6.1 - Notification de prise en charge
+            </h3>
+
+            <p className={style.TextLiP4}>
+                Lorsqu’un véhicule est déposé :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    PowerWatt34 envoie un <strong>email de confirmation</strong> de prise en charge.
+                </li>
+            </ul>
+
+            <h3 className={style.TitleH3}>
+                6.2 - Notification de fin de réparation
+            </h3>
+
+            <p className={style.TextLiP4}>
+                Dès que le véhicule est prêt :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    un <strong>email de fin d’intervention</strong> est envoyé au client,
+                </li>
+                <li className={style.TextLiP4}>
+                    cet email marque le <strong>début du délai de retrait.</strong>
+                </li>
+            </ul>
+
+            <h3 className={style.TitleH3}>
+                6.3 - Délai de retrait
+            </h3>
+
+            <p className={style.TextLiP4}>
+                Le client dispose de <strong>1 jour calendaire</strong> pour récupérer son véhicule <strong>sans frais.</strong> <br />
+                <strong>Exemple :</strong>
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    Véhicule terminé <strong>lundi</strong>, email envoyé lundi → retrait possible jusqu’à <strong>mardi 23h59.</strong>
+                </li>
+                <li className={style.TextLiP4}>
+                    Dès <strong>mercredi matin,</strong> des frais s'appliquent.
+                </li>
+            </ul>
+
 
 
 
