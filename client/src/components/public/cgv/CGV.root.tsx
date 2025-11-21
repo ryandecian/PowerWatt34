@@ -261,6 +261,41 @@ function CGV_Root() {
                 ou vente pour couvrir les frais).
             </p>
 
+            <h2 className={style.TitleH2}>
+                7 - Garantie
+            </h2>
+
+            <h3 className={style.TitleH3}>
+                7.1 - Garantie légale obligatoire
+            </h3>
+
+            <p className={style.TextLiP4}>
+                PowerWatt34 applique les garanties légales françaises :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Garantie légale de conformité (2 ans)</strong>
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Garantie légale des vices cachés</strong>
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Ces garanties sont assurées conformément aux articles L217-1 et suivants du Code de la consommation.
+            </p>
+
+            <h3 className={style.TitleH3}>
+                7.2 - Garantie commerciale PowerWatt34 – Véhicules
+            </h3>
+
+            <p className={style.TextP4}>
+                Tout véhicule acheté chez PowerWatt34 bénéficie d’une garantie <strong>constructeur de 2 ans. </strong> 
+                PowerWatt34 se charge <strong>d’effectuer les démarches auprès du constructeur</strong>, évitant ainsi 
+                au client toute procédure administrative.
+            </p>
+
 
 
 
