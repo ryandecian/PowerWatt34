@@ -352,6 +352,31 @@ function CGV_Root() {
                 </li>
             </ul>
 
+            <h2 className={style.TitleH2}>
+                8 - Droit de rétractation
+            </h2>
+
+            <h3 className={style.TitleH3}>
+                8.1 - Produits
+            </h3>
+
+            <p className={style.TextLiP4}>
+                Pour les ventes conclues à distance, le client dispose d’un <strong>droit de rétractation de 14 jours </strong> 
+                (article L221-18 du Code de la consommation), sauf :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    pièces détachées commandées spécifiquement,
+                </li>
+                <li className={style.TextLiP4}>
+                    produits personnalisés,
+                </li>
+                <li className={style.TextLiP4}>
+                    produits utilisés ou détériorés.
+                </li>
+            </ul>
+
 
 
 
