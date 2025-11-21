@@ -428,6 +428,20 @@ function CGV_Root() {
                 rectification et suppression (contact : powerwatt34@gmail.com).
             </p>
 
+            <h2 className={style.TitleH2}>
+                11 - Médiation et litiges
+            </h2>
+
+            <p className={style.TextP4}>
+                En cas de litige, le client peut recourir gratuitement à un service de médiation à la consommation 
+                (CNPM Médiation Consommation).
+            </p>
+
+            <p className={style.TextP4}>
+                À défaut d’accord amiable : <br />
+                <strong>Compétence exclusive : Tribunal de Montpellier</strong>
+            </p>
+
 
 
 
