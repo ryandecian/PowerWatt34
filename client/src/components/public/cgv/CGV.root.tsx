@@ -377,6 +377,71 @@ function CGV_Root() {
                 </li>
             </ul>
 
+            <h3 className={style.TitleH3}>
+                8.2 - Prestations
+            </h3>
+
+            <p className={style.TextLiP4}>
+                Le droit de rétractation <strong>ne s’applique pas :</strong>
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    aux réparations déjà effectuées,
+                </li>
+                <li className={style.TextLiP4}>
+                    aux diagnostics déjà réalisés.
+                </li>
+            </ul>
+            
+            <h2 className={style.TitleH2}>
+                9 - Responsabilité
+            </h2>
+
+            <p className={style.TextLiP4}>
+                PowerWatt34 n’est pas responsable :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    des dommages résultant d’une mauvaise utilisation ou modification du véhicule,
+                </li>
+                <li className={style.TextLiP4}>
+                    d’un débridage volontaire,
+                </li>
+                <li className={style.TextLiP4}>
+                    d’un manque d’entretien,
+                </li>
+                <li className={style.TextLiP4}>
+                    de la perte de données liées aux équipements électroniques.
+                </li>
+            </ul>
+            
+            <h2 className={style.TitleH2}>
+                10 - Données personnelles
+            </h2>
+
+            <p className={style.TextP4}>
+                Les informations collectées sont traitées conformément à la Politique de Confidentialité disponible 
+                sur le site. <br />
+                Conformément à la loi « Informatique et Libertés », le client dispose d’un droit d’accès, de 
+                rectification et suppression (contact : powerwatt34@gmail.com).
+            </p>
+
+            <h2 className={style.TitleH2}>
+                11 - Médiation et litiges
+            </h2>
+
+            <p className={style.TextP4}>
+                En cas de litige, le client peut recourir gratuitement à un service de médiation à la consommation 
+                (CNPM Médiation Consommation).
+            </p>
+
+            <p className={style.TextP4}>
+                À défaut d’accord amiable : <br />
+                <strong>Compétence exclusive : Tribunal de Montpellier</strong>
+            </p>
+
 
 
 
