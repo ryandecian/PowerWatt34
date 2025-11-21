@@ -377,6 +377,23 @@ function CGV_Root() {
                 </li>
             </ul>
 
+            <h3 className={style.TitleH3}>
+                8.2 - Prestations
+            </h3>
+
+            <p className={style.TextLiP4}>
+                Le droit de rétractation <strong>ne s’applique pas :</strong>
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    aux réparations déjà effectuées,
+                </li>
+                <li className={style.TextLiP4}>
+                    aux diagnostics déjà réalisés.
+                </li>
+            </ul>
+
 
 
 
