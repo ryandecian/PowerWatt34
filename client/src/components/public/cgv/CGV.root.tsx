@@ -296,6 +296,36 @@ function CGV_Root() {
                 au client toute procédure administrative.
             </p>
 
+            <h3 className={style.TitleH3}>
+                7.3 - Garantie des réparations
+            </h3>
+
+            <p className={style.TextLiP4}>
+                PowerWatt34 offre une garantie commerciale de :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>3 mois</strong> sur les réparations effectuées.
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Cette garantie couvre la <strong>main-d’œuvre</strong> et les <strong>pièces remplacées</strong>, à condition que :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    l’appareil n’ait pas été modifié,
+                </li>
+                <li className={style.TextLiP4}>
+                    il n’y ait pas eu de mauvaise utilisation, choc, immersion ou débridage,
+                </li>
+                <li className={style.TextLiP4}>
+                    les instructions d’usage aient été respectées.
+                </li>
+            </ul>
+
 
 
 
