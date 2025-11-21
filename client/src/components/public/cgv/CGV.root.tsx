@@ -326,6 +326,32 @@ function CGV_Root() {
                 </li>
             </ul>
 
+            <h3 className={style.TitleH3}>
+                7.4 - Exclusions de garantie
+            </h3>
+
+            <p className={style.TextLiP4}>
+                La garantie ne couvre pas :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    débridage ou modification de puissance,
+                </li>
+                <li className={style.TextLiP4}>
+                    infiltration d’eau (sauf certification IP),
+                </li>
+                <li className={style.TextLiP4}>
+                    choc, chute, accident,
+                </li>
+                <li className={style.TextLiP4}>
+                    usure normale (pneus, freins, plaquettes, câbles, etc.),
+                </li>
+                <li className={style.TextLiP4}>
+                    utilisation non conforme aux recommandations du fabricant.
+                </li>
+            </ul>
+
 
 
 
