@@ -231,6 +231,36 @@ function CGV_Root() {
                 </li>
             </ul>
 
+            <h3 className={style.TitleH3}>
+                6.4 - Frais de gardiennage
+            </h3>
+
+            <p className={style.TextLiP4}>
+                À partir du deuxième jour suivant la notification :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>5 € par jour</strong> de gardiennage,
+                </li>
+                <li className={style.TextLiP4}>
+                    Toute journée entamée est due,
+                </li>
+                <li className={style.TextLiP4}>
+                    Les frais doivent être réglés pour récupérer le véhicule.
+                </li>
+            </ul>
+
+            <h3 className={style.TitleH3}>
+                6.5 - Véhicules non récupérés
+            </h3>
+
+            <p className={style.TextP4}>
+                Après <strong>60 jours</strong>, et sans réponse malgré plusieurs relances, PowerWatt34 se réserve le 
+                droit d’engager les procédures prévues par l’article 2286 du Code civil (droit de rétention, conservation 
+                ou vente pour couvrir les frais).
+            </p>
+
 
 
 
