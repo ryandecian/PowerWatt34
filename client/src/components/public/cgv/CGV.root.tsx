@@ -418,11 +418,14 @@ function CGV_Root() {
             </ul>
             
             <h2 className={style.TitleH2}>
-                9 - Responsabilité
+                10 - Données personnelles
             </h2>
 
-            <p className={style.TextLiP4}>
-                10 - Données personnelles
+            <p className={style.TextP4}>
+                Les informations collectées sont traitées conformément à la Politique de Confidentialité disponible 
+                sur le site. <br />
+                Conformément à la loi « Informatique et Libertés », le client dispose d’un droit d’accès, de 
+                rectification et suppression (contact : powerwatt34@gmail.com).
             </p>
 
 
