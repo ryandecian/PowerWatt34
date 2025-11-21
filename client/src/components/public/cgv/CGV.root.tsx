@@ -231,6 +231,152 @@ function CGV_Root() {
                 </li>
             </ul>
 
+            <h3 className={style.TitleH3}>
+                6.4 - Frais de gardiennage
+            </h3>
+
+            <p className={style.TextLiP4}>
+                À partir du deuxième jour suivant la notification :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>5 € par jour</strong> de gardiennage,
+                </li>
+                <li className={style.TextLiP4}>
+                    Toute journée entamée est due,
+                </li>
+                <li className={style.TextLiP4}>
+                    Les frais doivent être réglés pour récupérer le véhicule.
+                </li>
+            </ul>
+
+            <h3 className={style.TitleH3}>
+                6.5 - Véhicules non récupérés
+            </h3>
+
+            <p className={style.TextP4}>
+                Après <strong>60 jours</strong>, et sans réponse malgré plusieurs relances, PowerWatt34 se réserve le 
+                droit d’engager les procédures prévues par l’article 2286 du Code civil (droit de rétention, conservation 
+                ou vente pour couvrir les frais).
+            </p>
+
+            <h2 className={style.TitleH2}>
+                7 - Garantie
+            </h2>
+
+            <h3 className={style.TitleH3}>
+                7.1 - Garantie légale obligatoire
+            </h3>
+
+            <p className={style.TextLiP4}>
+                PowerWatt34 applique les garanties légales françaises :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Garantie légale de conformité (2 ans)</strong>
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Garantie légale des vices cachés</strong>
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Ces garanties sont assurées conformément aux articles L217-1 et suivants du Code de la consommation.
+            </p>
+
+            <h3 className={style.TitleH3}>
+                7.2 - Garantie commerciale PowerWatt34 – Véhicules
+            </h3>
+
+            <p className={style.TextP4}>
+                Tout véhicule acheté chez PowerWatt34 bénéficie d’une garantie <strong>constructeur de 2 ans. </strong> 
+                PowerWatt34 se charge <strong>d’effectuer les démarches auprès du constructeur</strong>, évitant ainsi 
+                au client toute procédure administrative.
+            </p>
+
+            <h3 className={style.TitleH3}>
+                7.3 - Garantie des réparations
+            </h3>
+
+            <p className={style.TextLiP4}>
+                PowerWatt34 offre une garantie commerciale de :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>3 mois</strong> sur les réparations effectuées.
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Cette garantie couvre la <strong>main-d’œuvre</strong> et les <strong>pièces remplacées</strong>, à condition que :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    l’appareil n’ait pas été modifié,
+                </li>
+                <li className={style.TextLiP4}>
+                    il n’y ait pas eu de mauvaise utilisation, choc, immersion ou débridage,
+                </li>
+                <li className={style.TextLiP4}>
+                    les instructions d’usage aient été respectées.
+                </li>
+            </ul>
+
+            <h3 className={style.TitleH3}>
+                7.4 - Exclusions de garantie
+            </h3>
+
+            <p className={style.TextLiP4}>
+                La garantie ne couvre pas :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    débridage ou modification de puissance,
+                </li>
+                <li className={style.TextLiP4}>
+                    infiltration d’eau (sauf certification IP),
+                </li>
+                <li className={style.TextLiP4}>
+                    choc, chute, accident,
+                </li>
+                <li className={style.TextLiP4}>
+                    usure normale (pneus, freins, plaquettes, câbles, etc.),
+                </li>
+                <li className={style.TextLiP4}>
+                    utilisation non conforme aux recommandations du fabricant.
+                </li>
+            </ul>
+
+            <h2 className={style.TitleH2}>
+                8 - Droit de rétractation
+            </h2>
+
+            <h3 className={style.TitleH3}>
+                8.1 - Produits
+            </h3>
+
+            <p className={style.TextLiP4}>
+                Pour les ventes conclues à distance, le client dispose d’un <strong>droit de rétractation de 14 jours </strong> 
+                (article L221-18 du Code de la consommation), sauf :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    pièces détachées commandées spécifiquement,
+                </li>
+                <li className={style.TextLiP4}>
+                    produits personnalisés,
+                </li>
+                <li className={style.TextLiP4}>
+                    produits utilisés ou détériorés.
+                </li>
+            </ul>
+
 
 
 
