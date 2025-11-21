@@ -393,6 +393,37 @@ function CGV_Root() {
                     aux diagnostics déjà réalisés.
                 </li>
             </ul>
+            
+            <h2 className={style.TitleH2}>
+                9 - Responsabilité
+            </h2>
+
+            <p className={style.TextLiP4}>
+                PowerWatt34 n’est pas responsable :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    des dommages résultant d’une mauvaise utilisation ou modification du véhicule,
+                </li>
+                <li className={style.TextLiP4}>
+                    d’un débridage volontaire,
+                </li>
+                <li className={style.TextLiP4}>
+                    d’un manque d’entretien,
+                </li>
+                <li className={style.TextLiP4}>
+                    de la perte de données liées aux équipements électroniques.
+                </li>
+            </ul>
+            
+            <h2 className={style.TitleH2}>
+                9 - Responsabilité
+            </h2>
+
+            <p className={style.TextLiP4}>
+                10 - Données personnelles
+            </p>
 
 
 
