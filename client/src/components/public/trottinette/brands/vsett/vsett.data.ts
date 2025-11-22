@@ -1,7 +1,7 @@
 /* Import des Types */
 import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produits/cardsTrottinetteBrand.data.type";
 
-function kaboo_Data() {
+function vsett_Data() {
     const tab: CardsTrottinetteBrand_data_Type = [
         {
             reactKey: 1,
@@ -18,4 +18,4 @@ function kaboo_Data() {
     return (tab);
 }
 
-export { kaboo_Data };
+export { vsett_Data };
