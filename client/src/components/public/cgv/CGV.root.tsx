@@ -441,25 +441,6 @@ function CGV_Root() {
                 À défaut d’accord amiable : <br />
                 <strong>Compétence exclusive : Tribunal de Montpellier</strong>
             </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </section>
     )
 }
