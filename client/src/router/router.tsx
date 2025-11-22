@@ -9,6 +9,7 @@ import CGV_Page from "../pages/public/cgv_Page/CGV.page";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/Dualtron.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
+import Kaboo_Page from "../pages/public/trottinette_Page/brands/kaboo_Page/Kaboo.page";
 import MentionsLegales_Page from "../pages/public/mentions-legales_Page/MentionsLegales.page";
 import Teverun_Page from "../pages/public/trottinette_Page/brands/teverun_Page/Teverun.page";
 import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
@@ -63,6 +64,11 @@ const router: Router_Type[] = [
     {
         path: "/cgv",
         element: <CGV_Page />,
+    },
+    /* {router[9].path} */
+    {
+        path: "/produits/trottinette/kaboo",
+        element: <Kaboo_Page />,
     },
 ];
 
