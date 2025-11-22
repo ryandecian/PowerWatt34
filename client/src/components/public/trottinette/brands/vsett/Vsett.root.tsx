@@ -54,7 +54,6 @@ function Vsett_Root() {
                 <div>
                     <label 
                         htmlFor="search-dualtron-products" 
-                        // className={css.LabelSearch}
                     >
                         Filtrer les trottinettes Teverun
                     </label>
@@ -64,7 +63,6 @@ function Vsett_Root() {
                         placeholder="Rechercher un modèle Teverun..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        // className={style.searchBar}
                     />
                 </div>
             </div>
