@@ -35,17 +35,17 @@ function FooterPC_Layout() {
 
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${dataFooter[0].nameSubMenu[0].link}#top`} className={css.Link}>
+                            <Link to={dataFooter[0].nameSubMenu[0].link} className={css.Link}>
                                 {dataFooter[0].nameSubMenu[0].title}
                             </Link>
                         </li>
                         <li className={css.LiTextLink}>
-                            <Link to={`${dataFooter[0].nameSubMenu[1].link}#top`} className={css.Link}>
+                            <Link to={dataFooter[0].nameSubMenu[1].link} className={css.Link}>
                                 {dataFooter[0].nameSubMenu[1].title}
                             </Link>
                         </li>
                         <li className={css.LiTextLink}>
-                            <Link to={`${dataFooter[0].nameSubMenu[2].link}#top`} className={css.Link}>
+                            <Link to={dataFooter[0].nameSubMenu[2].link} className={css.Link}>
                                 {dataFooter[0].nameSubMenu[2].title}
                             </Link>
                         </li>
@@ -62,17 +62,17 @@ function FooterPC_Layout() {
 
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${dataFooter[1].nameSubMenu[0].link}#top`} className={css.Link}>
+                            <Link to={dataFooter[1].nameSubMenu[0].link} className={css.Link}>
                                 {dataFooter[1].nameSubMenu[0].title}
                             </Link>
                         </li>
                         <li className={css.LiTextLink}>
-                            <Link to={`${dataFooter[1].nameSubMenu[1].link}#top`} className={css.Link}>
+                            <Link to={dataFooter[1].nameSubMenu[1].link} className={css.Link}>
                                 {dataFooter[1].nameSubMenu[1].title}
                             </Link>
                         </li>
                         <li className={css.LiTextLink}>
-                            <Link to={`${dataFooter[1].nameSubMenu[2].link}#top`} className={css.Link}>
+                            <Link to={dataFooter[1].nameSubMenu[2].link} className={css.Link}>
                                 {dataFooter[1].nameSubMenu[2].title}
                             </Link>
                         </li>
@@ -89,17 +89,17 @@ function FooterPC_Layout() {
 
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${dataFooter[2].nameSubMenu[0].link}#top`} className={css.Link}>
+                            <Link to={dataFooter[2].nameSubMenu[0].link} className={css.Link}>
                                 {dataFooter[2].nameSubMenu[0].title}
                             </Link>
                         </li>
                         <li className={css.LiTextLink}>
-                            <Link to={`${dataFooter[2].nameSubMenu[1].link}#top`} className={css.Link}>
+                            <Link to={dataFooter[2].nameSubMenu[1].link} className={css.Link}>
                                 {dataFooter[2].nameSubMenu[1].title}
                             </Link>
                         </li>
                         <li className={css.LiTextLink}>
-                            <Link to={`${dataFooter[2].nameSubMenu[2].link}#top`} className={css.Link}>
+                            <Link to={dataFooter[2].nameSubMenu[2].link} className={css.Link}>
                                 {dataFooter[2].nameSubMenu[2].title}
                             </Link>
                         </li>
