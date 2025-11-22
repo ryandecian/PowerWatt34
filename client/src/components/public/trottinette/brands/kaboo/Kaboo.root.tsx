@@ -9,7 +9,7 @@ import { CardsProductTrottinette_Element } from "../../../../elements/cards-prod
 import { useState } from "react";
 
 /* Import des Datas */
-import { teverun_Data } from "./teverun.data";
+import { kaboo_Data } from "./kaboo.data";
 
 /* Import des Types */
 import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produits/cardsTrottinetteBrand.data.type";
