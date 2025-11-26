@@ -42,9 +42,9 @@ function Kaboo_Root() {
 
             {/* Paragraphe SEO */}
             <p className={css.DescriptionSEO}>
-                Explorez notre sélection de trottinettes électriques <strong>Teverun</strong>, 
+                Explorez notre sélection de trottinettes électriques <strong>Vsett</strong>, 
                 reconnues pour leurs performances exceptionnelles, leur fiabilité et la qualité 
-                de leurs composants. Retrouvez ici tous les modèles Teverun que PowerWatt34 
+                de leurs composants. Retrouvez ici tous les modèles Vsett que PowerWatt34 
                 commercialise et entretient, accompagnés de descriptions détaillées pour vous 
                 aider à choisir la trottinette la mieux adaptée à votre usage.
             </p>
@@ -55,7 +55,7 @@ function Kaboo_Root() {
                     <label 
                         htmlFor="search-dualtron-products" 
                     >
-                        Filtrer les trottinettes Teverun
+                        Filtrer les trottinettes Vsett
                     </label>
 
                     <input
