@@ -1,15 +1,11 @@
 /* Import des modules CSS */
+import css from "./home.module.css";
 import style from "../../styleRootComponent.module.css";
 
 function Home_Root() {
     return (
         <section className={`Home_Root ${style.ContainerRootRacine}`}>
-            <p>On est biennnnnnnn !</p>
-            <p>main, test test test test test test test test test test test test test test test test test test test test test test</p>
-            <p>main</p>
-            <p>main</p>
-            <p>main</p>
-            <p>main</p>
+            <div className={css.ContainerSubAccueil}></div>
         </section>
     )
 }
