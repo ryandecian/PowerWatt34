@@ -36,15 +36,15 @@ function Vsett_Root() {
             {/* Container du titre */}
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Découvrez toutes les trottinettes électriques Teverun proposées par PowerWatt34
+                    Découvrez toutes les trottinettes électriques Vsett proposées par PowerWatt34
                 </h1>
             </header>
 
             {/* Paragraphe SEO */}
             <p className={css.DescriptionSEO}>
-                Explorez notre sélection de trottinettes électriques <strong>Teverun</strong>, 
+                Explorez notre sélection de trottinettes électriques <strong>Vsett</strong>, 
                 reconnues pour leurs performances exceptionnelles, leur fiabilité et la qualité 
-                de leurs composants. Retrouvez ici tous les modèles Teverun que PowerWatt34 
+                de leurs composants. Retrouvez ici tous les modèles Vsett que PowerWatt34 
                 commercialise et entretient, accompagnés de descriptions détaillées pour vous 
                 aider à choisir la trottinette la mieux adaptée à votre usage.
             </p>
@@ -55,12 +55,12 @@ function Vsett_Root() {
                     <label 
                         htmlFor="search-dualtron-products" 
                     >
-                        Filtrer les trottinettes Teverun
+                        Filtrer les trottinettes Vsett
                     </label>
 
                     <input
                         type="search"
-                        placeholder="Rechercher un modèle Teverun..."
+                        placeholder="Rechercher un modèle Vsett..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                     />
