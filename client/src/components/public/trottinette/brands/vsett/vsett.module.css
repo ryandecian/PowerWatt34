@@ -1,0 +1,13 @@
+.DescriptionSEO {
+    width: 100%;
+    margin-top: 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* 24px */
+}

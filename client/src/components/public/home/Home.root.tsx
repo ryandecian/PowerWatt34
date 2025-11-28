@@ -1,15 +1,21 @@
 /* Import des modules CSS */
+import css from "./home.module.css";
 import style from "../../styleRootComponent.module.css";
 
 function Home_Root() {
+    
     return (
         <section className={`Home_Root ${style.ContainerRootRacine}`}>
-            <p>On est biennnnnnnn !</p>
-            <p>main, test test test test test test test test test test test test test test test test test test test test test test</p>
-            <p>main</p>
-            <p>main</p>
-            <p>main</p>
-            <p>main</p>
+            <div className={`${css.ContainerSubAccueil} ${css.BackgroundHome}`}>
+                <header className={css.ContainerTitle}>
+                    <h1 className={`${style.TitleH1} ${css.TitleH1}`}>
+                        Bienvenue chez PowerWatt34 <br />
+                        Spécialiste des 2 roues électriques
+                    </h1>
+                </header>
+            </div>
+
+            <p>test</p>
         </section>
     )
 }
