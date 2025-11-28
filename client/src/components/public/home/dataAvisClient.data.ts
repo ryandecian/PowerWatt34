@@ -14,7 +14,7 @@ const avisClientHome_Data: AvisClientSEO_Type[] = [
         id: 2,
         nom: "jean domenech",
         note: 5,
-        commentaire: "Commerçant sympathique, honnête et très pro. Je recommande à 100%!",
+        commentaire: "Très réactif accueil chaleureux très bonne expérience 👍🏼",
         date: "27/11/2025",
     },
 ];
