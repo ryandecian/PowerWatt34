@@ -7,10 +7,6 @@
     align-items: center;
     flex-direction: column;
 
-    /* --- 2. Dimensions Plein Écran --- */
-    width: 100vw; 
-    height: 100vh;
-
     /* --- 3. Le "Full Bleed" (La méthode sans left/position) --- */
     /* On positionne par rapport au flux normal via les marges */
     margin-left: calc(50% - 50vw);
@@ -26,11 +22,19 @@
     background-position: center;
 }
 
-.BackgroundHome_PC {
-    background-image: url("../../../../public/page/home/homePCPowerWatt34.jpg");
-}
-.BackgroundHome_Mobile {
+.BackgroundHome {
+    /* --- 2. Dimensions Plein Écran --- */
+    width: 100vw; 
+    height: calc(100vh - 6.5rem); /* 104px */
     background-image: url("../../../../public/page/home/homeMobilePowerWatt34.jpg");
+}
+@media (min-width: 50rem) { /* 800px */
+    .BackgroundHome {
+        /* --- 2. Dimensions Plein Écran --- */
+        width: 100vw; 
+        height: calc(100vh - 4.125rem); /* 66px */
+        background-image: url("../../../../public/page/home/homePCPowerWatt34.jpg");
+    }
 }
 
 .ContainerTitle {
