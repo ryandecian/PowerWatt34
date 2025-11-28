@@ -32,7 +32,7 @@ function trottinetteBrands_Data() {
         },
         {
             reactKey: 4,
-            path: "#",
+            path: router[10].path + "#top",
             title: "VSETT",
             description: "La marque de trottinette électrique bas de gamme",
             image: "/images/produits/brands/vsett.jpg",

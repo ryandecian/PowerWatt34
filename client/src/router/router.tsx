@@ -13,6 +13,7 @@ import Kaboo_Page from "../pages/public/trottinette_Page/brands/kaboo_Page/Kaboo
 import MentionsLegales_Page from "../pages/public/mentions-legales_Page/MentionsLegales.page";
 import Teverun_Page from "../pages/public/trottinette_Page/brands/teverun_Page/Teverun.page";
 import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
+import Vsett_Page from "../pages/public/trottinette_Page/brands/vsett_Page/Vsett.page";
 
 /**
  * Utilisation :
@@ -69,6 +70,11 @@ const router: Router_Type[] = [
     {
         path: "/produits/trottinette/kaboo",
         element: <Kaboo_Page />,
+    },
+    /* {router[10].path} */
+    {
+        path: "/produits/trottinette/vsett",
+        element: <Vsett_Page />,
     },
 ];
 
