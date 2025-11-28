@@ -2,6 +2,12 @@
 import css from "./home.module.css";
 import style from "../../styleRootComponent.module.css";
 
+/* Import des composants d'Elements */
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+
+/* Import des Datas */
+import { avisClientHome_Data } from "./dataAvisClient.data";
+
 function Home_Root() {
     
     return (
@@ -16,6 +22,8 @@ function Home_Root() {
             </div>
 
             <p>test</p>
+
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientHome_Data}/>
         </section>
     )
 }
