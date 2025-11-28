@@ -1,28 +1,48 @@
+/* home.module.css */
+
 .ContainerSubAccueil {
+    /* --- 1. Flexbox & Contenu --- */
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
-    width: 100%;
+
+    /* --- 2. Dimensions Plein Écran --- */
+    width: 100vw; 
     height: 100vh;
-    background-image: url("../../../../public/page/home/homePowerWatt34.jpg");
+
+    /* --- 3. Le "Full Bleed" (La méthode sans left/position) --- */
+    /* On positionne par rapport au flux normal via les marges */
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    
+    /* --- 4. Correction hauteur (ton padding top du main) --- */
+    margin-top: -1.25rem; 
+
+    /* --- 5. Background --- */
+    position: relative; /* On garde relative JUSTE pour le z-index */
+    z-index: 1;
     background-size: cover;
-    background-position: top center;
-    margin: 0rem;
-    border: 0rem;
-    padding: 0rem;
+    background-position: center;
+}
+
+.BackgroundHome_PC {
+    background-image: url("../../../../public/page/home/homePCPowerWatt34.jpg");
+}
+.BackgroundHome_Mobile {
+    background-image: url("../../../../public/page/home/homeMobilePowerWatt34.jpg");
 }
 
 .ContainerTitle {
+    /* ... ton code titre reste inchangé ... */
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0rem;
-    padding: 3rem 0rem 0rem 0rem;
-    border: 0rem;
+    padding-top: 15vh;
+    z-index: 2;
 }
 
 .TitleH1 {
     color: var(--ColorTextWhite);
+    text-align: center;
 }
