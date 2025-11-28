@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import css from "./kaboo.module.css";
+import css from "./vsett.module.css";
 import style from "../../../../styleRootComponent.module.css";
 
 /* Import des composants d'Elements */
@@ -9,7 +9,7 @@ import { CardsProductTrottinette_Element } from "../../../../elements/cards-prod
 import { useState } from "react";
 
 /* Import des Datas */
-import { kaboo_Data } from "./kaboo.data";
+import { vsett_Data } from "./vsett.data";
 
 /* Import des Types */
 import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produits/cardsTrottinetteBrand.data.type";
@@ -17,12 +17,12 @@ import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produ
 /* Import des Utils */
 import { parsePrice_Utils } from "../../../../../utils/parsePrice.utils";
 
-function Kaboo_Root() {
-    const kabooProducts: CardsTrottinetteBrand_data_Type = kaboo_Data();
+function Vsett_Root() {
+    const vsettProducts: CardsTrottinetteBrand_data_Type = vsett_Data();
     
     const [search, setSearch] = useState("");
 
-    const filtered = kabooProducts.filter((p) =>
+    const filtered = vsettProducts.filter((p) =>
         p.model.toLowerCase().includes(search.toLowerCase())
     );
 
@@ -31,12 +31,12 @@ function Kaboo_Root() {
     });
 
     return (
-        <section className={`Kaboo_Root ${style.ContainerRootRacine}`}>
+        <section className={`Dualtron_Root ${style.ContainerRootRacine}`}>
             
             {/* Container du titre */}
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Découvrez toutes les trottinettes électriques Kaboo proposées par PowerWatt34
+                    Découvrez toutes les trottinettes électriques Vsett proposées par PowerWatt34
                 </h1>
             </header>
 
@@ -60,7 +60,7 @@ function Kaboo_Root() {
 
                     <input
                         type="search"
-                        placeholder="Rechercher un modèle Kaboo..."
+                        placeholder="Rechercher un modèle Vsett..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                     />
@@ -77,4 +77,4 @@ function Kaboo_Root() {
     );
 }
 
-export default Kaboo_Root;
+export default Vsett_Root;
