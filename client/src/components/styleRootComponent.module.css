@@ -92,6 +92,7 @@
 .TitleH2,
 .TitleH2_00N0 {
     font-size: var(--h4); /* 16px */
+    font-weight: bold;
     text-align: start;
 }
 @media (min-width: 25rem) { /* 400px */
