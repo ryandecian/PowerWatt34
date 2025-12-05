@@ -1,7 +1,10 @@
 /* Import des composants Router */
 import router from "../../../router/router";
 
-function navMenu_Data() {
+/* Import des Types */
+import type { NavMenu_data_Type } from "../../../types/layout/nav/navMenu.data.type";
+
+function navMenu_Data(): NavMenu_data_Type {
     return {
         dataSubMenu: [
             {
