@@ -1,5 +1,5 @@
 /* Import des Types */
-import type { Router_Type } from "../types/router/router.type";
+// import type { Router_Type } from "../types/router/router.type";
 
 /* Liste des pages en import */
 /* Page Frontend verrouillée */
@@ -20,7 +20,7 @@ import Vsett_Page from "../pages/public/trottinette_Page/brands/vsett_Page/Vsett
  * {router[0].path}
  */
 
-const router: Router_Type[] = [
+const router = [
     /* {router[0].path} */
     {
         path: "/",
@@ -41,10 +41,14 @@ const router: Router_Type[] = [
         path: "/admin/compte",
         element: <h1>compte admin</h1>,
     },
-    /* {router[4].path} */
     {
-        path: "/produits/trottinette",
-        element: <Trottinette_Page />,
+        children: [
+            /* {router[4].children?.[0].path} */
+            {
+                path: "/produits/trottinette",
+                element: <Trottinette_Page />,
+            },
+        ],
     },
     /* {router[5].path} */
     {
