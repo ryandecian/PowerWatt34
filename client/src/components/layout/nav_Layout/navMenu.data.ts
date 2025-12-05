@@ -1,16 +1,13 @@
 /* Import des composants Router */
 import router from "../../../router/router";
 
-/* Import des Types */
-import type { NavMenu_data_Type } from "../../../types/layout/nav/navMenu.data.type";
-
-function navMenu_Data(): NavMenu_data_Type {
+function navMenu_Data() {
     return {
         dataSubMenu: [
             {
                 nameMenu: "PRODUITS",
                 nameSubMenu: [
-                    { title: "Trottinettes", link: router[4].path },
+                    { title: "Trottinettes", link: router[4].children?.[0].path },
                     { title: "Vélos", link: "#" },
                     { title: "Scooters", link: "#" },
                 ],

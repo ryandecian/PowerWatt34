@@ -1,5 +1,5 @@
 /* Import des Types */
-// import type { Router_Type } from "../types/router/router.type";
+import type { Router_Type } from "../types/router/router.type";
 
 /* Liste des pages en import */
 /* Page Frontend verrouillée */
@@ -20,7 +20,7 @@ import Vsett_Page from "../pages/public/trottinette_Page/brands/vsett_Page/Vsett
  * {router[0].path}
  */
 
-const router = [
+const router: Router_Type = [
     /* {router[0].path} */
     {
         path: "/",
