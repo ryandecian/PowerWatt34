@@ -3,12 +3,12 @@ type NavMenu_data_Type = {
         nameMenu: string;
         nameSubMenu: {
             title: string;
-            link?: string;
+            link: string;
         }[];
     }[];
     dataMenu: {
         nameMenu: string;
-        link?: string;
+        link: string;
     }[];
 }
 
