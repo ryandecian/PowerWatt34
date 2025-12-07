@@ -68,12 +68,12 @@ const router: Router_Type = [
             },
         ],
     },
-    /* {router[7].path} */
+    /* {router[5].path} */
     {
         path: "/mentions-legales",
         element: <MentionsLegales_Page />,
     },
-    /* {router[8].path} */
+    /* {router[6].path} */
     {
         path: "/cgv",
         element: <CGV_Page />,
