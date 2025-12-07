@@ -13,7 +13,7 @@
     margin-right: calc(50% - 50vw);
     
     /* --- 4. Correction hauteur (ton padding top du main) --- */
-    margin-top: -1.25rem; 
+    margin: -1.25rem 0rem 0rem 0rem; /* -20px 0px 00px 0px */
 
     /* --- 5. Background --- */
     position: relative; /* On garde relative JUSTE pour le z-index */
