@@ -20,7 +20,7 @@ import Vsett_Page from "../pages/public/trottinette_Page/brands/vsett_Page/Vsett
  * {router[0].path}
  */
 
-const router: Router_Type[] = [
+const router: Router_Type = [
     /* {router[0].path} */
     {
         path: "/",
@@ -45,36 +45,38 @@ const router: Router_Type[] = [
     {
         path: "/produits/trottinette",
         element: <Trottinette_Page />,
+        children: [
+            /* {router[4].children?.[0].path} */
+            {
+                path: "/produits/trottinette/dualtron",
+                element: <Dualtron_Page />,
+            },
+            /* {router[4].children?.[1].path} */
+            {
+                path: "/produits/trottinette/teverun",
+                element: <Teverun_Page />,
+            },
+            /* {router[4].children?.[2].path} */
+            {
+                path: "/produits/trottinette/kaboo",
+                element: <Kaboo_Page />,
+            },
+            /* {router[4].children?.[3].path} */
+            {
+                path: "/produits/trottinette/vsett",
+                element: <Vsett_Page />,
+            },
+        ],
     },
     /* {router[5].path} */
-    {
-        path: "/produits/trottinette/dualtron",
-        element: <Dualtron_Page />,
-    },
-    /* {router[6].path} */
-    {
-        path: "/produits/trottinette/teverun",
-        element: <Teverun_Page />,
-    },
-    /* {router[7].path} */
     {
         path: "/mentions-legales",
         element: <MentionsLegales_Page />,
     },
-    /* {router[8].path} */
+    /* {router[6].path} */
     {
         path: "/cgv",
         element: <CGV_Page />,
-    },
-    /* {router[9].path} */
-    {
-        path: "/produits/trottinette/kaboo",
-        element: <Kaboo_Page />,
-    },
-    /* {router[10].path} */
-    {
-        path: "/produits/trottinette/vsett",
-        element: <Vsett_Page />,
     },
 ];
 
