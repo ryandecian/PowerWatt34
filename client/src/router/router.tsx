@@ -81,12 +81,24 @@ const router: Router_Type = [
             /* {router[4].children?.[3].path} */
             {
                 path: "/produits/trottinette/kaboo",
-                element: <Kaboo_Page />,
+                children: [
+                    /* {router[4].children?.[3].children?.[0].path} */
+                    {
+                        path: "/produits/trottinette/kaboo",
+                        element: <Kaboo_Page />,
+                    },
+                ],
             },
             /* {router[4].children?.[4].path} */
             {
                 path: "/produits/trottinette/vsett",
-                element: <Vsett_Page />,
+                children: [
+                    /* {router[4].children?.[4].children?.[0].path} */
+                    {
+                        path: "/produits/trottinette/vsett",
+                        element: <Vsett_Page />,
+                    },
+                ],
             },
         ],
     },
