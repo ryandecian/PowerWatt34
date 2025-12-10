@@ -44,7 +44,7 @@ const router: Router_Type = [
     },
     /* {router[4].path} */
     {
-        path: "/",
+        path: "/produits/trottinette",
         children: [
             /* {router[4]!.children![0]!.path} */
             {
