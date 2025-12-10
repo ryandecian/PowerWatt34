@@ -45,27 +45,27 @@ const router: Router_Type = [
     {
         path: "/",
         children: [
-            /* {router[4].children?.[0].path} */
+            /* {router[4]!.children![0]!.path} */
             {
                 path: "/produits/trottinette",
                 element: <Trottinette_Page />,
             },
-            /* {router[4].children?.[1].path} */
+            /* {router[4]!.children![1]!.path} */
             {
                 path: "/produits/trottinette/dualtron",
                 element: <Dualtron_Page />,
             },
-            /* {router[4].children?.[2].path} */
+            /* {router[4]!.children![2]!.path} */
             {
                 path: "/produits/trottinette/teverun",
                 element: <Teverun_Page />,
             },
-            /* {router[4].children?.[3].path} */
+            /* {router[4]!.children![3]!.path} */
             {
                 path: "/produits/trottinette/kaboo",
                 element: <Kaboo_Page />,
             },
-            /* {router[4].children?.[4].path} */
+            /* {router[4]!.children![4]!.path} */
             {
                 path: "/produits/trottinette/vsett",
                 element: <Vsett_Page />,
