@@ -10,7 +10,7 @@ function navMenu_Data(): NavMenu_data_Type {
             {
                 nameMenu: "PRODUITS",
                 nameSubMenu: [
-                    { title: "Trottinettes", link: router[4].path },
+                    { title: "Trottinettes", link: router[4]!.children![1]!.path },
                     { title: "Vélos", link: "#" },
                     { title: "Scooters", link: "#" },
                 ],

@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 type Router_Type = {
     path: string;
-    element: ReactNode;
+    element?: ReactNode;
     children?: Router_Type;
 }[];
 
