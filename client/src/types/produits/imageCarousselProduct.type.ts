@@ -1,6 +1,6 @@
 type ImageCarousselProduct_Type = {
     reactKey: number;
-    image: string;
+    src: string;
     alt: string;
 }[];
 

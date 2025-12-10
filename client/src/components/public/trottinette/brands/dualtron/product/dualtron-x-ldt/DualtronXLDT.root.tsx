@@ -21,9 +21,9 @@ function DualtronXLDT_Root() {
     // Appel de la fonction data + mapping vers le format du carrousel
     const images: ImageSlide[] = useMemo(() => {
         const raw = dualtronXLDT_img_Data();
-        return raw.map(({ reactKey, image, alt }) => ({
+        return raw.map(({ reactKey, src, alt }) => ({
             id: reactKey,
-            src: image,
+            src: src,
             alt,
         }));
     }, []);
