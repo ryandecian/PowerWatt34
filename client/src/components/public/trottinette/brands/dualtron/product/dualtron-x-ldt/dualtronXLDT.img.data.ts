@@ -1,7 +1,8 @@
-
+/* Import des types */
+import type { ImageCarousselProduct_Type } from "../../../../../../../types/produits/imageCarousselProduct.type";
 
 function dualtronXLDT_img_Data() {
-    const tab = [
+    const tab: ImageCarousselProduct_Type = [
         {
             reactKey: 1,
             image: "/images/produits/trottinette/dualtron/dualtron-x-ldt/dualtron-x-ltd-n01-powerwatt34.jpg",
