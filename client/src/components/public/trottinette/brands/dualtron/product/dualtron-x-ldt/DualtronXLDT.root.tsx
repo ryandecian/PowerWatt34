@@ -1,77 +1,96 @@
-import { useState } from 'react';
-import styles from './Carousel.module.css';
+/* Import des modules CSS */
+import css from "./Carousel.module.css";
 
-// 1. Définition des types
+/* Import des composants React */
+import { useMemo, useState } from "react";
+
+/* Import des Datas */
+import { dualtronXLDT_img_Data } from "./dualtronXLDT.img.data";
+
+/* 1. Définition des types attendus par le carrousel */
 export interface ImageSlide {
-  id: number | string;
-  src: string;
-  alt: string;
+    id: number | string;
+    src: string;
+    alt: string;
 }
 
-interface CarouselProps {
-  images: ImageSlide[];
-}
+/* 2. Composant principal */
+function DualtronXLDT_Root() {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-// 2. Déclaration via function
-function DualtronXLDT_Root({ images }: CarouselProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+    // Appel de la fonction data + mapping vers le format du carrousel
+    const images: ImageSlide[] = useMemo(() => {
+        const raw = dualtronXLDT_img_Data();
+        return raw.map(({ reactKey, image, alt }) => ({
+            id: reactKey,
+            src: image,
+            alt,
+        }));
+    }, []);
 
-  // Gestion du clic "Suivant"
-  function handleNext() {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    // Sécurité si aucune image
+    if (!images || images.length === 0) {
+        return <div className={css.carouselContainer}>Aucune image disponible</div>;
+    }
+
+    // Gestion du clic "Suivant"
+    function handleNext() {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+    }
+
+    // Gestion du clic "Précédent"
+    function handlePrev() {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+    }
+
+    return (
+        <div className={css.carouselContainer}>
+            {/* Conteneur coulissant */}
+            <div
+                className={css.slidesContainer}
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+                {images.map((img) => (
+                    <img
+                        key={img.id}
+                        src={img.src}
+                        alt={img.alt}
+                        className={css.slide}
+                        loading="lazy"
+                        decoding="async"
+                        draggable={false}
+                    />
+                ))}
+            </div>
+
+            {/* Contrôles */}
+            {images.length > 1 && (
+                <>
+                    <button
+                        className={`${css.navButton} ${css.prev}`}
+                        onClick={handlePrev}
+                        aria-label="Précédent"
+                        type="button"
+                    >
+                        &#10094;
+                    </button>
+
+                    <button
+                        className={`${css.navButton} ${css.next}`}
+                        onClick={handleNext}
+                        aria-label="Suivant"
+                        type="button"
+                    >
+                        &#10095;
+                    </button>
+                </>
+            )}
+        </div>
     );
-  }
-
-  // Gestion du clic "Précédent"
-  function handlePrev() {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  }
-
-  // Si aucune image n'est fournie, on évite le crash
-  if (!images || images.length === 0) {
-    return <div className={styles.carouselContainer}>Aucune image disponible</div>;
-  }
-
-  return (
-    <div className={styles.carouselContainer}>
-      
-      {/* Conteneur coulissant */}
-      <div 
-        className={styles.slidesContainer}
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
-        {images.map((img) => (
-          <img 
-            key={img.id}
-            src={img.src}
-            alt={img.alt}
-            className={styles.slide}
-          />
-        ))}
-      </div>
-
-      {/* Contrôles */}
-      <button 
-        className={`${styles.navButton} ${styles.prev}`} 
-        onClick={handlePrev}
-        aria-label="Précédent"
-      >
-        &#10094;
-      </button>
-      
-      <button 
-        className={`${styles.navButton} ${styles.next}`} 
-        onClick={handleNext}
-        aria-label="Suivant"
-      >
-        &#10095;
-      </button>
-
-    </div>
-  );
 }
 
 export default DualtronXLDT_Root;

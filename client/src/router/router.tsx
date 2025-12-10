@@ -8,6 +8,7 @@ import type { Router_Type } from "../types/router/router.type";
 import CGV_Page from "../pages/public/cgv_Page/CGV.page";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/Dualtron.page";
+import DualtronXLDT_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronXLDT.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import Kaboo_Page from "../pages/public/trottinette_Page/brands/kaboo_Page/Kaboo.page";
 import MentionsLegales_Page from "../pages/public/mentions-legales_Page/MentionsLegales.page";
@@ -53,7 +54,18 @@ const router: Router_Type = [
             /* {router[4].children?.[1].path} */
             {
                 path: "/produits/trottinette/dualtron",
-                element: <Dualtron_Page />,
+                children: [
+                    /* {router[4].children?.[1].children?.[0].path} */
+                    {
+                        path: "/produits/trottinette/dualtron",
+                        element: <Dualtron_Page />,
+                    },
+                    /* {router[4].children?.[1].children?.[1].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-x-ldt",
+                        element: <DualtronXLDT_Page />,
+                    },
+                ],
             },
             /* {router[4].children?.[2].path} */
             {
