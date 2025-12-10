@@ -60,7 +60,7 @@ const router: Router_Type = [
                         path: "/produits/trottinette/dualtron",
                         element: <Dualtron_Page />,
                     },
-                    /* {router[4].children?.[1].children?.[1].path} */
+                    /* {router[4]!.children![1]!.children![1].path} */
                     {
                         path: "/produits/trottinette/dualtron/dualtron-x-ldt",
                         element: <DualtronXLDT_Page />,

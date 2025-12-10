@@ -1,12 +1,15 @@
 /* Import des Types */
 import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produits/cardsTrottinetteBrand.data.type";
 
+/* Import des composants Router */
+import router from "../../../../../router/router";
+
 function dualtron_Data() {
     const tab: CardsTrottinetteBrand_data_Type = [
         {
             reactKey: 1,
             image: "/images/produits/trottinette/dualtron/dualtron-x-ltd/dualtron-x-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![1].path,
             model: "Dualtron X LTD",
             price: "5949 €",
             battery: "84V 60Ah", 
