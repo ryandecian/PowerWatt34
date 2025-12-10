@@ -42,20 +42,20 @@ const router: Router_Type = [
         path: "/admin/compte",
         element: <h1>compte admin</h1>,
     },
-    /* {router[4].path} */
+    /* {router[4].path} : page parent = children[0]*/
     {
         path: "/produits/trottinette",
         children: [
-            /* {router[4]!.children![0]!.path} */
+            /* {router[4]!.children![0]!.path} : page parent */
             {
                 path: "/produits/trottinette",
                 element: <Trottinette_Page />,
             },
-            /* {router[4].children?.[1].path} */
+            /* {router[4].children?.[1].path} : page parent = children[0] */
             {
                 path: "/produits/trottinette/dualtron",
                 children: [
-                    /* {router[4].children?.[1].children?.[0].path} */
+                    /* {router[4].children?.[1].children?.[0].path} : page parent */
                     {
                         path: "/produits/trottinette/dualtron",
                         element: <Dualtron_Page />,
@@ -67,33 +67,33 @@ const router: Router_Type = [
                     },
                 ],
             },
-            /* {router[4].children?.[2].path} */
+            /* {router[4].children?.[2].path} : page parent = children[0] */
             {
                 path: "/produits/trottinette/teverun",
                 children: [
-                    /* {router[4].children?.[2].children?.[0].path} */
+                    /* {router[4].children?.[2].children?.[0].path} : page parent */
                     {
                         path: "/produits/trottinette/teverun",
                         element: <Teverun_Page />,
                     },
                 ],
             },
-            /* {router[4].children?.[3].path} */
+            /* {router[4].children?.[3].path} : page parent = children[0] */
             {
                 path: "/produits/trottinette/kaboo",
                 children: [
-                    /* {router[4].children?.[3].children?.[0].path} */
+                    /* {router[4].children?.[3].children?.[0].path} : page parent */
                     {
                         path: "/produits/trottinette/kaboo",
                         element: <Kaboo_Page />,
                     },
                 ],
             },
-            /* {router[4].children?.[4].path} */
+            /* {router[4].children?.[4].path} : page parent = children[0] */
             {
                 path: "/produits/trottinette/vsett",
                 children: [
-                    /* {router[4].children?.[4].children?.[0].path} */
+                    /* {router[4].children?.[4].children?.[0].path} : page parent */
                     {
                         path: "/produits/trottinette/vsett",
                         element: <Vsett_Page />,
