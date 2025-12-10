@@ -70,7 +70,13 @@ const router: Router_Type = [
             /* {router[4].children?.[2].path} */
             {
                 path: "/produits/trottinette/teverun",
-                element: <Teverun_Page />,
+                children: [
+                    /* {router[4].children?.[2].children?.[0].path} */
+                    {
+                        path: "/produits/trottinette/teverun",
+                        element: <Teverun_Page />,
+                    },
+                ],
             },
             /* {router[4].children?.[3].path} */
             {
