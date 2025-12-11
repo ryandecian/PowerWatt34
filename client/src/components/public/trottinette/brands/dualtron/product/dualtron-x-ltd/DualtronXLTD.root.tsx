@@ -1,12 +1,12 @@
 /* Import des modules CSS */
-import css from "./dualtronXLDT.module.css";
+import css from "./dualtronXLTD.module.css";
 import style from "../../../../../../styleRootComponent.module.css";
 
 /* Import des composants d'Elements */
-import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/carrouselProduct.element";
+import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/CarrouselProduct.element";
 
 /* Import des Datas */
-import { dualtronXLTD_img_Data } from "./dualtronXLDT.img.data";
+import { dualtronXLTD_img_Data } from "./dualtronXLTD.img.data";
 
 
 /* 2. Composant principal */
