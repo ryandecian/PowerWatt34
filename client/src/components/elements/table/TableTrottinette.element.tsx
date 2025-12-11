@@ -1,6 +1,5 @@
-// /components/elements/table-trottinette/TableTrottinette.element.tsx
 import React from "react";
-import css from "./TableTrottinette.module.css";
+import css from "./tableTrottinette.module.css";
 import type { Trottinette_Data_Type } from "../../../types/produits/trottinette/trottinette.data.type";
 
 type TableTrottinette_Props = {
