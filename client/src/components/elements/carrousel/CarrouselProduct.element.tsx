@@ -1,55 +1,47 @@
 /* Import des modules CSS */
 import css from "./dualtronXLDT.module.css";
 
-/* Import des composants React */
+/* Import React */
 import { useMemo, useState } from "react";
 
-/* Import des Datas */
-import { dualtronXLDT_img_Data } from "./dualtronXLDT.img.data";
+/* Import du type */
+import type { ImageCarousselProduct_Type } from "../../../types/produits/imageCarousselProduct.type";
 
-/* 1. Définition des types attendus par le carrousel */
-export interface ImageSlide {
-    id: number | string;
-    src: string;
-    alt: string;
-}
+type CarrouselProduct_Props = {
+    dataImg: ImageCarousselProduct_Type;
+};
 
-/* 2. Composant principal */
-function DualtronXLDT_Root() {
+function CarrouselProduct_Element({ dataImg }: CarrouselProduct_Props) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // Appel de la fonction data + mapping vers le format du carrousel
-    const images: ImageSlide[] = useMemo(() => {
-        const img = dualtronXLDT_img_Data();
-        return img.map(({ reactKey, src, alt }) => ({
+    // Mapping simple : ton type === le type du carrousel interne
+    const images = useMemo(() => {
+        return dataImg.map(({ reactKey, src, alt }) => ({
             id: reactKey,
-            src: src,
+            src,
             alt,
         }));
-    }, []);
+    }, [dataImg]);
 
-    // Sécurité si aucune image
-    if (!images || images.length === 0) {
+    if (images.length === 0) {
         return <div className={css.carouselContainer}>Aucune image disponible</div>;
     }
 
-    // Gestion du clic "Suivant"
     function handleNext() {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        setCurrentIndex((prev) =>
+            prev === images.length - 1 ? 0 : prev + 1
         );
     }
 
-    // Gestion du clic "Précédent"
     function handlePrev() {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        setCurrentIndex((prev) =>
+            prev === 0 ? images.length - 1 : prev - 1
         );
     }
 
     return (
         <div className={css.carouselContainer}>
-            {/* Conteneur coulissant */}
+            {/* Slides */}
             <div
                 className={css.slidesContainer}
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -67,7 +59,7 @@ function DualtronXLDT_Root() {
                 ))}
             </div>
 
-            {/* Contrôles */}
+            {/* Boutons */}
             {images.length > 1 && (
                 <>
                     <button
@@ -93,4 +85,4 @@ function DualtronXLDT_Root() {
     );
 }
 
-export default DualtronXLDT_Root;
+export { CarrouselProduct_Element };
