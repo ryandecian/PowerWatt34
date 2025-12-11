@@ -408,6 +408,16 @@ function dualtron_Data() {
         },
         {
             reactKey: 41,
+            image: "/images/produits/trottinette/dualtron/dualtron-togo-plus/dualtron-togo-plus-n01-powerwatt34.jpg",
+            path: "#",
+            model: "Dualtron Togo Plus",
+            price: "615 €",
+            battery: "48V 12Ah", 
+            power: "800W",
+            range: "50 km",
+        },
+        {
+            reactKey: 42,
             image: "/images/produits/trottinette/dualtron/dualtron-sonic-pro/dualtron-sonic-pro-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Sonic Pro",
