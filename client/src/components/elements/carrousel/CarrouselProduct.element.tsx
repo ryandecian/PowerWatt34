@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import css from "./dualtronXLDT.module.css";
+import css from "./carrouselProduct.module.css";
 
 /* Import React */
 import { useMemo, useState } from "react";
