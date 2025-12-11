@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import css from "./dualtronXLTD.module.css";
+// import css from "./dualtronXLTD.module.css";
 import style from "../../../../../../styleRootComponent.module.css";
 
 /* Import des composants d'Elements */
@@ -14,6 +14,7 @@ function DualtronXLTD_Root() {
     return (
         <section className={`DualtronXLTD_Root ${style.ContainerRootRacine}`}>
             <CarrouselProduct_Element dataImg={dualtronXLTD_img_Data()} />
+            <h1>Dualtron X LTD</h1>
         </section>
     );
 }
