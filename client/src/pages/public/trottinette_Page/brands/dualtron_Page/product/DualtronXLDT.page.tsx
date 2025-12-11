@@ -3,13 +3,13 @@ import style from "../../../../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../../../../components/layout/nav_Layout/Nav.root.layout";
-import DualtronXLDT_Root from "../../../../../../components/public/trottinette/brands/dualtron/product/dualtron-x-ldt/DualtronXLDT.root";
+import DualtronXLTD_Root from "../../../../../../components/public/trottinette/brands/dualtron/product/dualtron-x-ltd/DualtronXLTD.root";
 import Footer_root_layout from "../../../../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des Hooks */
 import { useScrollToHash_utils_Hook } from "../../../../../../hook/useScrollToHash.utils.hook";
 
-function DualtronXLDT_Page() {
+function DualtronXLTD_Page() {
     useScrollToHash_utils_Hook(); /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
@@ -18,7 +18,7 @@ function DualtronXLDT_Page() {
                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <DualtronXLDT_Root />
+                <DualtronXLTD_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer_root_layout />
@@ -27,4 +27,4 @@ function DualtronXLDT_Page() {
     );
 }
 
-export default DualtronXLDT_Page;
+export default DualtronXLTD_Page;
