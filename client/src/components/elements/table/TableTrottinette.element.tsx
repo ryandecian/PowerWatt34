@@ -1,5 +1,11 @@
-import React from "react";
+/* Import des modules CSS */
 import css from "./tableTrottinette.module.css";
+import style from "../../styleRootComponent.module.css";
+
+/* Import des composants React */
+import React from "react";
+
+/* Import des Types */
 import type { Trottinette_Data_Type } from "../../../types/produits/trottinette/trottinette.data.type";
 
 type TableTrottinette_Props = {
@@ -47,28 +53,28 @@ function TableTrottinette_Element({ data }: TableTrottinette_Props) {
 
     return (
         <div
-            className={css.wrapper}
+            className={css.ContainerTable}
             role="region"
             aria-labelledby={captionId}
             tabIndex={0}
         >
-            <table className={`${css.table} ${css.striped}`}>
-                <caption id={captionId}>
-                    Caractéristiques techniques — {data.modele}
+            <table className={`${css.Table} ${css.striped}`}>
+                <caption id={captionId} className={`${style.TextLiP4} ${css.Caption}`}>
+                    Caractéristiques techniques - {data.modele}
                 </caption>
 
                 <thead>
                     <tr>
-                        <th scope="col">Caractéristique</th>
-                        <th scope="col">Valeur</th>
+                        <th scope="col" className={style.TextP4}>Caractéristique</th>
+                        <th scope="col" className={style.TextP4}>Valeur</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     {order.map((key) => (
                         <tr key={key}>
-                            <th scope="row">{labels[key]}</th>
-                            <td>{data[key]}</td>
+                            <th scope="row" className={style.TextP4}>{labels[key]}</th>
+                            <td className={style.TextP4}>{data[key]}</td>
                         </tr>
                     ))}
                 </tbody>
