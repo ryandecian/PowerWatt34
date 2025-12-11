@@ -1,7 +1,7 @@
 /* Import des types */
 import type { ImageCarousselProduct_Type } from "../../../../../../../types/produits/imageCarousselProduct.type";
 
-function dualtronXLDT_img_Data() {
+function dualtronXLTD_img_Data() {
     const tab: ImageCarousselProduct_Type = [
         {
             reactKey: 1,
@@ -33,4 +33,4 @@ function dualtronXLDT_img_Data() {
     return tab;
 }
 
-export { dualtronXLDT_img_Data };
+export { dualtronXLTD_img_Data };
