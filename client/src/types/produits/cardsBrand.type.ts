@@ -8,3 +8,5 @@ type CardsBrand_Type = {
 }
 
 export type { CardsBrand_Type };
+
+/* Ce type est utilisé pour définir la structure des données contenue dans les cards de marque de produits */

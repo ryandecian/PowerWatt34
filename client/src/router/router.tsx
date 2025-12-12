@@ -8,6 +8,7 @@ import type { Router_Type } from "../types/router/router.type";
 import CGV_Page from "../pages/public/cgv_Page/CGV.page";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/Dualtron.page";
+import DualtronXLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronXLDT.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import Kaboo_Page from "../pages/public/trottinette_Page/brands/kaboo_Page/Kaboo.page";
 import MentionsLegales_Page from "../pages/public/mentions-legales_Page/MentionsLegales.page";
@@ -41,34 +42,63 @@ const router: Router_Type = [
         path: "/admin/compte",
         element: <h1>compte admin</h1>,
     },
-    /* {router[4].path} */
+    /* {router[4].path} : page parent = children[0]*/
     {
-        path: "/",
+        path: "/produits/trottinette",
         children: [
-            /* {router[4]!.children![0]!.path} */
+            /* {router[4]!.children![0]!.path} : page parent */
             {
                 path: "/produits/trottinette",
                 element: <Trottinette_Page />,
             },
-            /* {router[4].children?.[1].path} */
+            /* {router[4].children?.[1].path} : page parent = children[0] */
             {
                 path: "/produits/trottinette/dualtron",
-                element: <Dualtron_Page />,
+                children: [
+                    /* {router[4].children?.[1].children?.[0].path} : page parent */
+                    {
+                        path: "/produits/trottinette/dualtron",
+                        element: <Dualtron_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![1].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-x-ltd",
+                        element: <DualtronXLTD_Page />,
+                    },
+                ],
             },
-            /* {router[4].children?.[2].path} */
+            /* {router[4].children?.[2].path} : page parent = children[0] */
             {
                 path: "/produits/trottinette/teverun",
-                element: <Teverun_Page />,
+                children: [
+                    /* {router[4].children?.[2].children?.[0].path} : page parent */
+                    {
+                        path: "/produits/trottinette/teverun",
+                        element: <Teverun_Page />,
+                    },
+                ],
             },
-            /* {router[4].children?.[3].path} */
+            /* {router[4].children?.[3].path} : page parent = children[0] */
             {
                 path: "/produits/trottinette/kaboo",
-                element: <Kaboo_Page />,
+                children: [
+                    /* {router[4].children?.[3].children?.[0].path} : page parent */
+                    {
+                        path: "/produits/trottinette/kaboo",
+                        element: <Kaboo_Page />,
+                    },
+                ],
             },
-            /* {router[4].children?.[4].path} */
+            /* {router[4].children?.[4].path} : page parent = children[0] */
             {
                 path: "/produits/trottinette/vsett",
-                element: <Vsett_Page />,
+                children: [
+                    /* {router[4].children?.[4].children?.[0].path} : page parent */
+                    {
+                        path: "/produits/trottinette/vsett",
+                        element: <Vsett_Page />,
+                    },
+                ],
             },
         ],
     },

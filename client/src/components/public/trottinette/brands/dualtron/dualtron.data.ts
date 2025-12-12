@@ -1,12 +1,15 @@
 /* Import des Types */
 import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produits/cardsTrottinetteBrand.data.type";
 
+/* Import des composants Router */
+import router from "../../../../../router/router";
+
 function dualtron_Data() {
     const tab: CardsTrottinetteBrand_data_Type = [
         {
             reactKey: 1,
             image: "/images/produits/trottinette/dualtron/dualtron-x-ltd/dualtron-x-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![1].path,
             model: "Dualtron X LTD",
             price: "5949 €",
             battery: "84V 60Ah", 
@@ -405,6 +408,16 @@ function dualtron_Data() {
         },
         {
             reactKey: 41,
+            image: "/images/produits/trottinette/dualtron/dualtron-togo-plus/dualtron-togo-plus-n01-powerwatt34.jpg",
+            path: "#",
+            model: "Dualtron Togo Plus",
+            price: "615 €",
+            battery: "48V 12Ah", 
+            power: "800W",
+            range: "50 km",
+        },
+        {
+            reactKey: 42,
             image: "/images/produits/trottinette/dualtron/dualtron-sonic-pro/dualtron-sonic-pro-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Sonic Pro",
