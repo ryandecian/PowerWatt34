@@ -9,5 +9,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem; /* 24px */
+    gap: 1rem; /* 16px */
+}
+@media (min-width: 36.25rem) { /* 580px */
+    .cardsContainer {
+        gap: 1.5rem; /* 24px */
+    }
 }
