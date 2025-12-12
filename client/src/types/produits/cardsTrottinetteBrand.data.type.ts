@@ -10,3 +10,5 @@ type CardsTrottinetteBrand_data_Type = {
 }[]
 
 export type { CardsTrottinetteBrand_data_Type };
+
+/* Ce type est utilisé pour définir la structure des données des cartes de trottinette dans la page d'une marque spécifique */
