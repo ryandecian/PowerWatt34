@@ -14,12 +14,6 @@
     height: 17.5rem; /* 280px */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-}
 @media (min-width: 23.125rem) { /* 370px */
     .card {
         width: calc((100vw - 1rem - 2.5rem - 1rem) / 2); /* Viewport - gap - padding main - correctif */
@@ -33,6 +27,12 @@
         width: 15.625rem; /* 250px */
         height: 17.5rem; /* 280px */
     }
+}
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
@@ -58,13 +58,44 @@
     padding: 0rem;
     border: 0rem;
 }
+@media (min-width: 23.125rem) { /* 370px */
+    .TextPrice {
+        font-size: var(--h5); /* 14px */
+    }
+}
+@media (min-width: 28.125rem) { /* 450px */
+    .TextPrice {
+        font-size: calc(var(--h5) + 0.0625rem); /* 15px */
+    }
+}
+@media (min-width: 36.25rem) { /* 580px */
+    .TextPrice {
+        font-size: calc(var(--h3) + 0.0625rem); /* 19px */
+    }
+}
+
 
 .cardTitle {
     margin: 0;
     font-size: var(--h4); /* 16px */
     font-weight: bold;
 }
-@media (min-width: 35.25rem) { /* 564px */
+@media (min-width: 23.125rem) { /* 370px */
+    .cardTitle {
+        font-size: calc(var(--h5) + 0.0625rem); /* 15px */
+    }
+}
+@media (min-width: 28.125rem) { /* 450px */
+    .cardTitle {
+        font-size: var(--h4); /* 16px */
+    }
+}
+@media (min-width: 32.5rem) { /* 520px */
+    .cardTitle {
+        font-size: var(--h3); /* 18px */
+    }
+}
+@media (min-width: 36.25rem) { /* 580px */
     .cardTitle {
         font-size: calc(var(--h3) + 0.0625rem); /* 19px */
     }
@@ -91,4 +122,19 @@
 .SubText {
     font-size: calc(var(--h4) - 0.0625rem); /* 15px */
     margin: 0;
+}
+@media (min-width: 23.125rem) { /* 370px */
+    .SubText {
+        font-size: var(--h5); /* 14px */
+    }
+}
+@media (min-width: 28.125rem) { /* 450px */
+    .SubText {
+        font-size: calc(var(--h5) + 0.0625rem); /* 15px */
+    }
+}
+@media (min-width: 36.25rem) { /* 580px */
+    .SubText {
+        font-size: calc(var(--h4) - 0.0625rem); /* 15px */
+    }
 }
