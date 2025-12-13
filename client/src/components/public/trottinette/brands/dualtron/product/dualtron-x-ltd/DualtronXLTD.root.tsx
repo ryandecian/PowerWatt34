@@ -1,5 +1,4 @@
 /* Import des modules CSS */
-// import css from "./dualtronXLTD.module.css";
 import style from "../../../../../../styleRootComponent.module.css";
 
 /* Import des composants d'Elements */
