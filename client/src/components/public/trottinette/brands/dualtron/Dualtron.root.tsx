@@ -26,6 +26,7 @@ function Dualtron_Root() {
         p.model.toLowerCase().includes(search.toLowerCase())
     );
 
+    /* Trie les produits du prix le plus élevé au plus bas en convertissant chaque prix en nombre. */
     const sorted = [...filtered].sort((a, b) => {
         return parsePrice_Utils(b.price) - parsePrice_Utils(a.price);
     });
