@@ -4,7 +4,7 @@ import type { Trottinette_Data_Type } from "../../../../../../../types/produits/
 function dualtronStormLTD_Data(): Trottinette_Data_Type {
     const dualtronStormLTD_Data: Trottinette_Data_Type = {
         marque: "Dualtron",
-        modele: "Storm LTD",
+        modele: "Dualtron Storm LTD",
         batterie: "84V 45Ah (LG 21700)",
         autonomie: "180 à 220 km",
         moteurs: "Bimoteurs",
