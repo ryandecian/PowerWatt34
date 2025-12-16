@@ -17,6 +17,7 @@ function dualtronXLTD_Data(): Trottinette_Data_Type {
         clignotants: "Oui",
         poids: "82,9 kg",
         charge_maximale: "150 kg",
+        prix: "5949 €",
     }
 
     return dualtronXLTD_Data;
