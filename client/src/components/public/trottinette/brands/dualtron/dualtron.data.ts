@@ -19,7 +19,7 @@ function dualtron_Data() {
         {
             reactKey: 2,
             image: "/images/produits/trottinette/dualtron/dualtron-storm-ltd/dualtron-storm-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![2].path,
             model: "Dualtron Storm LTD",
             price: "4249 €",
             battery: "84V 45Ah", 
