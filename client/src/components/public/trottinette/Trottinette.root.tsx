@@ -2,8 +2,10 @@
 import style from "../../styleRootComponent.module.css";
 import css from "./trottinette.module.css";
 
+/* Import des composants d'Elements */
+import { CardBrand_Element } from "../../elements/cards-product-trottinette/CardBrand.element";
+
 /* Import des composants React */
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
 /* Import des Datas */
@@ -45,17 +47,10 @@ function Trottinette_Root() {
 
             <div className={css.cardsContainer}>
                 {filtered.map((brand) => (
-                    <Link
+                    <CardBrand_Element
                         key={brand.reactKey}
-                        to={`${brand.path}`}
-                        className={`${css.card} ${brand.light && css[`card${brand.light}`]}`}
-                        style={{backgroundImage: `url(${brand.image})`}}
-                    >
-                        <div className={css.overlay}>
-                            <h3 className={css.cardTitle}>{brand.title}</h3>
-                            <p className={css.cardDescription}>{brand.description}</p>
-                        </div>
-                    </Link>
+                        dataBrand={brand}
+                    />
                 ))}
             </div>
             
