@@ -13,6 +13,7 @@ type Trottinette_Data_Type = {
     clignotants: string;
     poids: string;
     charge_maximale: string;
+    prix: string;
 };
 
 export type { Trottinette_Data_Type };

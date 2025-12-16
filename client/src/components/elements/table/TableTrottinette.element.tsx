@@ -31,6 +31,7 @@ function TableTrottinette_Element({ data }: TableTrottinette_Props) {
         "clignotants",
         "poids",
         "charge_maximale",
+        "prix",
     ];
 
     // Libellés lisibles
@@ -49,6 +50,7 @@ function TableTrottinette_Element({ data }: TableTrottinette_Props) {
         clignotants: "Clignotants",
         poids: "Poids",
         charge_maximale: "Charge maximale",
+        prix: "Prix",
     };
 
     return (

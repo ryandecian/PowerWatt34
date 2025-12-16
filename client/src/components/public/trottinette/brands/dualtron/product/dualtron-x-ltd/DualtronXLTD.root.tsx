@@ -19,6 +19,7 @@ function DualtronXLTD_Root() {
             <h1 className={style.TitleH1}>{productData.modele}</h1>
             <CarrouselProduct_Element dataImg={dualtronXLTD_img_Data()} />
             <br />
+            <p><strong>Prix : {productData.prix}</strong></p>
             <TableTrottinette_Element data={productData} />
         </section>
     );
