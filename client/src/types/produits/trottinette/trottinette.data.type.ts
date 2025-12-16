@@ -1,4 +1,4 @@
-type Trottinette_Data_Type = {
+type Trottinette_Data_Type = Partial<{
     marque: string;
     modele: string;
     batterie: string;
@@ -14,6 +14,6 @@ type Trottinette_Data_Type = {
     poids: string;
     charge_maximale: string;
     prix: string;
-};
+}>;
 
 export type { Trottinette_Data_Type };

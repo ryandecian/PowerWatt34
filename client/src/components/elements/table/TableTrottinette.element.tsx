@@ -9,13 +9,12 @@ import React from "react";
 import type { Trottinette_Data_Type } from "../../../types/produits/trottinette/trottinette.data.type";
 
 type TableTrottinette_Props = {
-    data: Trottinette_Data_Type; // unique param
+    data: Trottinette_Data_Type;
 };
 
 function TableTrottinette_Element({ data }: TableTrottinette_Props) {
     const captionId = React.useId();
 
-    // Ordre d’affichage (clés du type)
     const order: (keyof Trottinette_Data_Type)[] = [
         "marque",
         "modele",
@@ -34,7 +33,6 @@ function TableTrottinette_Element({ data }: TableTrottinette_Props) {
         "prix",
     ];
 
-    // Libellés lisibles
     const labels: Record<keyof Trottinette_Data_Type, string> = {
         marque: "Marque",
         modele: "Modèle",
@@ -53,6 +51,11 @@ function TableTrottinette_Element({ data }: TableTrottinette_Props) {
         prix: "Prix",
     };
 
+    const rows = order.filter((key) => {
+        const value = data[key];
+        return value !== undefined && value !== null && String(value).trim() !== "";
+    });
+
     return (
         <div
             className={css.ContainerTable}
@@ -62,7 +65,7 @@ function TableTrottinette_Element({ data }: TableTrottinette_Props) {
         >
             <table className={`${css.Table} ${css.striped}`}>
                 <caption id={captionId} className={`${style.TextLiP4} ${css.Caption}`}>
-                    Caractéristiques techniques - {data.modele}
+                    Caractéristiques techniques - {data.modele ?? "Trottinette"}
                 </caption>
 
                 <thead>
@@ -73,7 +76,7 @@ function TableTrottinette_Element({ data }: TableTrottinette_Props) {
                 </thead>
 
                 <tbody>
-                    {order.map((key) => (
+                    {rows.map((key) => (
                         <tr key={key}>
                             <th scope="row" className={style.TextP4}>{labels[key]}</th>
                             <td className={style.TextP4}>{data[key]}</td>
