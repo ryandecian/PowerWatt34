@@ -8,6 +8,7 @@ import type { Router_Type } from "../types/router/router.type";
 import CGV_Page from "../pages/public/cgv_Page/CGV.page";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/Dualtron.page";
+import DualtronAlien_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAlien.page";
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
 import DualtronXLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronXLTD.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
@@ -70,6 +71,11 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-storm-ltd",
                         element: <DualtronStormLTD_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![3].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-alien",
+                        element: <DualtronAlien_Page />,
                     },
                 ],
             },
