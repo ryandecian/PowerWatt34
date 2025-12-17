@@ -29,7 +29,7 @@ function dualtron_Data() {
         {
             reactKey: 3,
             image: "/images/produits/trottinette/dualtron/dualtron-alien/dualtron-alien-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![3].path,
             model: "Dualtron Alien",
             price: "3949 €",
             battery: "72V 40Ah", 
