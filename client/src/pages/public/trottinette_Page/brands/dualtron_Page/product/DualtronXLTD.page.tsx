@@ -13,7 +13,7 @@ function DualtronXLTD_Page() {
     useScrollToHash_utils_Hook(); /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
-        <section className={`Dualtron_Page ${style.Page}`}>
+        <section className={`DualtronXLTD_Page ${style.Page}`}>
             <header id="top" className={style.Header}>
                 <Nav_root_Layout />
             </header>
