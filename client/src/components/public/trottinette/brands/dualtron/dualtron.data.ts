@@ -39,7 +39,7 @@ function dualtron_Data() {
         {
             reactKey: 4,
             image: "/images/produits/trottinette/dualtron/dualtron-thunder-3/dualtron-thunder-3-n01-powerwatt34.webp",
-            path: "#",
+            path: router[4]!.children![1]!.children![7].path,
             model: "Dualtron Thunder 3",
             price: "2949 €",
             battery: "72V 40Ah", 
@@ -49,7 +49,7 @@ function dualtron_Data() {
         {
             reactKey: 5,
             image: "/images/produits/trottinette/dualtron/dualtron-thunder-2/dualtron-thunder-2-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![6].path,
             model: "Dualtron Thunder 2",
             price: "2749 €",
             battery: "72V 40Ah", 
@@ -59,7 +59,7 @@ function dualtron_Data() {
         {
             reactKey: 6,
             image: "/images/produits/trottinette/dualtron/dualtron-achilleus-rouge/dualtron-achilleus-rouge-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![5].path,
             model: "Dualtron Achilleus Rouge",
             price: "2449 €",
             battery: "60V 35Ah", 
@@ -69,7 +69,7 @@ function dualtron_Data() {
         {
             reactKey: 7,
             image: "/images/produits/trottinette/dualtron/dualtron-achilleus/dualtron-achilleus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![4].path,
             model: "Dualtron Achilleus",
             price: "2449 €",
             battery: "60V 35Ah", 
@@ -79,7 +79,7 @@ function dualtron_Data() {
         {
             reactKey: 8,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-ltd/dualtron-victor-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![8].path,
             model: "Dualtron Victor LTD",
             price: "2649 €",
             battery: "60V 35Ah Samsung", 
