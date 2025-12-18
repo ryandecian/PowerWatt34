@@ -2,7 +2,7 @@
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
 function dualtronThunder3_Data(): Trottinette_Data_Type {
-    const dualtronThunder3_Data: Trottinette_Data_Type = {
+    const data: Trottinette_Data_Type = {
         marque: "Dualtron",
         modele: "Dualtron Thunder 3",
         batterie: "72V 40Ah (LG M50LT)",
@@ -20,7 +20,7 @@ function dualtronThunder3_Data(): Trottinette_Data_Type {
         prix: "2949 €",
     }
 
-    return dualtronThunder3_Data;
+    return data;
 }
 
 export { dualtronThunder3_Data };
