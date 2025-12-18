@@ -2,7 +2,7 @@
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
 function dualtronXLTD_Data(): Trottinette_Data_Type {
-    const dualtronXLTD_Data: Trottinette_Data_Type = {
+    const data: Trottinette_Data_Type = {
         marque: "Dualtron",
         modele: "Dualtron X LTD",
         batterie: "84V 60Ah",
@@ -20,7 +20,7 @@ function dualtronXLTD_Data(): Trottinette_Data_Type {
         prix: "5949 €",
     }
 
-    return dualtronXLTD_Data;
+    return data;
 }
 
 export { dualtronXLTD_Data };

@@ -38,7 +38,15 @@ function MentionsLegales_Root() {
 
             <p className={style.TextP4}>
                 <strong>Identification de l'entreprise :</strong> PowerWatt Mobility au capital social de 200 € – 
-                SIREN : 988482196 – RCS ou RM : Montpellier – Adresse postale : 1348 Avenue de la Mer-Raymond du 34000 Montpellier.
+                SIREN : 988482196 – RCS ou RM : Montpellier – Adresse postale : 122 Chemin de Saint Hubert, 34970 Lattes.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>SIRET :</strong> 988 482 196 00017
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Numéro de TVA :</strong> FR42988482196
             </p>
 
             <p className={style.TextP4}>
