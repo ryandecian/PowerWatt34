@@ -2,7 +2,7 @@
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
 function dualtronStormLTD_Data(): Trottinette_Data_Type {
-    const dualtronStormLTD_Data: Trottinette_Data_Type = {
+    const data: Trottinette_Data_Type = {
         marque: "Dualtron",
         modele: "Dualtron Storm LTD",
         batterie: "84V 45Ah (LG 21700)",
@@ -19,7 +19,7 @@ function dualtronStormLTD_Data(): Trottinette_Data_Type {
         prix: "4249 €",
     }
 
-    return dualtronStormLTD_Data;
+    return data;
 }
 
 export { dualtronStormLTD_Data };
