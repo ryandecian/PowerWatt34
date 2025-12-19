@@ -99,7 +99,7 @@ function dualtron_Data() {
         {
             reactKey: 10,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-ltd/dualtron-victor-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![11].path + "#top",
             model: "Dualtron Victor LTD",
             price: "2349 €",
             battery: "60V 31Ah", 
