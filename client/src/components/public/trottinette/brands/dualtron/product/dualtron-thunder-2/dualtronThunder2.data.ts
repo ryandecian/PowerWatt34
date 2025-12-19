@@ -6,7 +6,7 @@ function dualtronThunder2_Data(): Trottinette_Data_Type {
         marque: "Dualtron",
         modele: "Dualtron Thunder 2",
         batterie: "72V 40Ah (LG)",
-        autonomie: "100 à 150 km",
+        autonomie: "70 à 120 km",
         moteurs: "Bimoteurs",
         taille_roues: "11 pouces tubeless",
         puissance_nominale: "5400W soit 2 x 2700W",
