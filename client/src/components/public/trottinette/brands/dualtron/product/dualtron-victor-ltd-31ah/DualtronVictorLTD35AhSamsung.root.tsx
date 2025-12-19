@@ -6,18 +6,18 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { dualtronVictorLTD35AhSamsung_Data } from "./dualtronVictorLTD35AhSamsung.data";
-import { dualtronVictorLTD35AhSamsung_img_Data } from "./dualtronVictorLTD35AhSamsung.img.data";
+import { dualtronVictorLTD31Ah_Data } from "./dualtronVictorLTD31Ah.data";
+import { dualtronVictorLTD31Ah_img_Data } from "./dualtronVictorLTD31Ah.img.data";
 
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function DualtronVictorLTD35AhSamsung_Root() {
-    const productData: Trottinette_Data_Type = dualtronVictorLTD35AhSamsung_Data();
+function DualtronVictorLTD31Ah_Root() {
+    const productData: Trottinette_Data_Type = dualtronVictorLTD31Ah_Data();
     return (
-        <section className={`DualtronVictorLTD35AhSamsung_Root ${style.ContainerRootRacine}`}>
+        <section className={`DualtronVictorLTD31Ah_Root ${style.ContainerRootRacine}`}>
             <h1 className={style.TitleH1}>{productData.modele}</h1>
-            <CarrouselProduct_Element dataImg={dualtronVictorLTD35AhSamsung_img_Data()} />
+            <CarrouselProduct_Element dataImg={dualtronVictorLTD31Ah_img_Data()} />
             <br />
             <p><strong>Prix : {productData.prix}</strong></p>
             <TableTrottinette_Element data={productData} />
@@ -25,4 +25,4 @@ function DualtronVictorLTD35AhSamsung_Root() {
     );
 }
 
-export default DualtronVictorLTD35AhSamsung_Root;
+export default DualtronVictorLTD31Ah_Root;
