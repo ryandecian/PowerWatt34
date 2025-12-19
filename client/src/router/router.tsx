@@ -14,7 +14,8 @@ import DualtronAlien_Page from "../pages/public/trottinette_Page/brands/dualtron
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
 import DualtronThunder2_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder2.page";
 import DualtronThunder3_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder3.page";
-import DualtronVictorLTD35AhSamsung_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD35AgSamsung.page";
+import DualtronVictorLTD35Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD35Ah.page";
+import DualtronVictorLTD35AhSamsung_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD35AhSamsung.page";
 import DualtronXLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronXLTD.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import Kaboo_Page from "../pages/public/trottinette_Page/brands/kaboo_Page/Kaboo.page";
@@ -106,6 +107,11 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-victor-ltd-35ah-samsung",
                         element: <DualtronVictorLTD35AhSamsung_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![9].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-victor-ltd-35ah",
+                        element: <DualtronVictorLTD35Ah_Page />,
                     },
                 ],
             },
