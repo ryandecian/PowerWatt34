@@ -6,7 +6,7 @@ function dualtronVictorLTD35Ah_Data(): Trottinette_Data_Type {
         marque: "Dualtron",
         modele: "Victor LTD",
         batterie: "60V 35Ah (LG 21700)",
-        autonomie: "90 à 120 km",
+        autonomie: "90 à 110 km",
         moteurs: "Bimoteurs",
         taille_roues: "10 pouces tubeless",
         puissance_nominale: "4000W soit 2 x 2000W",
