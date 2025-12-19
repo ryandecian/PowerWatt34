@@ -8,8 +8,13 @@ import type { Router_Type } from "../types/router/router.type";
 import CGV_Page from "../pages/public/cgv_Page/CGV.page";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/Dualtron.page";
+import DualtronAchilleus_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAchilleus.page";
+import DualtronAchilleusRouge_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAchilleusRouge.page";
 import DualtronAlien_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAlien.page";
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
+import DualtronThunder2_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder2.page";
+import DualtronThunder3_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder3.page";
+import DualtronVictorLTD35AhSamsung_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD35AgSamsung.page";
 import DualtronXLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronXLTD.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import Kaboo_Page from "../pages/public/trottinette_Page/brands/kaboo_Page/Kaboo.page";
@@ -76,6 +81,31 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-alien",
                         element: <DualtronAlien_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![4].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-achilleus",
+                        element: <DualtronAchilleus_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![5].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-achilleus-rouge",
+                        element: <DualtronAchilleusRouge_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![6].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-thunder-2",
+                        element: <DualtronThunder2_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![7].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-thunder-3",
+                        element: <DualtronThunder3_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![8].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-victor-ltd-35ah-samsung",
+                        element: <DualtronVictorLTD35AhSamsung_Page />,
                     },
                 ],
             },
