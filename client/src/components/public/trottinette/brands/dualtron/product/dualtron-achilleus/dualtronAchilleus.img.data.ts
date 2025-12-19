@@ -10,7 +10,7 @@ function dualtronAchilleus_img_Data() {
         },
         {
             reactKey: 2,
-            src: "/images/produits/trottinette/dualtron/dualtron-achilleus/dualtron-achilleus-n02-powerwatt34.png",
+            src: "/images/produits/trottinette/dualtron/dualtron-achilleus/dualtron-achilleus-n02-powerwatt34.jpg",
             alt: "Dualtron Achilleus - Image 2 - PowerWatt34",
         },
         {

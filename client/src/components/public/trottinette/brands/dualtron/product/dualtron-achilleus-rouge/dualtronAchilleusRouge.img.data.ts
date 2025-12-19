@@ -10,7 +10,7 @@ function dualtronAchilleusRouge_img_Data() {
         },
         {
             reactKey: 2,
-            src: "/images/produits/trottinette/dualtron/dualtron-achilleus-rouge/dualtron-achilleus-rouge-n02-powerwatt34.png",
+            src: "/images/produits/trottinette/dualtron/dualtron-achilleus-rouge/dualtron-achilleus-rouge-n02-powerwatt34.jpg",
             alt: "Dualtron Achilleus Rouge - Image 2 - PowerWatt34",
         },
         {
