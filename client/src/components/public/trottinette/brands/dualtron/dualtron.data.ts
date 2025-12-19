@@ -119,11 +119,11 @@ function dualtron_Data() {
         {
             reactKey: 12,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-luxury-plus/dualtron-victor-luxury-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![10].path + "#top",
             model: "Dualtron Victor Luxury Plus",
             price: "2449 €",
             battery: "60V 35Ah Samsung", 
-            power: "4000W",
+            power: "4400W",
             range: "120 km",
         },
         {
