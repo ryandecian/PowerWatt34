@@ -41,7 +41,7 @@ function dualtron_Data() {
             image: "/images/produits/trottinette/dualtron/dualtron-thunder-3/dualtron-thunder-3-n01-powerwatt34.webp",
             path: router[4]!.children![1]!.children![7].path + "#top",
             model: "Dualtron Thunder 3",
-            price: "2949 €",
+            price: "3049 €",
             battery: "72V 40Ah", 
             power: "10800W",
             range: "150 km",
@@ -89,7 +89,7 @@ function dualtron_Data() {
         {
             reactKey: 9,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-ltd/dualtron-victor-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![9].path + "#top",
             model: "Dualtron Victor LTD",
             price: "2449 €",
             battery: "60V 35Ah", 
@@ -119,11 +119,11 @@ function dualtron_Data() {
         {
             reactKey: 12,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-luxury-plus/dualtron-victor-luxury-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![10].path + "#top",
             model: "Dualtron Victor Luxury Plus",
             price: "2449 €",
             battery: "60V 35Ah Samsung", 
-            power: "4000W",
+            power: "4400W",
             range: "120 km",
         },
         {
