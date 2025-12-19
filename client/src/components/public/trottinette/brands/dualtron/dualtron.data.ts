@@ -9,7 +9,7 @@ function dualtron_Data() {
         {
             reactKey: 1,
             image: "/images/produits/trottinette/dualtron/dualtron-x-ltd/dualtron-x-ltd-n01-powerwatt34.jpg",
-            path: router[4]!.children![1]!.children![1].path,
+            path: router[4]!.children![1]!.children![1].path + "#top",
             model: "Dualtron X LTD",
             price: "5949 €",
             battery: "84V 60Ah", 
@@ -19,7 +19,7 @@ function dualtron_Data() {
         {
             reactKey: 2,
             image: "/images/produits/trottinette/dualtron/dualtron-storm-ltd/dualtron-storm-ltd-n01-powerwatt34.jpg",
-            path: router[4]!.children![1]!.children![2].path,
+            path: router[4]!.children![1]!.children![2].path + "#top",
             model: "Dualtron Storm LTD",
             price: "4249 €",
             battery: "84V 45Ah", 
@@ -29,7 +29,7 @@ function dualtron_Data() {
         {
             reactKey: 3,
             image: "/images/produits/trottinette/dualtron/dualtron-alien/dualtron-alien-n01-powerwatt34.jpg",
-            path: router[4]!.children![1]!.children![3].path,
+            path: router[4]!.children![1]!.children![3].path + "#top",
             model: "Dualtron Alien",
             price: "3949 €",
             battery: "72V 40Ah", 
@@ -39,9 +39,9 @@ function dualtron_Data() {
         {
             reactKey: 4,
             image: "/images/produits/trottinette/dualtron/dualtron-thunder-3/dualtron-thunder-3-n01-powerwatt34.webp",
-            path: "#",
+            path: router[4]!.children![1]!.children![7].path + "#top",
             model: "Dualtron Thunder 3",
-            price: "3449 €",
+            price: "2949 €",
             battery: "72V 40Ah", 
             power: "10800W",
             range: "150 km",
@@ -49,9 +49,9 @@ function dualtron_Data() {
         {
             reactKey: 5,
             image: "/images/produits/trottinette/dualtron/dualtron-thunder-2/dualtron-thunder-2-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![6].path + "#top",
             model: "Dualtron Thunder 2",
-            price: "2949 €",
+            price: "2749 €",
             battery: "72V 40Ah", 
             power: "10080W",
             range: "120 km",
@@ -59,7 +59,7 @@ function dualtron_Data() {
         {
             reactKey: 6,
             image: "/images/produits/trottinette/dualtron/dualtron-achilleus-rouge/dualtron-achilleus-rouge-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![5].path + "#top",
             model: "Dualtron Achilleus Rouge",
             price: "2449 €",
             battery: "60V 35Ah", 
@@ -69,7 +69,7 @@ function dualtron_Data() {
         {
             reactKey: 7,
             image: "/images/produits/trottinette/dualtron/dualtron-achilleus/dualtron-achilleus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![4].path + "#top",
             model: "Dualtron Achilleus",
             price: "2449 €",
             battery: "60V 35Ah", 
@@ -79,7 +79,7 @@ function dualtron_Data() {
         {
             reactKey: 8,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-ltd/dualtron-victor-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![8].path + "#top",
             model: "Dualtron Victor LTD",
             price: "2649 €",
             battery: "60V 35Ah Samsung", 
