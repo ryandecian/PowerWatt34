@@ -41,7 +41,7 @@ function dualtron_Data() {
             image: "/images/produits/trottinette/dualtron/dualtron-thunder-3/dualtron-thunder-3-n01-powerwatt34.webp",
             path: router[4]!.children![1]!.children![7].path + "#top",
             model: "Dualtron Thunder 3",
-            price: "2949 €",
+            price: "3049 €",
             battery: "72V 40Ah", 
             power: "10800W",
             range: "150 km",
