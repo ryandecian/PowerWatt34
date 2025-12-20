@@ -161,10 +161,10 @@ function dualtron_Data() {
             image: "/images/produits/trottinette/dualtron/dualtron-city/dualtron-city-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron City",
-            price: "2249 €",
-            battery: "60V 25Ah", 
+            price: "1649 €",
+            battery: "60V 20Ah", 
             power: "4000W",
-            range: "80 km",
+            range: "70 km",
         },
         {
             reactKey: 17,
