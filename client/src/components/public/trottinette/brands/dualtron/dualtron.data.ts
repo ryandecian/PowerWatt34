@@ -129,7 +129,7 @@ function dualtron_Data() {
         {
             reactKey: 13,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-luxury-plus/dualtron-victor-luxury-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![15].path + "#top",
             model: "Dualtron Victor Luxury Plus",
             price: "2249 €",
             battery: "60V 35Ah", 
@@ -139,7 +139,7 @@ function dualtron_Data() {
         {
             reactKey: 14,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-luxury-plus/dualtron-victor-luxury-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![14].path + "#top",
             model: "Dualtron Victor Luxury Plus",
             price: "2149 €",
             battery: "60V 31Ah", 
@@ -149,7 +149,7 @@ function dualtron_Data() {
         {
             reactKey: 15,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-luxury-plus/dualtron-victor-luxury-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![13].path + "#top",
             model: "Dualtron Victor Luxury Plus",
             price: "1949 €",
             battery: "60V 28Ah", 
