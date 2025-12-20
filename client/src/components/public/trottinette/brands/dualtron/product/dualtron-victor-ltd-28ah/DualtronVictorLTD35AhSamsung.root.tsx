@@ -6,7 +6,7 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { dualtronVictorLTD31Ah_Data } from "./dualtronVictorLTD31Ah.data";
+import { dualtronVictorLTD31Ah_Data } from "./dualtronVictorLTD28Ah.data";
 import { dualtronVictorLTD31Ah_img_Data } from "./dualtronVictorLTD31Ah.img.data";
 
 /* Import des Types */

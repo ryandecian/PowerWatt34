@@ -15,7 +15,7 @@ function dualtronVictorLTD35AhSamsung_Data(): Trottinette_Data_Type {
         vitesse_maximale: "80 km/h",
         freinage: "Hydraulique NUTT à disques 140mm",
         clignotants: "Oui",
-        poids: "33 kg",
+        poids: "39,1 kg",
         charge_maximale: "120 kg",
         prix: "2649 €",
     }
