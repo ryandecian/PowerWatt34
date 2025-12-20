@@ -15,6 +15,7 @@ import DualtronVictorLuxuryPlus35AhSamsung_Page from "../pages/public/trottinett
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
 import DualtronThunder2_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder2.page";
 import DualtronThunder3_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder3.page";
+import DualtronVictorLTD28Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD28Ah.page";
 import DualtronVictorLTD31Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD31Ah.page";
 import DualtronVictorLTD35Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD35Ah.page";
 import DualtronVictorLTD35AhSamsung_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD35AhSamsung.page";
@@ -124,6 +125,11 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-ltd-31ah",
                         element: <DualtronVictorLTD31Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![12].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-ltd-28ah",
+                        element: <DualtronVictorLTD28Ah_Page />,
                     },
                 ],
             },
