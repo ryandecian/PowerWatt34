@@ -18,6 +18,9 @@ import DualtronThunder3_Page from "../pages/public/trottinette_Page/brands/dualt
 import DualtronVictorLTD28Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD28Ah.page";
 import DualtronVictorLTD31Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD31Ah.page";
 import DualtronVictorLTD35Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD35Ah.page";
+import DualtronVictorLuxuryPlus28Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLuxuryPlus28Ah.page";
+import DualtronVictorLuxuryPlus31Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLuxuryPlus31Ah.page";
+import DualtronVictorLuxuryPlus35Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLuxuryPlus35Ah.page";
 import DualtronVictorLTD35AhSamsung_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD35AhSamsung.page";
 import DualtronXLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronXLTD.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
@@ -130,6 +133,21 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-ltd-28ah",
                         element: <DualtronVictorLTD28Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![13].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-luxury-plus-28ah",
+                        element: <DualtronVictorLuxuryPlus28Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![14].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-luxury-plus-31ah",
+                        element: <DualtronVictorLuxuryPlus31Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![15].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-luxury-plus-35ah",
+                        element: <DualtronVictorLuxuryPlus35Ah_Page />,
                     },
                 ],
             },

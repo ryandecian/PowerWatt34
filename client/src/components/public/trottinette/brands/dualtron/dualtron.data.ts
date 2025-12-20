@@ -129,7 +129,7 @@ function dualtron_Data() {
         {
             reactKey: 13,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-luxury-plus/dualtron-victor-luxury-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![15].path + "#top",
             model: "Dualtron Victor Luxury Plus",
             price: "2249 €",
             battery: "60V 35Ah", 
@@ -139,7 +139,7 @@ function dualtron_Data() {
         {
             reactKey: 14,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-luxury-plus/dualtron-victor-luxury-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![14].path + "#top",
             model: "Dualtron Victor Luxury Plus",
             price: "2149 €",
             battery: "60V 31Ah", 
@@ -149,7 +149,7 @@ function dualtron_Data() {
         {
             reactKey: 15,
             image: "/images/produits/trottinette/dualtron/dualtron-victor-luxury-plus/dualtron-victor-luxury-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![13].path + "#top",
             model: "Dualtron Victor Luxury Plus",
             price: "1949 €",
             battery: "60V 28Ah", 
@@ -161,33 +161,43 @@ function dualtron_Data() {
             image: "/images/produits/trottinette/dualtron/dualtron-city/dualtron-city-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron City",
-            price: "2249 €",
-            battery: "60V 25Ah", 
+            price: "1649 €",
+            battery: "60V 20Ah", 
             power: "4000W",
-            range: "80 km",
+            range: "70 km",
         },
         {
             reactKey: 17,
-            image: "/images/produits/trottinette/dualtron/dualtron-city/dualtron-city-n01-powerwatt34.jpg",
+            image: "/images/produits/trottinette/dualtron/dualtron-new-city/dualtron-new-city-n01-powerwatt34.jpg",
             path: "#",
-            model: "Dualtron City",
+            model: "Dualtron New City",
             price: "2149 €",
-            battery: "60V 25Ah", 
+            battery: "60V 20Ah", 
             power: "4000W",
             range: "65 km",
         },
         {
             reactKey: 18,
-            image: "/images/produits/trottinette/dualtron/dualtron-city/dualtron-city-n01-powerwatt34.jpg",
+            image: "/images/produits/trottinette/dualtron/dualtron-new-city/dualtron-new-city-n01-powerwatt34.jpg",
             path: "#",
-            model: "Dualtron City",
+            model: "Dualtron New City",
+            price: "1949 €",
+            battery: "60V 22,5Ah", 
+            power: "4000W",
+            range: "50 km",
+        },
+        {
+            reactKey: 19,
+            image: "/images/produits/trottinette/dualtron/dualtron-new-city/dualtron-new-city-n01-powerwatt34.jpg",
+            path: "#",
+            model: "Dualtron New City",
             price: "1949 €",
             battery: "60V 25Ah", 
             power: "4000W",
             range: "50 km",
         },
         {
-            reactKey: 19,
+            reactKey: 20,
             image: "/images/produits/trottinette/dualtron/dualtron-spider-max/dualtron-spider-max-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Spider Max",
@@ -197,7 +207,7 @@ function dualtron_Data() {
             range: "100 km",
         },
         {
-            reactKey: 20,
+            reactKey: 21,
             image: "/images/produits/trottinette/dualtron/dualtron-victor/dualtron-victor-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Victor",
@@ -207,7 +217,7 @@ function dualtron_Data() {
             range: "95 km",
         },
         {
-            reactKey: 21,
+            reactKey: 22,
             image: "/images/produits/trottinette/dualtron/dualtron-victor/dualtron-victor-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Victor",
@@ -217,7 +227,7 @@ function dualtron_Data() {
             range: "85 km",
         },
         {
-            reactKey: 22,
+            reactKey: 23,
             image: "/images/produits/trottinette/dualtron/dualtron-victor/dualtron-victor-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Victor",
@@ -227,7 +237,7 @@ function dualtron_Data() {
             range: "75 km",
         },
         {
-            reactKey: 23,
+            reactKey: 24,
             image: "/images/produits/trottinette/dualtron/dualtron-aminia-double-moteur/dualtron-aminia-double-moteur-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Aminia Double Moteur",
@@ -237,7 +247,7 @@ function dualtron_Data() {
             range: "50 km",
         },
         {
-            reactKey: 24,
+            reactKey: 25,
             image: "/images/produits/trottinette/dualtron/dualtron-aminia-double-moteur/dualtron-aminia-double-moteur-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Aminia Double Moteur",
@@ -247,7 +257,7 @@ function dualtron_Data() {
             range: "40 km",
         },
         {
-            reactKey: 25,
+            reactKey: 26,
             image: "/images/produits/trottinette/dualtron/dualtron-aminia/dualtron-aminia-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Aminia",
@@ -257,7 +267,7 @@ function dualtron_Data() {
             range: "45 km",
         },
         {
-            reactKey: 26,
+            reactKey: 27,
             image: "/images/produits/trottinette/dualtron/dualtron-aminia/dualtron-aminia-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Aminia",
@@ -267,7 +277,7 @@ function dualtron_Data() {
             range: "35 km",
         },
         {
-            reactKey: 27,
+            reactKey: 28,
             image: "/images/produits/trottinette/dualtron/dualtron-forever-limited/dualtron-forever-limited-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Forever Limited",
@@ -277,7 +287,7 @@ function dualtron_Data() {
             range: "80 km",
         },
         {
-            reactKey: 28,
+            reactKey: 29,
             image: "/images/produits/trottinette/dualtron/dualtron-forever-limited/dualtron-forever-limited-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Forever Limited",
@@ -287,7 +297,7 @@ function dualtron_Data() {
             range: "70 km",
         },
         {
-            reactKey: 29,
+            reactKey: 30,
             image: "/images/produits/trottinette/dualtron/dualtron-forever-limited/dualtron-forever-limited-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Forever Limited",
@@ -297,7 +307,7 @@ function dualtron_Data() {
             range: "65 km",
         },
         {
-            reactKey: 30,
+            reactKey: 31,
             image: "/images/produits/trottinette/dualtron/dualtron-forever-limited/dualtron-forever-limited-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Forever Limited",
@@ -307,7 +317,7 @@ function dualtron_Data() {
             range: "50 km",
         },
         {
-            reactKey: 31,
+            reactKey: 32,
             image: "/images/produits/trottinette/dualtron/dualtron-forever/dualtron-forever-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Forever",
@@ -317,7 +327,7 @@ function dualtron_Data() {
             range: "70 km",
         },
         {
-            reactKey: 32,
+            reactKey: 33,
             image: "/images/produits/trottinette/dualtron/dualtron-forever/dualtron-forever-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Forever",
@@ -327,7 +337,7 @@ function dualtron_Data() {
             range: "50 km",
         },
         {
-            reactKey: 33,
+            reactKey: 34,
             image: "/images/produits/trottinette/dualtron/dualtron-pop/dualtron-pop-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Pop",
@@ -337,7 +347,7 @@ function dualtron_Data() {
             range: "50 km",
         },
         {
-            reactKey: 34,
+            reactKey: 35,
             image: "/images/produits/trottinette/dualtron/dualtron-pop-double-moteur/dualtron-pop-double-moteur-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Pop Double Moteur",
@@ -347,7 +357,7 @@ function dualtron_Data() {
             range: "40 km",
         },
         {
-            reactKey: 35,
+            reactKey: 36,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-max/dualtron-togo-max-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Togo Max",
@@ -357,7 +367,7 @@ function dualtron_Data() {
             range: "50 km",
         },
         {
-            reactKey: 36,
+            reactKey: 37,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-ltd/dualtron-togo-ltd-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Togo LTD",
@@ -367,7 +377,7 @@ function dualtron_Data() {
             range: "50 km",
         },
         {
-            reactKey: 37,
+            reactKey: 38,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-ltd/dualtron-togo-ltd-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Togo LTD",
@@ -377,7 +387,7 @@ function dualtron_Data() {
             range: "50 km",
         },
         {
-            reactKey: 38,
+            reactKey: 39,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-ltd/dualtron-togo-ltd-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Togo LTD",
@@ -387,7 +397,7 @@ function dualtron_Data() {
             range: "40 km",
         },
         {
-            reactKey: 39,
+            reactKey: 40,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-pro/dualtron-togo-pro-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Togo Pro",
@@ -397,7 +407,7 @@ function dualtron_Data() {
             range: "35 km",
         },
         {
-            reactKey: 40,
+            reactKey: 41,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-plus/dualtron-togo-plus-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Togo Plus",
@@ -407,7 +417,7 @@ function dualtron_Data() {
             range: "35 km",
         },
         {
-            reactKey: 41,
+            reactKey: 42,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-plus/dualtron-togo-plus-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Togo Plus",
@@ -417,7 +427,7 @@ function dualtron_Data() {
             range: "50 km",
         },
         {
-            reactKey: 42,
+            reactKey: 43,
             image: "/images/produits/trottinette/dualtron/dualtron-sonic-pro/dualtron-sonic-pro-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Sonic Pro",
