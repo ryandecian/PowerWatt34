@@ -3,7 +3,7 @@ import style from "../../../../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../../../../components/layout/nav_Layout/Nav.root.layout";
-import DualtronVictorLTD31Ah_Root from "../../../../../../components/public/trottinette/brands/dualtron/product/dualtron-victor-ltd-31ah/DualtronVictorLTD35AhSamsung.root";
+import DualtronVictorLTD31Ah_Root from "../../../../../../components/public/trottinette/brands/dualtron/product/dualtron-victor-ltd-31ah/DualtronVictorLTD35Ah.root";
 import Footer_root_layout from "../../../../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des Hooks */
