@@ -20,6 +20,9 @@ import DualtronSpiderMax30Ah_Page from "../pages/public/trottinette_Page/brands/
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
 import DualtronThunder2_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder2.page";
 import DualtronThunder3_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder3.page";
+import DualtronVictor24Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictor24Ah.page";
+import DualtronVictor27Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictor27Ah.page";
+import DualtronVictor30Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictor30Ah.page";
 import DualtronVictorLuxuryPlus35AhSamsung_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLuxuryPlus35AhSamsung.page";
 import DualtronVictorLTD28Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD28Ah.page";
 import DualtronVictorLTD31Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD31Ah.page";
@@ -184,6 +187,21 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-spider-max-30ah",
                         element: <DualtronSpiderMax30Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![22].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-victor-24ah",
+                        element: <DualtronVictor24Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![23].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-victor-27ah",
+                        element: <DualtronVictor27Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![24].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-victor-30ah",
+                        element: <DualtronVictor30Ah_Page />,
                     },
                 ],
             },
