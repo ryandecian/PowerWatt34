@@ -4,7 +4,7 @@ import type { Trottinette_Data_Type } from "../../../../../../../types/produits/
 function dualtronNewCity20Ah_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
-        modele: "Dualtron City",
+        modele: "Dualtron New City - 20Ah",
         batterie: "60V 20Ah (LG)",
         autonomie: "50 à 70 km",
         moteurs: "Bimoteurs",

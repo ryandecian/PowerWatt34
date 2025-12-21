@@ -6,7 +6,7 @@ function dualtronThunder3_Data(): Trottinette_Data_Type {
         marque: "Dualtron",
         modele: "Dualtron Thunder 3",
         batterie: "72V 40Ah (LG M50LT)",
-        autonomie: "125 à 170 km",
+        autonomie: "110 à 170 km",
         moteurs: "Bimoteurs",
         taille_roues: "11 pouces tubeless",
         puissance_nominale: "5000W soit 2 x 2500W",
