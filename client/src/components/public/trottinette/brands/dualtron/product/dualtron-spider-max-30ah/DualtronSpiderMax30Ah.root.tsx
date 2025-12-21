@@ -6,18 +6,18 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { dualtronSpiderMax27Ah_Data } from "./dualtronSpiderMax30Ah.data";
-import { dualtronSpiderMax27Ah_img_Data } from "./dualtronSpiderMax30Ah.img.data";
+import { dualtronSpiderMax30Ah_Data } from "./dualtronSpiderMax30Ah.data";
+import { dualtronSpiderMax30Ah_img_Data } from "./dualtronSpiderMax30Ah.img.data";
 
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function DualtronSpiderMax27Ah_Root() {
-    const productData: Trottinette_Data_Type = dualtronSpiderMax27Ah_Data();
+function DualtronSpiderMax30Ah_Root() {
+    const productData: Trottinette_Data_Type = dualtronSpiderMax30Ah_Data();
     return (
-        <section className={`DualtronSpiderMax27Ah_Root ${style.ContainerRootRacine}`}>
+        <section className={`DualtronSpiderMax30Ah_Root ${style.ContainerRootRacine}`}>
             <h1 className={style.TitleH1}>{productData.modele}</h1>
-            <CarrouselProduct_Element dataImg={dualtronSpiderMax27Ah_img_Data()} />
+            <CarrouselProduct_Element dataImg={dualtronSpiderMax30Ah_img_Data()} />
             <br />
             <p><strong>Prix : {productData.prix}</strong></p>
             <TableTrottinette_Element data={productData} />
@@ -25,4 +25,4 @@ function DualtronSpiderMax27Ah_Root() {
     );
 }
 
-export default DualtronSpiderMax27Ah_Root;
+export default DualtronSpiderMax30Ah_Root;
