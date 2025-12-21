@@ -15,6 +15,8 @@ import DualtronCity_Page from "../pages/public/trottinette_Page/brands/dualtron_
 import DualtronNewCity20Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity20Ah.page";
 import DualtronNewCity22Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity22Ah.page";
 import DualtronNewCity25Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity25Ah.page";
+import DualtronSpiderMax27Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronSpiderMax27Ah.page";
+import DualtronSpiderMax30Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronSpiderMax30Ah.page";
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
 import DualtronThunder2_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder2.page";
 import DualtronThunder3_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder3.page";
@@ -172,6 +174,16 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-new-city-25ah",
                         element: <DualtronNewCity25Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![20].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-spider-max-27ah",
+                        element: <DualtronSpiderMax27Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![21].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-spider-max-30ah",
+                        element: <DualtronSpiderMax30Ah_Page />,
                     },
                 ],
             },
