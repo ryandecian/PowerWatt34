@@ -38,6 +38,11 @@ function dualtronSpiderMax27Ah_img_Data() {
             src: "/images/produits/trottinette/dualtron/dualtron-spider-max/dualtron-spider-max-n07-powerwatt34.jpg",
             alt: "Dualtron Spider Max - Image 7 - PowerWatt34",
         },
+        {
+            reactKey: 8,
+            src: "/images/produits/trottinette/dualtron/dualtron-spider-max/dualtron-spider-max-n08-powerwatt34.jpg",
+            alt: "Dualtron Spider Max - Image 8 - PowerWatt34",
+        },
     ]
 
     return tab;
