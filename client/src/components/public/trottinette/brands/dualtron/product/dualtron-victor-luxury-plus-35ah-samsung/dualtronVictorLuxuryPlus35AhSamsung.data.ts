@@ -4,7 +4,7 @@ import type { Trottinette_Data_Type } from "../../../../../../../types/produits/
 function dualtronVictorLuxuryPlus35AhSamsung_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
-        modele: "Dualtron Victor Luxury Plus",
+        modele: "Dualtron Victor Luxury Plus - 28Ah (Samsung)",
         batterie: "60V 35Ah (Samsung 21700)",
         autonomie: "90 à 120 km",
         moteurs: "Bimoteurs",
