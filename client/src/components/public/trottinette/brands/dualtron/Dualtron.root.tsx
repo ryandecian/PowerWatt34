@@ -65,7 +65,6 @@ function Dualtron_Root() {
                         placeholder="Rechercher un modèle Dualtron..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        // className={style.searchBar}
                     />
                 </div>
             </div>
