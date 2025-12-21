@@ -6,7 +6,7 @@ function dualtronVictor24Ah_Data(): Trottinette_Data_Type {
         marque: "Dualtron",
         modele: "Dualtron Victor",
         batterie: "60V 24Ah",
-        autonomie: "60 à 75 km",
+        autonomie: "60 à 80 km",
         moteurs: "Bimoteurs",
         taille_roues: "10 pouces tubeless",
         puissance_nominale: "2000W soit 2 x 1000W",
