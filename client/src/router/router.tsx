@@ -11,6 +11,10 @@ import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page
 import DualtronAchilleus_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAchilleus.page";
 import DualtronAchilleusRouge_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAchilleusRouge.page";
 import DualtronAlien_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAlien.page";
+import DualtronAminia13Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAminia13Ah.page";
+import DualtronAminia15Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAminia15Ah.page";
+import DualtronAminia17Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAminia17Ah.page";
+import DualtronAminia21Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAminia21Ah.page";
 import DualtronCity_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronCity.page";
 import DualtronNewCity20Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity20Ah.page";
 import DualtronNewCity22Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity22Ah.page";
@@ -202,6 +206,26 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-victor-30ah",
                         element: <DualtronVictor30Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![25].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-aminia-13ah",
+                        element: <DualtronAminia13Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![26].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-aminia-15ah",
+                        element: <DualtronAminia15Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![27].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-aminia-17ah",
+                        element: <DualtronAminia17Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![28].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-aminia-21ah",
+                        element: <DualtronAminia21Ah_Page />,
                     },
                 ],
             },
