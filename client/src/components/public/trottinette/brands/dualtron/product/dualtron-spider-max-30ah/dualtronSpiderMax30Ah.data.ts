@@ -1,26 +1,26 @@
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function dualtronNewCity22Ah_Data(): Trottinette_Data_Type {
+function dualtronSpiderMax30Ah_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
-        modele: "Dualtron New City - 22,5Ah",
-        batterie: "60V 22,5Ah (LG)",
-        autonomie: "60 à 80 km",
+        modele: "Dualtron Spider Max",
+        batterie: "60V 30Ah",
+        autonomie: "80 à 100 km",
         moteurs: "Bimoteurs",
-        taille_roues: "15 pouces",
-        puissance_nominale: "2000W soit 2 x 1000W",
+        taille_roues: "10 pouces",
+        puissance_nominale: "2400W soit 2 x 1200W",
         puissance_maximale: "4000W soit 2 x 2000W",
         vitesse_bridée: "25 km/h",
         vitesse_maximale: "70 km/h",
-        freinage: "Hydraulique à disques",
+        freinage: "Hydraulique à disques + frein électronique",
         clignotants: "Oui",
-        poids: "41,2 kg",
+        poids: "31,5 kg",
         charge_maximale: "120 kg",
-        prix: "1949 €",
+        prix: "à partir de 1549 €",
     }
 
     return data;
 }
 
-export { dualtronNewCity22Ah_Data };
+export { dualtronSpiderMax30Ah_Data };
