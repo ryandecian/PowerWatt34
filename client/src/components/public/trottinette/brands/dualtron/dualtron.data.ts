@@ -159,7 +159,7 @@ function dualtron_Data() {
         {
             reactKey: 16,
             image: "/images/produits/trottinette/dualtron/dualtron-city/dualtron-city-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![16].path + "#top",
             model: "Dualtron City",
             price: "1649 €",
             battery: "60V 20Ah", 
