@@ -12,6 +12,9 @@ import DualtronAchilleus_Page from "../pages/public/trottinette_Page/brands/dual
 import DualtronAchilleusRouge_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAchilleusRouge.page";
 import DualtronAlien_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAlien.page";
 import DualtronCity_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronCity.page";
+import DualtronNewCity20Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity20Ah.page";
+import DualtronNewCity22Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity22Ah.page";
+import DualtronNewCity25Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity25Ah.page";
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
 import DualtronThunder2_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder2.page";
 import DualtronThunder3_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder3.page";
@@ -154,6 +157,21 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-city",
                         element: <DualtronCity_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![17].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-new-city-20ah",
+                        element: <DualtronNewCity20Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![18].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-new-city-22ah",
+                        element: <DualtronNewCity22Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![19].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-new-city-25ah",
+                        element: <DualtronNewCity25Ah_Page />,
                     },
                 ],
             },
