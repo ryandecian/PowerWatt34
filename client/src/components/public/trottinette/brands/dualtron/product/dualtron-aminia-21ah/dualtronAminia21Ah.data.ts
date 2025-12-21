@@ -17,7 +17,7 @@ function dualtronAminia21Ah_Data(): Trottinette_Data_Type {
         clignotants: "Oui",
         poids: "30 kg",
         charge_maximale: "120 kg",
-        prix: "1899 €",
+        prix: "1349 €",
     }
 
     return data;
