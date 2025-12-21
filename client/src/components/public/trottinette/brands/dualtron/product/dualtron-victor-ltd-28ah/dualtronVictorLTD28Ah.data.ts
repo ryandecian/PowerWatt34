@@ -4,7 +4,7 @@ import type { Trottinette_Data_Type } from "../../../../../../../types/produits/
 function dualtronVictorLTD28Ah_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
-        modele: "Victor LTD",
+        modele: "Victor LTD - 28Ah",
         batterie: "60V 31Ah (Samsung 21700)",
         autonomie: "70 à 90 km",
         moteurs: "Bimoteurs",
