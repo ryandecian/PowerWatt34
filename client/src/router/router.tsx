@@ -11,10 +11,11 @@ import Dualtron_Page from "../pages/public/trottinette_Page/brands/dualtron_Page
 import DualtronAchilleus_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAchilleus.page";
 import DualtronAchilleusRouge_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAchilleusRouge.page";
 import DualtronAlien_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAlien.page";
-import DualtronVictorLuxuryPlus35AhSamsung_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLuxuryPlus35AhSamsung.page";
+import DualtronCity_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronCity.page";
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
 import DualtronThunder2_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder2.page";
 import DualtronThunder3_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder3.page";
+import DualtronVictorLuxuryPlus35AhSamsung_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLuxuryPlus35AhSamsung.page";
 import DualtronVictorLTD28Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD28Ah.page";
 import DualtronVictorLTD31Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD31Ah.page";
 import DualtronVictorLTD35Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictorLTD35Ah.page";
@@ -148,6 +149,11 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-luxury-plus-35ah",
                         element: <DualtronVictorLuxuryPlus35Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![16].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-city",
+                        element: <DualtronCity_Page />,
                     },
                 ],
             },
