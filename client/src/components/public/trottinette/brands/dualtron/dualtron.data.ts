@@ -199,7 +199,7 @@ function dualtron_Data() {
         {
             reactKey: 20,
             image: "/images/produits/trottinette/dualtron/dualtron-spider-max/dualtron-spider-max-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![20].path + "#top",
             model: "Dualtron Spider Max",
             price: "1449 €",
             battery: "60V 27Ah",
@@ -209,7 +209,7 @@ function dualtron_Data() {
         {
             reactKey: 21,
             image: "/images/produits/trottinette/dualtron/dualtron-spider-max/dualtron-spider-max-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![21].path + "#top",
             model: "Dualtron Spider Max",
             price: "1549 €",
             battery: "60V 30Ah",
