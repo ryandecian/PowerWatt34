@@ -254,7 +254,7 @@ function dualtron_Data() {
             price: "1349 €",
             battery: "52V 21Ah", 
             power: "2900W",
-            range: "50 km",
+            range: "65 km",
         },
         {
             reactKey: 26,
@@ -264,7 +264,7 @@ function dualtron_Data() {
             price: "979 €",
             battery: "52V 15,6Ah", 
             power: "2900W",
-            range: "40 km",
+            range: "50 km",
         },
         {
             reactKey: 27,
@@ -272,9 +272,9 @@ function dualtron_Data() {
             path: "#",
             model: "Dualtron Aminia",
             price: "979 €",
-            battery: "52V 17Ah", 
+            battery: "52V 17,5Ah", 
             power: "1450W",
-            range: "45 km",
+            range: "60 km",
         },
         {
             reactKey: 28,
@@ -284,7 +284,7 @@ function dualtron_Data() {
             price: "749 €",
             battery: "52V 13Ah", 
             power: "1450W",
-            range: "35 km",
+            range: "45 km",
         },
         {
             reactKey: 29,
