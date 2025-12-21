@@ -1,12 +1,12 @@
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function dualtronVictor24Ah_Data(): Trottinette_Data_Type {
+function dualtronVictor27Ah_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
         modele: "Dualtron Victor",
-        batterie: "60V 24Ah",
-        autonomie: "60 à 80 km",
+        batterie: "60V 27Ah",
+        autonomie: "70 à 85 km",
         moteurs: "Bimoteurs",
         taille_roues: "10 pouces tubeless",
         puissance_nominale: "2000W soit 2 x 1000W",
@@ -17,10 +17,10 @@ function dualtronVictor24Ah_Data(): Trottinette_Data_Type {
         clignotants: "Oui",
         poids: "33 kg",
         charge_maximale: "120 kg",
-        prix: "1549 €",
+        prix: "1599 €",
     }
 
     return data;
 }
 
-export { dualtronVictor24Ah_Data };
+export { dualtronVictor27Ah_Data };
