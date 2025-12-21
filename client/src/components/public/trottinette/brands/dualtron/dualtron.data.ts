@@ -249,7 +249,7 @@ function dualtron_Data() {
         {
             reactKey: 25,
             image: "/images/produits/trottinette/dualtron/dualtron-aminia-double-moteur/dualtron-aminia-double-moteur-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![28].path + "#top",
             model: "Dualtron Aminia Double Moteur",
             price: "1349 €",
             battery: "52V 21Ah", 
@@ -259,7 +259,7 @@ function dualtron_Data() {
         {
             reactKey: 26,
             image: "/images/produits/trottinette/dualtron/dualtron-aminia-double-moteur/dualtron-aminia-double-moteur-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![27].path + "#top",
             model: "Dualtron Aminia Double Moteur",
             price: "979 €",
             battery: "52V 15,6Ah", 
@@ -269,7 +269,7 @@ function dualtron_Data() {
         {
             reactKey: 27,
             image: "/images/produits/trottinette/dualtron/dualtron-aminia/dualtron-aminia-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![26].path + "#top",
             model: "Dualtron Aminia",
             price: "979 €",
             battery: "52V 17,5Ah", 
@@ -279,7 +279,7 @@ function dualtron_Data() {
         {
             reactKey: 28,
             image: "/images/produits/trottinette/dualtron/dualtron-aminia/dualtron-aminia-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![25].path + "#top",
             model: "Dualtron Aminia",
             price: "749 €",
             battery: "52V 13Ah", 
