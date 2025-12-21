@@ -1,12 +1,12 @@
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function dualtronAminia21Ah_Data(): Trottinette_Data_Type {
+function dualtronAminia15Ah_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
-        modele: "Dualtron Aminia - 21Ah",
-        batterie: "52V 21Ah (LG)",
-        autonomie: "50 à 65 km",
+        modele: "Dualtron Aminia - 15,6Ah",
+        batterie: "52V 15,6Ah (LG)",
+        autonomie: "35 à 50 km",
         moteurs: "Bimoteurs",
         taille_roues: "9 pouces tubeless",
         puissance_nominale: "2000W soit 2 x 1000W",
@@ -23,4 +23,4 @@ function dualtronAminia21Ah_Data(): Trottinette_Data_Type {
     return data;
 }
 
-export { dualtronAminia21Ah_Data };
+export { dualtronAminia15Ah_Data };
