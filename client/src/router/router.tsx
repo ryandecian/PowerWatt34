@@ -16,6 +16,10 @@ import DualtronAminia15Ah_Page from "../pages/public/trottinette_Page/brands/dua
 import DualtronAminia17Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAminia17Ah.page";
 import DualtronAminia21Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAminia21Ah.page";
 import DualtronCity_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronCity.page";
+import DualtronForeverLimited18Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronForeverLimited18Ah.page";
+import DualtronForeverLimited24Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronForeverLimited24Ah.page";
+import DualtronForeverLimited27Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronForeverLimited27Ah.page";
+import DualtronForeverLimited30Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronForeverLimited30Ah.page";
 import DualtronNewCity20Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity20Ah.page";
 import DualtronNewCity22Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity22Ah.page";
 import DualtronNewCity25Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity25Ah.page";
@@ -226,6 +230,26 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-aminia-21ah",
                         element: <DualtronAminia21Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![29].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-forever-limited-18ah",
+                        element: <DualtronForeverLimited18Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![30].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-forever-limited-24ah",
+                        element: <DualtronForeverLimited24Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![31].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-forever-limited-27ah",
+                        element: <DualtronForeverLimited27Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![32].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-forever-limited-30ah",
+                        element: <DualtronForeverLimited30Ah_Page />,
                     },
                 ],
             },
