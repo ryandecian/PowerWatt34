@@ -289,7 +289,7 @@ function dualtron_Data() {
         {
             reactKey: 29,
             image: "/images/produits/trottinette/dualtron/dualtron-forever-limited/dualtron-forever-limited-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![32].path + "#top",
             model: "Dualtron Forever Limited",
             price: "1449 €",
             battery: "60V 30Ah", 
@@ -299,7 +299,7 @@ function dualtron_Data() {
         {
             reactKey: 30,
             image: "/images/produits/trottinette/dualtron/dualtron-forever-limited/dualtron-forever-limited-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![31].path + "#top",
             model: "Dualtron Forever Limited",
             price: "1399 €",
             battery: "60V 27Ah", 
@@ -309,7 +309,7 @@ function dualtron_Data() {
         {
             reactKey: 31,
             image: "/images/produits/trottinette/dualtron/dualtron-forever-limited/dualtron-forever-limited-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![30].path + "#top",
             model: "Dualtron Forever Limited",
             price: "1349 €",
             battery: "60V 24Ah", 
@@ -319,7 +319,7 @@ function dualtron_Data() {
         {
             reactKey: 32,
             image: "/images/produits/trottinette/dualtron/dualtron-forever-limited/dualtron-forever-limited-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![29].path + "#top",
             model: "Dualtron Forever Limited",
             price: "1249 €",
             battery: "60V 18,2Ah", 
