@@ -314,7 +314,7 @@ function dualtron_Data() {
             price: "1349 €",
             battery: "60V 24Ah", 
             power: "2900W",
-            range: "65 km",
+            range: "60 km",
         },
         {
             reactKey: 32,
