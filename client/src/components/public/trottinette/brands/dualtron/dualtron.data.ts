@@ -341,7 +341,7 @@ function dualtron_Data() {
             image: "/images/produits/trottinette/dualtron/dualtron-forever/dualtron-forever-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Forever",
-            price: "1149 €",
+            price: "1099 €",
             battery: "60V 18Ah", 
             power: "2900W",
             range: "50 km",
