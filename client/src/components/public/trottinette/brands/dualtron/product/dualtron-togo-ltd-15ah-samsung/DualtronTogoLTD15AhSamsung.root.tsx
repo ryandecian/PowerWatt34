@@ -6,18 +6,18 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { dualtronTogoMax16Ah_Data } from "./dualtronTogoMax16Ah.data";
-import { dualtronTogoMax16Ah_img_Data } from "./dualtronTogoMax16Ah.img.data";
+import { dualtronTogoLTD15AhSamsung_Data } from "./dualtronTogoLTD15AhSamsung.data";
+import { dualtronTogoLTD15AhSamsung_img_Data } from "./dualtronTogoLTD15AhSamsung.img.data";
 
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function DualtronTogoMax16Ah_Root() {
-    const productData: Trottinette_Data_Type = dualtronTogoMax16Ah_Data();
+function DualtronTogoLTD15AhSamsung_Root() {
+    const productData: Trottinette_Data_Type = dualtronTogoLTD15AhSamsung_Data();
     return (
-        <section className={`DualtronTogoMax16Ah_Root ${style.ContainerRootRacine}`}>
+        <section className={`DualtronTogoLTD15AhSamsung_Root ${style.ContainerRootRacine}`}>
             <h1 className={style.TitleH1}>{productData.modele}</h1>
-            <CarrouselProduct_Element dataImg={dualtronTogoMax16Ah_img_Data()} />
+            <CarrouselProduct_Element dataImg={dualtronTogoLTD15AhSamsung_img_Data()} />
             <br />
             <p><strong>Prix : {productData.prix}</strong></p>
             <TableTrottinette_Element data={productData} />
@@ -25,4 +25,4 @@ function DualtronTogoMax16Ah_Root() {
     );
 }
 
-export default DualtronTogoMax16Ah_Root;
+export default DualtronTogoLTD15AhSamsung_Root;
