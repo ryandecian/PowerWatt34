@@ -6,7 +6,7 @@ function dualtronPopDoubleMoteur20Ah_Data(): Trottinette_Data_Type {
         marque: "Dualtron",
         modele: "Dualtron Pop",
         batterie: "52V 20Ah (LG)",
-        autonomie: "35 à 50 km",
+        autonomie: "25 à 40 km",
         moteurs: "Bimoteur",
         taille_roues: "9 pouces tubeless",
         puissance_nominale: "1800W soit 2 x 900W",
