@@ -32,6 +32,10 @@ import DualtronSpiderMax30Ah_Page from "../pages/public/trottinette_Page/brands/
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
 import DualtronThunder2_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder2.page";
 import DualtronThunder3_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronThunder3.page";
+import DualtronTogoLTD12Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronTogoLTD12Ah.page";
+import DualtronTogoLTD15Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronTogoLTD15Ah.page";
+import DualtronTogoLTD15AhSamsung_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronTogoLTD15AhSamsung.page";
+import DualtronTogoMax16Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronTogoMax16Ah.page";
 import DualtronVictor24Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictor24Ah.page";
 import DualtronVictor27Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictor27Ah.page";
 import DualtronVictor30Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronVictor30Ah.page";
@@ -274,6 +278,26 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-pop-double-moteur-20ah",
                         element: <DualtronPopDoubleMoteur20Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![37].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-togo-ltd-12ah",
+                        element: <DualtronTogoLTD12Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![38].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-togo-ltd-15ah",
+                        element: <DualtronTogoLTD15Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![39].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-togo-ltd-15ah-samsung",
+                        element: <DualtronTogoLTD15AhSamsung_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![40].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-togo-max-16ah",
+                        element: <DualtronTogoMax16Ah_Page />,
                     },
                 ],
             },
