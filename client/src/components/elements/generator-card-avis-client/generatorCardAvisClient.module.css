@@ -47,7 +47,7 @@
     align-items: start;
     flex-direction: column;
     width: calc(100% - 1.25rem); /* 20px */
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 10px;
     border-radius: 12px;
     background: var(--ColorTextWhite);
     margin: 1.25rem; /* 20px 20px 20px 20px */
