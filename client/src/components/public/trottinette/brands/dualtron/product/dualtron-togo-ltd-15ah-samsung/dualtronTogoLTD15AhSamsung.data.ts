@@ -10,7 +10,7 @@ function dualtronTogoLTD15AhSamsung_Data(): Trottinette_Data_Type {
         moteurs: "Monomoteur",
         taille_roues: "9 pouces tubeless",
         puissance_nominale: "900W",
-        puissance_maximale: "1000W",
+        puissance_maximale: "1200W",
         vitesse_bridée: "25 km/h",
         vitesse_maximale: "52 km/h",
         freinage: "Disque AV + AR + frein électronique",
