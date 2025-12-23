@@ -5,7 +5,7 @@ function dualtronForeverLimited18Ah_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
         modele: "Dualtron Forever Limited",
-        batterie: "60V 18Ah (LG 21700)",
+        batterie: "60V 18,2Ah (LG 21700)",
         autonomie: "35 à 50 km",
         moteurs: "Bimoteurs",
         taille_roues: "10 pouces tubeless",
