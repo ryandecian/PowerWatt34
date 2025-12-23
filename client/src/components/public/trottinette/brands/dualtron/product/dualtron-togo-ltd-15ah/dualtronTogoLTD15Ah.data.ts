@@ -4,7 +4,7 @@ import type { Trottinette_Data_Type } from "../../../../../../../types/produits/
 function dualtronTogoLTD15Ah_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
-        modele: "Dualtron Togo LTD 15Ah Samsung",
+        modele: "Dualtron Togo LTD 15Ah",
         batterie: "60V 15Ah (Samsung)",
         autonomie: "35 à 50 km",
         moteurs: "Monomoteur",
