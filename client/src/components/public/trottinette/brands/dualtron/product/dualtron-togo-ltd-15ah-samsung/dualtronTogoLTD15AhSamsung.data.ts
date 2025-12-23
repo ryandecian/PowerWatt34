@@ -1,11 +1,11 @@
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function dualtronTogoMax16Ah_Data(): Trottinette_Data_Type {
+function dualtronTogoLTD15AhSamsung_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
-        modele: "Dualtron Togo Max",
-        batterie: "60V 15,9Ah",
+        modele: "Dualtron Togo LTD 15Ah Samsung",
+        batterie: "60V 15Ah (Samsung)",
         autonomie: "35 à 50 km",
         moteurs: "Monomoteur",
         taille_roues: "9 pouces tubeless",
@@ -17,10 +17,10 @@ function dualtronTogoMax16Ah_Data(): Trottinette_Data_Type {
         clignotants: "Non",
         poids: "25 kg",
         charge_maximale: "100 kg",
-        prix: "949 €",
+        prix: "879 €",
     }
 
     return data;
 }
 
-export { dualtronTogoMax16Ah_Data };
+export { dualtronTogoLTD15AhSamsung_Data };
