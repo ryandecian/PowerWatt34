@@ -6,8 +6,8 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { dualtronForever18
-import { dualtronForever27Ah_img_Data } from "./dualtronForever18Ah.img.data";
+import { dualtronForever18Ah_Data } from "./dualtronForever18Ah.data";
+import { dualtronForever18Ah_img_Data } from "./dualtronForever18Ah.img.data";
 
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
