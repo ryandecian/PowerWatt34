@@ -349,7 +349,7 @@ function dualtron_Data() {
         {
             reactKey: 35,
             image: "/images/produits/trottinette/dualtron/dualtron-pop/dualtron-pop-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![35].path + "#top",
             model: "Dualtron Pop",
             price: "1049 €",
             battery: "52V 25Ah", 
@@ -359,7 +359,7 @@ function dualtron_Data() {
         {
             reactKey: 36,
             image: "/images/produits/trottinette/dualtron/dualtron-pop-double-moteur/dualtron-pop-double-moteur-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![36].path + "#top",
             model: "Dualtron Pop Double Moteur",
             price: "1249 €",
             battery: "52V 20Ah", 
