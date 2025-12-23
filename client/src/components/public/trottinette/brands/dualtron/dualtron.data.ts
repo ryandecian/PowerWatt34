@@ -369,17 +369,17 @@ function dualtron_Data() {
         {
             reactKey: 37,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-max/dualtron-togo-max-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![40].path + "#top",
             model: "Dualtron Togo Max",
             price: "949 €",
-            battery: "60V 16Ah", 
+            battery: "60V 15,9Ah", 
             power: "1200W",
             range: "50 km",
         },
         {
             reactKey: 38,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-ltd/dualtron-togo-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![39].path + "#top",
             model: "Dualtron Togo LTD",
             price: "879 €",
             battery: "60V 15Ah Samsung", 
@@ -389,7 +389,7 @@ function dualtron_Data() {
         {
             reactKey: 39,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-ltd/dualtron-togo-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![38].path + "#top",
             model: "Dualtron Togo LTD",
             price: "849 €",
             battery: "60V 15Ah", 
@@ -399,7 +399,7 @@ function dualtron_Data() {
         {
             reactKey: 40,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-ltd/dualtron-togo-ltd-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![37].path + "#top",
             model: "Dualtron Togo LTD",
             price: "779 €",
             battery: "60V 12Ah", 
