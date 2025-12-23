@@ -16,6 +16,8 @@ import DualtronAminia15Ah_Page from "../pages/public/trottinette_Page/brands/dua
 import DualtronAminia17Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAminia17Ah.page";
 import DualtronAminia21Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronAminia21Ah.page";
 import DualtronCity_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronCity.page";
+import DualtronForever18Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronForever18Ah.page";
+import DualtronForever27Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronForever27Ah.page";
 import DualtronForeverLimited18Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronForeverLimited18Ah.page";
 import DualtronForeverLimited24Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronForeverLimited24Ah.page";
 import DualtronForeverLimited27Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronForeverLimited27Ah.page";
@@ -250,6 +252,16 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-forever-limited-30ah",
                         element: <DualtronForeverLimited30Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![33].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-forever-27ah",
+                        element: <DualtronForever27Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![34].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-forever-18ah",
+                        element: <DualtronForever18Ah_Page />,
                     },
                 ],
             },
