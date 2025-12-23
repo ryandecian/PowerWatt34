@@ -17,7 +17,7 @@ function dualtronForeverLimited27Ah_Data(): Trottinette_Data_Type {
         clignotants: "Oui",
         poids: "27 kg",
         charge_maximale: "100 kg",
-        prix: "1449 €",
+        prix: "1399 €",
     }
 
     return data;
