@@ -5,7 +5,7 @@ function dualtronThunder3DGT_img_Data() {
     const tab: ImageCarousselProduct_Type = [
         {
             reactKey: 1,
-            src: "/images/produits/trottinette/dualtron/dualtron-thunder-3-dgt/dualtron-thunder-3-dgt-n01-powerwatt34.webp",
+            src: "/images/produits/trottinette/dualtron/dualtron-thunder-3-dgt/dualtron-thunder-3-dgt-n01-powerwatt34.jpg",
             alt: "Dualtron Thunder 3 DGT - Image 1 - PowerWatt34",
         },
         {
