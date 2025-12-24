@@ -5,7 +5,7 @@ function dualtronThunder3_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
         modele: "Dualtron Thunder 3",
-        batterie: "72V 40Ah (LG M50LT)",
+        batterie: "72V 40Ah (LG)",
         autonomie: "110 à 170 km",
         moteurs: "Bimoteurs",
         taille_roues: "11 pouces tubeless",
@@ -16,7 +16,7 @@ function dualtronThunder3_Data(): Trottinette_Data_Type {
         freinage: "Hydraulique NUTT à disques 160mm",
         clignotants: "Oui",
         poids: "53 kg",
-        charge_maximale: "120–130 kg",
+        charge_maximale: "130 kg",
         prix: "3049 €",
     }
 
