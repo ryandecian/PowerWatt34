@@ -27,6 +27,7 @@ import DualtronNewCity22Ah_Page from "../pages/public/trottinette_Page/brands/du
 import DualtronNewCity25Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronNewCity25Ah.page";
 import DualtronPop25Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronPop25Ah.page";
 import DualtronPopDoubleMoteur20Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronPopDoubleMoteur20Ah.page";
+import DualtronSonicPro10Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronSonicPro10Ah.page";
 import DualtronSpiderMax27Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronSpiderMax27Ah.page";
 import DualtronSpiderMax30Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronSpiderMax30Ah.page";
 import DualtronStormLTD_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/DualtronStormLTD.page";
@@ -310,6 +311,11 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/dualtron/dualtron-togo-plus-12ah",
                         element: <DualtronTogoPlus12Ah_Page />,
+                    },
+                    /* {router[4]!.children![1]!.children![43].path} */
+                    {
+                        path: "/produits/trottinette/dualtron/dualtron-sonic-pro-10ah",
+                        element: <DualtronSonicPro10Ah_Page />,
                     },
                 ],
             },
