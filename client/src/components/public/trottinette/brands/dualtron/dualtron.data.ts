@@ -431,7 +431,7 @@ function dualtron_Data() {
             image: "/images/produits/trottinette/dualtron/dualtron-sonic-pro/dualtron-sonic-pro-n01-powerwatt34.jpg",
             path: "#",
             model: "Dualtron Sonic Pro",
-            price: "649 €",
+            price: "599 €",
             battery: "36V 10Ah", 
             power: "700W",
             range: "30 km",
