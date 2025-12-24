@@ -409,7 +409,7 @@ function dualtron_Data() {
         {
             reactKey: 41,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-pro/dualtron-togo-pro-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![41].path + "#top",
             model: "Dualtron Togo Pro",
             price: "679 €",
             battery: "48V 13,5Ah", 
