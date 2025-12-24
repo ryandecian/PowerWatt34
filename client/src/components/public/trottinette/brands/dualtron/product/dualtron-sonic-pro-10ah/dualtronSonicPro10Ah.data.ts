@@ -6,7 +6,7 @@ function dualtronSonicPro10Ah_Data(): Trottinette_Data_Type {
         marque: "Dualtron",
         modele: "Dualtron Sonic Pro 10Ah",
         batterie: "36V 10Ah",
-        autonomie: "20 à 35 km",
+        autonomie: "20 à 30 km",
         moteurs: "Bimoteurs",
         taille_roues: "8 pouces pleins",
         puissance_nominale: "700W soit 2 x 350W",
