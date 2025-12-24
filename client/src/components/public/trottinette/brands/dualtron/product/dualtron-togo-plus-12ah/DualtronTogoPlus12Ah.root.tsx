@@ -6,7 +6,7 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { dualtronTogoPlus12Ah_img_Data } from "./dualtronTogoPlus12Ah.img.data";
+import { dualtronTogoPlus12Ah_Data } from "./dualtronTogoPlus12Ah.data";
 import { dualtronTogoPlus12Ah_img_Data } from "./dualtronTogoPlus12Ah.img.data";
 
 /* Import des Types */
