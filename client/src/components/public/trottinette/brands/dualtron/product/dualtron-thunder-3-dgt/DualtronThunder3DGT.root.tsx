@@ -6,18 +6,18 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { dualtronThunder3_Data } from "./dualtronThunder3.data";
-import { dualtronThunder3_img_Data } from "./dualtronThunder3.img.data";
+import { dualtronThunder3DGT_Data } from "./dualtronThunder3DGT.data";
+import { dualtronThunder3DGT_img_Data } from "./dualtronThunder3DGT.img.data";
 
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function DualtronThunder3_Root() {
-    const productData: Trottinette_Data_Type = dualtronThunder3_Data();
+function DualtronThunder3DGT_Root() {
+    const productData: Trottinette_Data_Type = dualtronThunder3DGT_Data();
     return (
-        <section className={`DualtronThunder3_Root ${style.ContainerRootRacine}`}>
+        <section className={`DualtronThunder3DGT_Root ${style.ContainerRootRacine}`}>
             <h1 className={style.TitleH1}>{productData.modele}</h1>
-            <CarrouselProduct_Element dataImg={dualtronThunder3_img_Data()} />
+            <CarrouselProduct_Element dataImg={dualtronThunder3DGT_img_Data()} />
             <br />
             <p><strong>Prix : {productData.prix}</strong></p>
             <TableTrottinette_Element data={productData} />
@@ -25,4 +25,4 @@ function DualtronThunder3_Root() {
     );
 }
 
-export default DualtronThunder3_Root;
+export default DualtronThunder3DGT_Root;
