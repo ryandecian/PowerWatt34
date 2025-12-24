@@ -419,7 +419,7 @@ function dualtron_Data() {
         {
             reactKey: 42,
             image: "/images/produits/trottinette/dualtron/dualtron-togo-plus/dualtron-togo-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![1]!.children![42].path + "#top",
             model: "Dualtron Togo Plus",
             price: "615 €",
             battery: "48V 12Ah", 
