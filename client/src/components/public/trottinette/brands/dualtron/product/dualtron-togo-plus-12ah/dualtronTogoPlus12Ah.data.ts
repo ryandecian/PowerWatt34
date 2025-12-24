@@ -1,7 +1,7 @@
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function dualtronTogoPlus48V12Ah_Data(): Trottinette_Data_Type {
+function dualtronTogoPlus12Ah_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
         modele: "Dualtron Togo Plus - 12Ah",
@@ -23,4 +23,4 @@ function dualtronTogoPlus48V12Ah_Data(): Trottinette_Data_Type {
     return data;
 }
 
-export { dualtronTogoPlus48V12Ah_Data };
+export { dualtronTogoPlus12Ah_Data };
