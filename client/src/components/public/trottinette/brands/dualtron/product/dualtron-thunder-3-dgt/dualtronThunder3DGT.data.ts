@@ -1,10 +1,10 @@
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function dualtronThunder3_Data(): Trottinette_Data_Type {
+function dualtronThunder3DGT_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Dualtron",
-        modele: "Dualtron Thunder 3",
+        modele: "Dualtron Thunder 3 DGT",
         batterie: "72V 40Ah (LG)",
         autonomie: "110 à 170 km",
         moteurs: "Bimoteurs",
@@ -17,10 +17,10 @@ function dualtronThunder3_Data(): Trottinette_Data_Type {
         clignotants: "Oui",
         poids: "53 kg",
         charge_maximale: "130 kg",
-        prix: "3049 €",
+        prix: "2799 €",
     }
 
     return data;
 }
 
-export { dualtronThunder3_Data };
+export { dualtronThunder3DGT_Data };
