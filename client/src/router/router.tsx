@@ -335,7 +335,7 @@ const router: Router_Type = [
                         path: "/produits/trottinette/teverun",
                         element: <Teverun_Page />,
                     },
-                    /* {router[4].children?.[2].children?.[1].path} : page parent */
+                    /* {router[4]!.children![2!].children![1].path} : page parent */
                     {
                         path: "/produits/trottinette/teverun/teverun-fighter-7260r-v4-edition-2025",
                         element: <TeverunFighter7260RV4Edition2025_Page />,
