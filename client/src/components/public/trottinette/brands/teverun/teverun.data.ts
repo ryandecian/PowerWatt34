@@ -1,14 +1,17 @@
 /* Import des Types */
 import type { CardsTrottinetteBrand_data_Type } from "../../../../../types/produits/cardsTrottinetteBrand.data.type";
 
+/* Import des composants Router */
+import router from "../../../../../router/router";
+
 function teverun_Data() {
     const tab: CardsTrottinetteBrand_data_Type = [
         {
             reactKey: 1,
             image: "/images/produits/trottinette/teverun/teverun-fighter-7260r/teverun-fighter-7260r-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![2!].children![1].path + "#top",
             model: "Teverun Fighter 7260R Edition 2025 V4",
-            price: "4799 €",
+            price: "4490 €",
             battery: "72V 60Ah", 
             power: "15000W",
             range: "200 km",
