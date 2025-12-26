@@ -56,6 +56,7 @@ import Home_Page from "../pages/public/home_Page/Home.page";
 import Kaboo_Page from "../pages/public/trottinette_Page/brands/kaboo_Page/Kaboo.page";
 import MentionsLegales_Page from "../pages/public/mentions-legales_Page/MentionsLegales.page";
 import Teverun_Page from "../pages/public/trottinette_Page/brands/teverun_Page/Teverun.page";
+import TeverunFighter7260RV4Edition2025_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighter7260RV4Edition2025.page";
 import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 import Vsett_Page from "../pages/public/trottinette_Page/brands/vsett_Page/Vsett.page";
 
@@ -333,6 +334,11 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/teverun",
                         element: <Teverun_Page />,
+                    },
+                    /* {router[4].children?.[2].children?.[1].path} : page parent */
+                    {
+                        path: "/produits/trottinette/teverun/teverun-fighter-7260r-v4-edition-2025",
+                        element: <TeverunFighter7260RV4Edition2025_Page />,
                     },
                 ],
             },
