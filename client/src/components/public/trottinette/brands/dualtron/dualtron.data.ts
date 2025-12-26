@@ -436,6 +436,16 @@ function dualtron_Data() {
             power: "800W",
             range: "30 km",
         },
+        {
+            reactKey: 44,
+            image: "/images/produits/trottinette/dualtron/dualtron-sonic-pro/dualtron-sonic-pro-n01-powerwatt34.jpg",
+            path: router[4]!.children![1]!.children![44].path + "#top",
+            model: "Dualtron Thunder 3 DGT",
+            price: "2799 €",
+            battery: "72V 40Ah", 
+            power: "10800W",
+            range: "150 km",
+        },
     ]
 
     return (tab);
