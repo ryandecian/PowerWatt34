@@ -8,7 +8,7 @@ function teverun_Data() {
     const tab: CardsTrottinetteBrand_data_Type = [
         {
             reactKey: 1,
-            image: "/images/produits/trottinette/teverun/teverun-fighter-7260r/teverun-fighter-7260r-n01-powerwatt34.jpg",
+            image: "/images/produits/trottinette/teverun/teverun-fighter-7260r-v4-edition-2025/teverun-fighter-7260r-v4-edition-2025-n01-powerwatt34.jpg",
             path: router[4]!.children![2!].children![1].path + "#top",
             model: "Teverun Fighter 7260R Edition 2025 V4",
             price: "4490 €",
