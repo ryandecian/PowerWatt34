@@ -1,7 +1,7 @@
 /* Import des types */
 import type { ImageCarousselProduct_Type } from "../../../../../../../types/produits/imageCarousselProduct.type";
 
-function teverunFighter7260RV4Edition2025_img_Data() {
+function teverunFighterMiniPro25Ah_img_Data() {
     const tab: ImageCarousselProduct_Type = [
         {
             reactKey: 1,
@@ -43,4 +43,4 @@ function teverunFighter7260RV4Edition2025_img_Data() {
     return tab;
 }
 
-export { teverunFighter7260RV4Edition2025_img_Data };
+export { teverunFighterMiniPro25Ah_img_Data };
