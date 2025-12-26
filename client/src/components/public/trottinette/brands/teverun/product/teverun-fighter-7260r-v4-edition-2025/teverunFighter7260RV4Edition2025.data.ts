@@ -17,7 +17,7 @@ function teverunFighter7260R_V4_2025_Data(): Trottinette_Data_Type {
         clignotants: "Oui",
         poids: "63 kg",
         charge_maximale: "150 kg",
-        prix: "4790 €",
+        prix: "4490 €",
     }
 
     return data;
