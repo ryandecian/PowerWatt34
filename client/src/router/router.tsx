@@ -336,12 +336,12 @@ const router: Router_Type = [
                         path: "/produits/trottinette/teverun",
                         element: <Teverun_Page />,
                     },
-                    /* {router[4]!.children![2!].children![1].path}
+                    /* {router[4]!.children![2!].children![1].path} */
                     {
                         path: "/produits/trottinette/teverun/teverun-fighter-7260r-v4-edition-2025",
                         element: <TeverunFighter7260RV4Edition2025_Page />,
                     },
-                    /* {router[4]!.children![2!].children![2].path}
+                    /* {router[4]!.children![2!].children![2].path} */
                     {
                         path: "/produits/trottinette/teverun/teverun-fighter-mini-pro-25ah",
                         element: <TeverunFighterMiniPro25Ah_Page />,
