@@ -19,7 +19,7 @@ function teverun_Data() {
         {
             reactKey: 2,
             image: "/images/produits/trottinette/teverun/teverun-fighter-mini-pro/teverun-fighter-mini-pro-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![2!].children![2].path + "#top",
             model: "Teverun Fighter Mini Pro",
             price: "1849 €",
             battery: "60V 25Ah", 
