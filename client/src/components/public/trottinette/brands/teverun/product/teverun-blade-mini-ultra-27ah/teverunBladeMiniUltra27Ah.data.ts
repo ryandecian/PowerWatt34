@@ -1,11 +1,11 @@
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function teverunFighterMini25Ah_Data(): Trottinette_Data_Type {
+function teverunBladeMiniUltra27Ah_Data(): Trottinette_Data_Type {
     const data: Trottinette_Data_Type = {
         marque: "Teverun",
-        modele: "Teverun Fighter Mini - 25Ah",
-        batterie: "52V 25Ah",
+        modele: "Teverun Blade Mini Ultra - 27Ah",
+        batterie: "60V 27Ah",
         autonomie: "65 à 80 km",
         moteurs: "Bimoteurs",
         taille_roues: "10 pouces tubeless",
@@ -23,4 +23,4 @@ function teverunFighterMini25Ah_Data(): Trottinette_Data_Type {
     return data;
 }
 
-export { teverunFighterMini25Ah_Data };
+export { teverunBladeMiniUltra27Ah_Data };
