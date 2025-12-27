@@ -12,7 +12,7 @@ function teverunFighterMini25Ah_Data(): Trottinette_Data_Type {
         puissance_nominale: "2000W soit 2 x 1000W",
         puissance_maximale: "2950W soit 2 x 1475W",
         vitesse_bridée: "25 km/h",
-        vitesse_maximale: "80 km/h",
+        vitesse_maximale: "65 km/h",
         freinage: "Hydraulique à disques",
         clignotants: "Oui",
         poids: "34,4 kg",
