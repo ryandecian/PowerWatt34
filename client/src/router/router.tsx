@@ -56,8 +56,10 @@ import Home_Page from "../pages/public/home_Page/Home.page";
 import Kaboo_Page from "../pages/public/trottinette_Page/brands/kaboo_Page/Kaboo.page";
 import MentionsLegales_Page from "../pages/public/mentions-legales_Page/MentionsLegales.page";
 import Teverun_Page from "../pages/public/trottinette_Page/brands/teverun_Page/Teverun.page";
+import TeverunBladeMiniUltra27Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunBladeMiniUltra27Ah.page";
 import TeverunFighter7260RV4Edition2025_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighter7260RV4Edition2025.page";
-import TeverunFighterMiniPro25Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/TeverunFighterMiniPro25Ah.page";
+import TeverunFighterMini25Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMini25Ah.page";
+import TeverunFighterMiniPro25Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMiniPro25Ah.page";
 import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 import Vsett_Page from "../pages/public/trottinette_Page/brands/vsett_Page/Vsett.page";
 
@@ -345,6 +347,16 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/teverun/teverun-fighter-mini-pro-25ah",
                         element: <TeverunFighterMiniPro25Ah_Page />,
+                    },
+                    /* {router[4]!.children![2!].children![3].path} */
+                    {
+                        path: "/produits/trottinette/teverun/teverun-fighter-mini-25ah",
+                        element: <TeverunFighterMini25Ah_Page />,
+                    },
+                    /* {router[4]!.children![2!].children![4].path} */
+                    {
+                        path: "/produits/trottinette/teverun/teverun-blade-mini-ultra-27ah",
+                        element: <TeverunBladeMiniUltra27Ah_Page />,
                     },
                 ],
             },
