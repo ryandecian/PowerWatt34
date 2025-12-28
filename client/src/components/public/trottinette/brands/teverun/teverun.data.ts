@@ -39,7 +39,7 @@ function teverun_Data() {
         {
             reactKey: 4,
             image: "/images/produits/trottinette/teverun/teverun-blade-mini-ultra/teverun-blade-mini-ultra-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![2!].children![4].path + "#top",
             model: "Teverun Blade Mini Ultra",
             price: "1449 €",
             battery: "60V 27Ah", 
