@@ -57,8 +57,9 @@ import Kaboo_Page from "../pages/public/trottinette_Page/brands/kaboo_Page/Kaboo
 import MentionsLegales_Page from "../pages/public/mentions-legales_Page/MentionsLegales.page";
 import Teverun_Page from "../pages/public/trottinette_Page/brands/teverun_Page/Teverun.page";
 import TeverunFighter7260RV4Edition2025_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighter7260RV4Edition2025.page";
-import TeverunFighterMini25Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/TeverunFighterMini25Ah.page";
-import TeverunFighterMiniPro25Ah_Page from "../pages/public/trottinette_Page/brands/dualtron_Page/product/TeverunFighterMiniPro25Ah.page";
+import TeverunFighterMini25Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMini25Ah.page";
+import TeverunFighterMiniPro25Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMiniPro25Ah.page";
+// import TeverunBlad
 import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 import Vsett_Page from "../pages/public/trottinette_Page/brands/vsett_Page/Vsett.page";
 

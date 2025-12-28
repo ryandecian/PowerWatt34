@@ -6,8 +6,8 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { teverunFighterMini25Ah_Data } from "./teverunFighterMini25Ah.data";
-import { teverunFighterMini25Ah_img_Data } from "./teverunFighterMini25Ah.img.data";
+import { teverunFighterMini25Ah_Data } from "./teverunBladeMiniUltra27Ah.data";
+import { teverunFighterMini25Ah_img_Data } from "./teverunBladeMiniUltra27Ah.img.data";
 
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
