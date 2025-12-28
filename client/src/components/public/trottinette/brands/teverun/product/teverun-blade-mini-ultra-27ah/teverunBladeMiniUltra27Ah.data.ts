@@ -15,7 +15,7 @@ function teverunBladeMiniUltra27Ah_Data(): Trottinette_Data_Type {
         vitesse_maximale: "65 km/h",
         freinage: "Hydraulique à disques",
         clignotants: "Oui",
-        poids: "34,4 kg",
+        poids: "35 kg",
         charge_maximale: "100 kg",
         prix: "1549 €",
     }
