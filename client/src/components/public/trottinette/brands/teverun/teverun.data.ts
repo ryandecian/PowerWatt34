@@ -46,7 +46,7 @@ function teverun_Data() {
             power: "2950W",
             range: "100 km",
         },
-        {
+        {/**/
             reactKey: 5,
             image: "/images/produits/trottinette/teverun/teverun-fighter-mini-eco/teverun-fighter-mini-eco-n01-powerwatt34.jpg",
             path: "#",
