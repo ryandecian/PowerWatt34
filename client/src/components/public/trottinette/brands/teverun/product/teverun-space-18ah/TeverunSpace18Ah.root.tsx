@@ -6,18 +6,18 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { teverunFighterMini25Ah_Data } from "./teverunFighterMini25Ah.data";
-import { teverunFighterMini25Ah_img_Data } from "./teverunFighterMini25Ah.img.data";
+import { teverunSpace18Ah_Data } from "./teverunSpace18Ah.data";
+import { teverunSpace18Ah_img_Data } from "./teverunSpace18Ah.img.data";
 
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function TeverunFighterMini25Ah_Root() {
-    const productData: Trottinette_Data_Type = teverunFighterMini25Ah_Data();
+function TeverunSpace18Ah_Root() {
+    const productData: Trottinette_Data_Type = teverunSpace18Ah_Data();
     return (
-        <section className={`TeverunFighterMini25Ah_Root ${style.ContainerRootRacine}`}>
+        <section className={`TeverunSpace18Ah_Root ${style.ContainerRootRacine}`}>
             <h1 className={style.TitleH1}>{productData.modele}</h1>
-            <CarrouselProduct_Element dataImg={teverunFighterMini25Ah_img_Data()} />
+            <CarrouselProduct_Element dataImg={teverunSpace18Ah_img_Data()} />
             <br />
             <p><strong>Prix : {productData.prix}</strong></p>
             <TableTrottinette_Element data={productData} />
@@ -25,4 +25,4 @@ function TeverunFighterMini25Ah_Root() {
     );
 }
 
-export default TeverunFighterMini25Ah_Root;
+export default TeverunSpace18Ah_Root;
