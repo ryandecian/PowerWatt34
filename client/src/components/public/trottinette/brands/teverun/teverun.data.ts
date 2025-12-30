@@ -46,10 +46,10 @@ function teverun_Data() {
             power: "2950W",
             range: "100 km",
         },
-        {
+        {/**/
             reactKey: 5,
             image: "/images/produits/trottinette/teverun/teverun-fighter-mini-eco/teverun-fighter-mini-eco-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![2!].children![5].path + "#top",
             model: "Teverun Fighter Mini Eco",
             price: "1349 €",
             battery: "52V 20,8Ah", 
@@ -59,7 +59,7 @@ function teverun_Data() {
         {
             reactKey: 6,
             image: "/images/produits/trottinette/teverun/teverun-space/teverun-space-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![2!].children![6].path + "#top",
             model: "Teverun Space",
             price: "1049 €",
             battery: "52V 18Ah", 
