@@ -61,6 +61,9 @@ import TeverunFighter7260RV4Edition2025_Page from "../pages/public/trottinette_P
 import TeverunFighterMini25Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMini25Ah.page";
 import TeverunFighterMiniEco20Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMiniEco20Ah.page";
 import TeverunFighterMiniPro25Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMiniPro25Ah.page";
+import TeverunFighterMiniQ13Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMiniQ13Ah.page";
+import TeverunFighterMiniQPro15Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMiniQPro15Ah.page";
+import TeverunFighterMiniQProPlus15Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMiniQProPlus15Ah.page";
 import TeverunSpace18Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunSpace18Ah.page";
 import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 import Vsett_Page from "../pages/public/trottinette_Page/brands/vsett_Page/Vsett.page";
@@ -369,6 +372,21 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/teverun/teverun-space-18ah",
                         element: <TeverunSpace18Ah_Page />,
+                    },
+                    /* {router[4]!.children![2!].children![7].path} */
+                    {
+                        path: "/produits/trottinette/teverun/teverun-fighter-mini-q-13ah",
+                        element: <TeverunFighterMiniQ13Ah_Page />,
+                    },
+                    /* {router[4]!.children![2!].children![8].path} */
+                    {
+                        path: "/produits/trottinette/teverun/teverun-fighter-mini-q-pro-15ah",
+                        element: <TeverunFighterMiniQPro15Ah_Page />,
+                    },
+                    /* {router[4]!.children![2!].children![9].path} */
+                    {
+                        path: "/produits/trottinette/teverun/teverun-fighter-mini-q-pro-plus-15ah",
+                        element: <TeverunFighterMiniQProPlus15Ah_Page />,
                     },
                 ],
             },

@@ -69,7 +69,7 @@ function teverun_Data() {
         {
             reactKey: 7,
             image: "/images/produits/trottinette/teverun/teverun-fighter-mini-q-pro-plus/teverun-fighter-mini-q-pro-plus-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![2!].children![9].path + "#top",
             model: "Teverun Fighter Mini Q Pro Plus",
             price: "999 €",
             battery: "52V 15Ah", 
@@ -79,7 +79,7 @@ function teverun_Data() {
         {
             reactKey: 8,
             image: "/images/produits/trottinette/teverun/teverun-fighter-mini-q-pro/teverun-fighter-mini-q-pro-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![2!].children![8].path + "#top",
             model: "Teverun Fighter Mini Q Pro",
             price: "949 €",
             battery: "52V 15Ah", 
@@ -89,7 +89,7 @@ function teverun_Data() {
         {
             reactKey: 9,
             image: "/images/produits/trottinette/teverun/teverun-fighter-mini-q-pro/teverun-fighter-mini-q-pro-n01-powerwatt34.jpg",
-            path: "#",
+            path: router[4]!.children![2!].children![7].path + "#top",
             model: "Teverun Fighter Mini Q",
             price: "849 €",
             battery: "52V 13Ah", 
