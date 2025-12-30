@@ -59,7 +59,9 @@ import Teverun_Page from "../pages/public/trottinette_Page/brands/teverun_Page/T
 import TeverunBladeMiniUltra27Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunBladeMiniUltra27Ah.page";
 import TeverunFighter7260RV4Edition2025_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighter7260RV4Edition2025.page";
 import TeverunFighterMini25Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMini25Ah.page";
+import TeverunFighterMiniEco20Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMiniEco20Ah.page";
 import TeverunFighterMiniPro25Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunFighterMiniPro25Ah.page";
+import TeverunSpace18Ah_Page from "../pages/public/trottinette_Page/brands/teverun_Page/product/TeverunSpace18Ah.page";
 import Trottinette_Page from "../pages/public/trottinette_Page/Trottinette.page";
 import Vsett_Page from "../pages/public/trottinette_Page/brands/vsett_Page/Vsett.page";
 
@@ -357,6 +359,16 @@ const router: Router_Type = [
                     {
                         path: "/produits/trottinette/teverun/teverun-blade-mini-ultra-27ah",
                         element: <TeverunBladeMiniUltra27Ah_Page />,
+                    },
+                    /* {router[4]!.children![2!].children![5].path} */
+                    {
+                        path: "/produits/trottinette/teverun/teverun-fighter-mini-eco-20ah",
+                        element: <TeverunFighterMiniEco20Ah_Page />,
+                    },
+                    /* {router[4]!.children![2!].children![6].path} */
+                    {
+                        path: "/produits/trottinette/teverun/teverun-space-18ah",
+                        element: <TeverunSpace18Ah_Page />,
                     },
                 ],
             },
