@@ -8,7 +8,7 @@ function teverunFighterMiniQProPlus15Ah_Data(): Trottinette_Data_Type {
         batterie: "52V 15Ah",
         autonomie: "35 à 50 km",
         moteurs: "Bimoteurs",
-        taille_roues: "9 pouces",
+        taille_roues: "9 pouces + chambre à air",
         puissance_nominale: "2000W soit 2 x 1000W",
         puissance_maximale: "3000W soit 2 x 1500W",
         vitesse_bridée: "25 km/h",
