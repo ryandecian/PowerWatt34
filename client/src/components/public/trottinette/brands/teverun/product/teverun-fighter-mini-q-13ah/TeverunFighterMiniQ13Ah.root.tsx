@@ -6,18 +6,18 @@ import { CarrouselProduct_Element } from "../../../../../../elements/carrousel/C
 import { TableTrottinette_Element } from "../../../../../../elements/table/TableTrottinette.element";
 
 /* Import des Datas */
-import { teverunFighterMiniQPro15Ah_Data } from "./teverunFighterMiniQPro15Ah.data";
-import { teverunFighterMiniQPro15Ah_img_Data } from "./teverunFighterMiniQPro15Ah.img.data";
+import { teverunFighterMiniQ13Ah_Data } from "./teverunFighterMiniQ13Ah.data";
+import { teverunFighterMiniQ13Ah_img_Data } from "./teverunFighterMiniQ13Ah.img.data";
 
 /* Import des Types */
 import type { Trottinette_Data_Type } from "../../../../../../../types/produits/trottinette/trottinette.data.type";
 
-function TeverunFighterMiniQPro15Ah_Root() {
-    const productData: Trottinette_Data_Type = teverunFighterMiniQPro15Ah_Data();
+function TeverunFighterMiniQ13Ah_Root() {
+    const productData: Trottinette_Data_Type = teverunFighterMiniQ13Ah_Data();
     return (
-        <section className={`TeverunFighterMiniQPro15Ah_Root ${style.ContainerRootRacine}`}>
+        <section className={`TeverunFighterMiniQ13Ah_Root ${style.ContainerRootRacine}`}>
             <h1 className={style.TitleH1}>{productData.modele}</h1>
-            <CarrouselProduct_Element dataImg={teverunFighterMiniQPro15Ah_img_Data()} />
+            <CarrouselProduct_Element dataImg={teverunFighterMiniQ13Ah_img_Data()} />
             <br />
             <p><strong>Prix : {productData.prix}</strong></p>
             <TableTrottinette_Element data={productData} />
@@ -25,4 +25,4 @@ function TeverunFighterMiniQPro15Ah_Root() {
     );
 }
 
-export default TeverunFighterMiniQPro15Ah_Root;
+export default TeverunFighterMiniQ13Ah_Root;
