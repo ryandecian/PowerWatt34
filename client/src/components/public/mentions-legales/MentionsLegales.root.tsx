@@ -62,7 +62,7 @@ function MentionsLegales_Root() {
             </p>
 
             <p className={style.TextP4}>
-                <strong>Délégué à la protection des données :</strong> Helena PEREZ -  
+                <strong>Délégué à la protection des données :</strong> Sofian ZEGAGH -  
                 <A_Element option={1} href={routerExt.emailPowerWatt34} text="powerwatt34@gmail.com" />
             </p>
 
