@@ -27,16 +27,10 @@ function HomeSEOHeadManager_root_SEO() {
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
     return (
-        <Helmet>
+        <>
             {/* JSON-LD */}
             <script type="application/ld+json">
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
-            </script>
-            <script type="application/ld+json">
-                {JSON_LD_HomePage_Home_schema_SEO()}
-            </script>
-            <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Home_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -47,7 +41,6 @@ function HomeSEOHeadManager_root_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            <meta name="author" content={SEO.author} />
             {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
@@ -70,7 +63,7 @@ function HomeSEOHeadManager_root_SEO() {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:image" content={SEO.twitterUrlImg} />
             <meta name="twitter:site" content={SEO.twitterCompte} />
-        </Helmet>
+        </>
     );
 }
 
