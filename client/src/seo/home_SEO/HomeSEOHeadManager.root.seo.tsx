@@ -5,17 +5,16 @@
 /* Import des JSON_LD */
 
 /* Import des Types */
-// import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
+import { DataSEOHeadManager_Type } from "../../types/seo/dataSEOHeadManager.type";
 // import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 // import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function HelmetHome_helmet_SEO() {
+function HomeSEOHeadManager_root_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Home: DataSEOTargetOne_Type = dataSEO_Home_data_SEO(); /* Récupération des données SEO de la page */
 
-    const SEO: DataSEOHelmet_Type = {
+    const SEO: DataSEOHeadManager_Type = {
         title: dataSEO_Home.title,
-        author: dataSEO_Home.author,
         description: dataSEO_Home.description,
         url: dataSEO_Home.url,
         img: dataSEO_Home.img_Helmet,
@@ -75,4 +74,4 @@ function HelmetHome_helmet_SEO() {
     );
 }
 
-export { HelmetHome_helmet_SEO };
+export { HomeSEOHeadManager_root_SEO };
