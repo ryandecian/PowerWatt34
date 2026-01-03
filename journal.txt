@@ -1,7 +1,8 @@
 Il faut créer des sous router pour chaque type de produit et de service et mettre a jour
 le router principale. Il faudra également développer et tester la page dualtron x ldt
 ----------------------------------------------------------------
-
+Faire le déploiement 
 ----------------------------------------------------------------
 
 ----------------------------------------------------------------
+
