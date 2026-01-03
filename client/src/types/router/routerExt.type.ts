@@ -6,6 +6,8 @@ type RouterExt_Type = {
     linkPowerWatt34: string;
     adressPowerWatt34: string;
 
+    instagram: string;
+
     phoneInfomaniak: string;
     adressInfomaniak: string;
 

@@ -94,7 +94,7 @@ const router: Router_Type = [
         path: "/admin/compte",
         element: <h1>compte admin</h1>,
     },
-    /* {router[4].path} : page parent = children[0]*/
+    /* {router[4].path} : page parent = children[0] */
     {
         path: "/produits/trottinette",
         children: [
