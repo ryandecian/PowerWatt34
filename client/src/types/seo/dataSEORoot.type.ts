@@ -1,9 +1,4 @@
 type DataSEORoot_Type = {
-    author: {
-        "@type": string;
-        name: string;
-        url: string;
-    };
     creator: {
         "@type": string;
         name: string;
