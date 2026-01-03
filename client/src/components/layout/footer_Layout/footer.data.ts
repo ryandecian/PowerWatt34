@@ -1,5 +1,6 @@
 /* Import des composants Router */
 import router from "../../../router/router";
+import routerExt from "../../../router/routerExt.router";
 
 /* Import des Types */
 import type { Footer_data_Type } from "../../../types/layout/footer/footer.data.type";
@@ -17,7 +18,7 @@ function footer_Data(): Footer_data_Type {
         {
             nameMenu: "RESEAUX",
             nameSubMenu: [
-                { title: "Instagram", link: "#" },
+                { title: "Instagram", link: routerExt.instagram },
                 { title: "Facebook", link: "#" },
                 { title: "Google Maps", link: "#" },
             ],
