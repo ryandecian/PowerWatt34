@@ -5,9 +5,9 @@
 /* Import des JSON_LD */
 
 /* Import des Types */
-import { DataSEOHeadManager_Type } from "../../types/seo/dataSEOHeadManager.type";
-// import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
-// import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
+import type { DataSEOHeadManager_Type } from "../../types/seo/dataSEOHeadManager.type";
+import type { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import type { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 function HomeSEOHeadManager_root_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */

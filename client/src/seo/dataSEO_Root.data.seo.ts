@@ -6,7 +6,6 @@ import router from "../router/router";
 import type { DataSEORoot_Type } from "../types/seo/dataSEORoot.type";
 
 function dataSEO_Root_data_SEO(): DataSEORoot_Type {
-    const routerData = router; /* Récupération des données du routeur */
     const dataSEORoots = {
         /* Data Helmet */
         creator: {
@@ -74,7 +73,7 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
             routerExt.instagram, /* Compte Instagram */
             routerExt.facebook, /* A modifier car ce n'est pas le bon compte */
         ],
-        termsOfService: `${import.meta.env.VITE_DOMAIN_CLIENT}/${router[9].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
+        termsOfService: `${import.meta.env.VITE_DOMAIN_CLIENT}/${router[5].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
         "worksFor": {
             /* Indique de la personne est liée à cette activité */
             "@type": "Organization",
