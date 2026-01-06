@@ -19,8 +19,8 @@ function footer_Data(): Footer_data_Type {
             nameMenu: "RESEAUX",
             nameSubMenu: [
                 { title: "Instagram", link: routerExt.instagram },
-                { title: "Facebook", link: "#" },
-                { title: "Google Maps", link: "#" },
+                { title: "Facebook", link: routerExt.facebook },
+                { title: "Google Maps", link: routerExt.adressPowerWatt34 },
             ],
         },
         {
