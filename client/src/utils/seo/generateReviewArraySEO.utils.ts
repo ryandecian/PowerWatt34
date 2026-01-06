@@ -1,5 +1,5 @@
 /* Import des Types */
-import { AvisClientSEO_Type } from "../../types/seo/avisClientSEO.type";
+import type { AvisClientSEO_Type } from "../../types/seo/avisClientSEO.type";
 
 function generateReviewArraySEO_Utils(data : AvisClientSEO_Type[]) {
     if (!data.length) return [];
