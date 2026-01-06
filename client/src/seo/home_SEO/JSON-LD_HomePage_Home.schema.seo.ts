@@ -3,8 +3,8 @@ import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
 
 /* Import des Types */
-import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
-import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
+import type { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import type { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 function JSON_LD_HomePage_Home_schema_SEO() : string {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */

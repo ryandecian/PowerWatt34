@@ -1,6 +1,6 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-// import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
+import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
 
 /* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
@@ -18,7 +18,7 @@ function HomeSEOHeadManager_root_SEO() {
         title: dataSEO_Home.title,
         description: dataSEO_Home.description,
         url: dataSEO_Home.url,
-        img: dataSEO_Home.img_Helmet,
+        img: dataSEO_Home.img_JSON_LD,
         twitterUrlImg: dataSEO_Home.twitterUrlImg || dataSEO_Home.img_JSON_LD, // fallback
         twitterCompte: dataSEORoot.twitterCompte,
         keywords: dataSEO_Home.keywords,
