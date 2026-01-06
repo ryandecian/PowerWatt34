@@ -41,7 +41,7 @@ function dataSEO_Home_data_SEO(): DataSEOTargetOne_Type {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/home/google/atelier-reparation-trottinette-scooter-velo-electrique-lattes.jpg`, /*Lien URL public de l'image*/
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/page/home/homePCPowerWatt34.jpg`, /*Lien URL public de l'image*/
         id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[0].path}#home`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Découverte des prestations de réparation et d’entretien de deux-roues électriques proposées par PowerWatt34",
     };

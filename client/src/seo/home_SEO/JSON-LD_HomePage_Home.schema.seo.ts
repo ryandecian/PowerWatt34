@@ -28,9 +28,9 @@ function JSON_LD_HomePage_Home_schema_SEO() : string {
             "name": dataSEORoot.name,
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "13 Allée des Platanes",
-                "addressLocality": "Grabels",
-                "postalCode": "34790",
+                "streetAddress": "122 Chemin de Saint Hubert",
+                "addressLocality": "Lattes",
+                "postalCode": "34970",
                 "addressCountry": "FR"
             }
         },

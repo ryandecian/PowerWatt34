@@ -4,6 +4,8 @@ import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
 
 /* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
+import { JSON_LD_HomePage_Home_schema_SEO } from "./JSON-LD_HomePage_Home.schema.seo";
+import { JSON_LD_Breadcrumb_Home_schema_SEO } from "./JSON-LD_Breadcrumb_Home.schema.seo";
 
 /* Import des Types */
 import type { DataSEOHeadManager_Type } from "../../types/seo/dataSEOHeadManager.type";
@@ -30,9 +32,18 @@ function HomeSEOHeadManager_root_SEO() {
     return (
         <>
             {/* JSON-LD */}
-            <script type="application/ld+json">
-                {JSON_LD_LocalBusiness_Root_schema_SEO()}
-            </script>
+            <script 
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON_LD_LocalBusiness_Root_schema_SEO() }}
+            />
+            <script 
+                type="application/ld+json" 
+                dangerouslySetInnerHTML={{ __html: JSON_LD_HomePage_Home_schema_SEO() }}
+            />
+            <script 
+                type="application/ld+json" 
+                dangerouslySetInnerHTML={{ __html: JSON_LD_Breadcrumb_Home_schema_SEO() }}
+            />
 
             {/* Langue principale du document */}
             <html lang="fr" />
