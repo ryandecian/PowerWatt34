@@ -62,20 +62,11 @@ type DataSEORoot_Type = {
         name: string;
         url: string;
     };
-    alumniOf: {
-        "@type": string;
-        name: string;
-    }[];
     knowsAbout: string[];
     areaServed: {
         "@type": string;
         name: string;
-        address: {
-            "@type": string;
-            addressLocality: string;
-            postalCode: string;
-            addressCountry: string;
-        };
+        addressCountry?: string;
     }[];
 };
   

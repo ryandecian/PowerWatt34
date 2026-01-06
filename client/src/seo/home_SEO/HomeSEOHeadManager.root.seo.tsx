@@ -1,13 +1,16 @@
 /* Import des Components */
-// import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-// import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
+import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
+import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
 
 /* Import des JSON_LD */
+import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
+import { JSON_LD_HomePage_Home_schema_SEO } from "./JSON-LD_HomePage_Home.schema.seo";
+import { JSON_LD_Breadcrumb_Home_schema_SEO } from "./JSON-LD_Breadcrumb_Home.schema.seo";
 
 /* Import des Types */
-import { DataSEOHeadManager_Type } from "../../types/seo/dataSEOHeadManager.type";
-// import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
-// import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
+import type { DataSEOHeadManager_Type } from "../../types/seo/dataSEOHeadManager.type";
+import type { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import type { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 function HomeSEOHeadManager_root_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
@@ -17,7 +20,7 @@ function HomeSEOHeadManager_root_SEO() {
         title: dataSEO_Home.title,
         description: dataSEO_Home.description,
         url: dataSEO_Home.url,
-        img: dataSEO_Home.img_Helmet,
+        img: dataSEO_Home.img_JSON_LD,
         twitterUrlImg: dataSEO_Home.twitterUrlImg || dataSEO_Home.img_JSON_LD, // fallback
         twitterCompte: dataSEORoot.twitterCompte,
         keywords: dataSEO_Home.keywords,
@@ -29,9 +32,18 @@ function HomeSEOHeadManager_root_SEO() {
     return (
         <>
             {/* JSON-LD */}
-            <script type="application/ld+json">
-                {JSON_LD_LocalBusiness_Root_schema_SEO()}
-            </script>
+            <script 
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON_LD_LocalBusiness_Root_schema_SEO() }}
+            />
+            <script 
+                type="application/ld+json" 
+                dangerouslySetInnerHTML={{ __html: JSON_LD_HomePage_Home_schema_SEO() }}
+            />
+            <script 
+                type="application/ld+json" 
+                dangerouslySetInnerHTML={{ __html: JSON_LD_Breadcrumb_Home_schema_SEO() }}
+            />
 
             {/* Langue principale du document */}
             <html lang="fr" />
