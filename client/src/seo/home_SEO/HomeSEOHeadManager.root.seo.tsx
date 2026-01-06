@@ -1,8 +1,9 @@
 /* Import des Components */
-// import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
+import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 // import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
 
 /* Import des JSON_LD */
+import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
 
 /* Import des Types */
 import type { DataSEOHeadManager_Type } from "../../types/seo/dataSEOHeadManager.type";
