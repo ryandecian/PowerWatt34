@@ -10,6 +10,7 @@ const routerExt: RouterExt_Type = {
     adressPowerWatt34: "https://maps.app.goo.gl/xRmizdSzPEkHU22e9",
 
     instagram: "https://www.instagram.com/powerwatt34/",
+    facebook: "https://www.facebook.com",
 
     phoneInfomaniak: "tel:+41228203541",
     adressInfomaniak: "https://maps.app.goo.gl/NytB3Ns7WESfdVEAA",
