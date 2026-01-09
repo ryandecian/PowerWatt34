@@ -46,10 +46,16 @@ services:
         - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
         - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
     env_file: .env
-    restart: always
     volumes:
-      - client-dist:/app/dist  # Rend disponible le build Vite pour Nginx
-    command: [ "sleep", "infinity" ]
+      - client-dist:/dist  # Rend disponible le build Vite pour Nginx
+    # Commande temporaire pour copier les fichiers buildés dans le volume
+    # sh : Lance un shell
+    # -c : Exécute la commande suivante dans le shell
+    # rm -rf /dist/* : (rm : supprime) (-r : tout le contenu si c'est un dossier) (-f : force la suppression sans demander de confirmation) -> supprime tout le contenu actuel du volume /dist
+    # && : exécute la commande de droite uniquement si celle de gauche a réussi (exit code 0)
+    # cp -r /app/dist/* /dist/ : (cp : copie) (-r : copie récursive pour les dossiers) -> copie tout le contenu du dossier buildé /app/dist/ vers le volume /dist/
+    command: ["sh", "-c", "rm -rf /dist/* && cp -r /app/dist/* /dist/"]
+    restart: "no"
 
   server:
     container_name: server

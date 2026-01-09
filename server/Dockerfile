@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json tsconfig.json ./
 
 # Installe les dépendances sans les devDependencies
-RUN npm install --omit=dev
+RUN npm install
 
 # Copie le code source
 COPY ./src ./src
