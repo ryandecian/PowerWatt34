@@ -12,10 +12,12 @@ services:
       - ./nginx/certs:/etc/nginx/certs                               # Certificats TLS (Let's Encrypt)
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - ./nginx/html:/usr/share/nginx/html                           # Page HTML statique (optionnel, ex: page maintenance)
-      - client-dist:/usr/share/nginx/html/powerwatt34                # Volume monté contenant les fichiers buildés du frontend
+      - client-dist:/usr/share/nginx/html/powerwatt34:ro             # Volume monté contenant les fichiers buildés du frontend. (:ro signifier que le service est en lecture seule)
     depends_on:
-      - client
-      - server
+      client:
+        condition: service_completed_successfully
+      server:
+        condition: service_started
 
   db:
     image: mariadb:11
