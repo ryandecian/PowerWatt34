@@ -35,6 +35,6 @@ WORKDIR /app
 # Copie uniquement le dossier dist généré depuis l’étape précédente
 COPY --from=build /app/dist ./dist
 
-# Ce conteneur ne sert pas les fichiers directement
+# Ce conteneur ne sert pas les fichiers directement test
 # Il sera utilisé uniquement pour partager le dossier dist avec Nginx via un volume
 CMD ["sh"]
