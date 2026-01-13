@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------
 # Licence MIT
 #
-# Copyright (c) 2025 Ryan DECIAN
+# Copyright (c) 2025 - 2026 Ryan DECIAN
 #
 # Permission est accordée, gratuitement, à toute personne obtenant
 # une copie de ce logiciel et des fichiers de documentation associés
@@ -45,7 +45,7 @@
 #!/bin/bash
 
 # Version du script
-echo -e "\033[1;35mVersion du script V6.3.1\033[0m"
+echo -e "\033[1;35mVersion du script V6.4.1\033[0m"
 echo ""
 echo ""
 echo -e "\033[35mDébut d'exécution du script\033[0m"
