@@ -65,33 +65,38 @@ echo -e "\033[36m🔍 Vérification si un agent SSH est actif\033[0m"
 echo ""
 SSH_ENV="$HOME/.ssh-agent.env"
 
-# Fonction pour démarrer un nouvel agent SSH
 start_agent() {
     echo ""
     echo "🔑 Démarrage d'un nouvel agent SSH..."
     echo ""
-    eval "$(ssh-agent -s)" > "$SSH_ENV"
-    echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> "$SSH_ENV"
-    echo "export SSH_AGENT_PID=$SSH_AGENT_PID" >> "$SSH_ENV"
-    ssh-add ~/.ssh/id_ed25519 > /dev/null 2>&1
-    if [ $? -eq 0 ]; then
-        echo "🔐 Clé SSH ajoutée avec succès : ~/.ssh/id_ed25519"
-    else
-        echo "❌ Échec lors de l'ajout de la clé SSH : ~/.ssh/id_ed25519"
-    fi
+
+    # Fichier env sourçable (on enlève la ligne "echo Agent pid ...")
+    ssh-agent -s | grep -v '^echo ' > "$SSH_ENV"
+
+    # Recharge les variables
+    source "$SSH_ENV" > /dev/null 2>&1
+
+    # Ajoute la clé
+    ssh-add ~/.ssh/id_ed25519
 }
 
-# Recharger ou démarrer l'agent SSH
 echo -e "\033[36m🔄 Recharger ou démarrer l'agent SSH\033[0m"
 echo ""
+
 if [ -f "$SSH_ENV" ]; then
-    source "$SSH_ENV" > /dev/null
-    if ! ps -p $SSH_AGENT_PID > /dev/null 2>&1; then
-        start_agent
-    fi
-else
-    start_agent
+    source "$SSH_ENV" > /dev/null 2>&1
 fi
+
+# Si pas de socket, ou agent non joignable -> on redémarre
+if [ -z "$SSH_AUTH_SOCK" ] || [ ! -S "$SSH_AUTH_SOCK" ] || ! ssh-add -l >/dev/null 2>&1; then
+    start_agent
+else
+    # Agent joignable mais vide -> on charge la clé
+    if ssh-add -l 2>/dev/null | grep -q "The agent has no identities"; then
+        ssh-add ~/.ssh/id_ed25519
+    fi
+fi
+
 echo -e "\033[34m✅ Traitement agent SSH terminé\033[0m"
 echo ""
 
