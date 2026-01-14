@@ -9,7 +9,9 @@
     "dev": "concurrently --raw \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
     "dev:client": "npm run dev --prefix client",
     "dev:server": "npm run dev --prefix server",
-    "vps": "ssh -i ~/.ssh/id_vps_infomaniak_powerwatt34 ubuntu@83.228.219.128"
+    "vps": "ssh -i ~/.ssh/id_vps_infomaniak_powerwatt34 ubuntu@83.228.219.128",
+    "vps-env": "scp -i ~/.ssh/id_vps_infomaniak_powerwatt34 ./.env ubuntu@83.228.219.128:~/projet/powerwatt34/.env"
+
   },
   "dependencies": {
     "concurrently": "^9.2.1"
