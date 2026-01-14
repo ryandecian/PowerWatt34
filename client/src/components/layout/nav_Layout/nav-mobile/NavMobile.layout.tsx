@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import css from "./NavMobile.module.css";
+import css from "./navMobile.module.css";
 
 /* Import des Components */
 import { MenuBurger_Layout } from "./components/MenuBurger.layout";
