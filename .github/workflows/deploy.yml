@@ -3,7 +3,7 @@ name: Déploiement en Production
 on:
   push:
     branches:
-      - Deploy
+      - deploy
 
 jobs:
   deploy:
@@ -27,8 +27,45 @@ jobs:
             echo "📁 Accès au dossier du projet"
             cd ${{ secrets.PROJECT_PATH }}
 
-            # ✅ Etape 1/8 : PRUNE AVANT L'ARRÊT — conditionnel pour protéger la DB si tout est déjà down
-            sudo docker builder prune -af || true  # Nettoie uniquement les caches BuildKit
+            echo "✅ Etape 1/8 : PRUNE AVANT L'ARRÊT — conditionnel pour protéger la DB si tout est déjà down"
+
+            # Nettoie uniquement les caches BuildKit
+            sudo docker builder prune -af || true
+
+            echo "Etape 1.1 - Listage des conteneurs actifs"
+            ACTIVE_CONTAINERS="$(sudo docker ps -q)"
+
+            if [ -z "$ACTIVE_CONTAINERS" ]; then
+              echo "ℹ️ Aucun conteneur actif -> prune SANS --volumes (protection DB)"
+              sudo docker system prune -af || true
+
+            else
+              echo "ℹ️ Conteneurs actifs détectés"
+
+              # Création d'une variable = au nom du conteneur DB (nom réel récupérable via 'docker ps')
+              DB_CONTAINER="db"
+
+              echo "ℹ️ Vérification si le conteneur DB est actif"
+              if sudo docker ps --format '{{.Names}}' | grep -qx "$DB_CONTAINER"; then
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             if [ -z "$(sudo docker ps -q)" ]; then
               echo "ℹ️ Aucun conteneur actif -> prune SANS --volumes (protection DB)"
               sudo docker system prune -af || true
