@@ -13,25 +13,8 @@ function dataSEO_Trottinette_data_SEO(): DataSEOTargetOne_Type {
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${router[4].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Marques de trottinettes", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
-        name_Service: "Marques de trottinettes - PowerWatt34", /* Nom du service, utilisé dans le JSON-LD Service */
+        name_PageGoogle: "Marques de trottinettes - PowerWatt34", /* Nom du service, utilisé dans le JSON-LD Service */
         twitterUrlImg: "", /* Lien URL de l'image */
-        keywords: {
-            1: "PowerWatt34", /* 1 mot clés */
-            2: "Atelier réparation trottinette", /* 2 mots clés */
-            3: "Marques trottinettes électriques", /* 3 mots clés */
-            5: "Trottinette électrique Dualtron", /* 4 mots clés */
-            4: "Trottinette électrique Teverun", /* 5 mots clés */
-            6: "Trottinette électrique Kaabo", /* 6 mots clés */
-            7: "Trottinette électrique VSETT", /* 7 mots clés */
-            8: "Trottinette électrique Langfeite", /* 8 mots clés */
-            9: "Trottinette électrique ETWOW", /* 9 mots clés */
-            10: "Trottinette électrique Inmotion", /* 10 mots clés */
-            11: "Vente trottinettes électriques", /* 11 mots clés */
-            12: "PowerWatt34 Lattes", /* 12 mots clés */
-            13: "", /* 13 mots clés */
-            14: "", /* 14 mots clés */
-            15: "", /* 15 mots clés */
-        }, /* 10 a 15 mots max */
         type : {
             website: "website", /*(Valeur par défaut) indique qu'il s'agit d'un site web classique.*/
             article: "article", /*Pour des articles de blog ou du contenu éditorial.*/
