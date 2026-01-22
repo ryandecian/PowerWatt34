@@ -10,7 +10,7 @@ type DataSEOTargetOne_Type = {
     name_ContactPage?: string; /* Nom de la page de contact, utilisé dans le JSON-LD ContactPage */
     name_HomePage?: string; /* Nom de la page d'accueil, utilisé dans le JSON-LD HomePage */
     twitterUrlImg?: string; /* fallback */
-    keywords: {
+    keywords?: {
         1: string; /* 1 mot clé */
         2: string; /* 2 mots clés */
         3: string; /* 3 mots clés */
