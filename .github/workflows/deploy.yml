@@ -3,7 +3,7 @@ name: Déploiement en Production
 on:
   push:
     branches:
-      - Deploy
+      - deploy
 
 jobs:
   deploy:
@@ -21,44 +21,91 @@ jobs:
 
       - name: 🚀 Déployer sur le VPS
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << EOF
             set -e  # Stoppe à la moindre erreur
 
+            echo "🚀 Début du déploiement sur le VPS"
+
+            #--------------------------------------------------------------------------------------------------------
+
             echo "📁 Accès au dossier du projet"
+
             cd ${{ secrets.PROJECT_PATH }}
 
-            # ✅ Etape 1/8 : PRUNE AVANT L'ARRÊT — conditionnel pour protéger la DB si tout est déjà down
-            sudo docker builder prune -af || true  # Nettoie uniquement les caches BuildKit
-            if [ -z "$(sudo docker ps -q)" ]; then
-              echo "ℹ️ Aucun conteneur actif -> prune SANS --volumes (protection DB)"
-              sudo docker system prune -af || true
-            else
-              echo "ℹ️ Conteneurs actifs -> prune AVEC --volumes (les volumes utilisés sont protégés)"
-              sudo docker system prune -af --volumes || true
-            fi
+            echo "✅ Accès au dossier du projet : OK"
 
-            echo "🛑 Etape 2/8 : Stop + remove containers : Phase 1/2"
-            sudo docker stop $(sudo docker ps -q) || true
-            sudo docker rm $(sudo docker ps -aq) || true
+            #--------------------------------------------------------------------------------------------------------
+              
+            echo "⏳ Etape 1/6 : Téléchargement de toutes les mises à jour du dépôt distant sur GitHub"
+              
+            # Télécharge toutes les mises à jour depuis le dépôt distant de toutes les branches sans modifier le code actuel local
+            git fetch --all
+              
+            # Partie 1 : Se déplace sur la branche deploy
+            # Partie 2 : Si la commande partie 1 échoue (branche absente localement), crée la branche locale 'deploy' en se basant sur la branche distante 'origin/deploy'
+            git checkout deploy || git checkout -b deploy origin/deploy
+              
+            # Force la branche locale à être STRICTEMENT identique à origin/deploy
+            git reset --hard origin/deploy
 
-            echo "🧹 Etape 3/8 : Suppression du volume client-dist"
-            sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
+            echo "✅ Etape 1/6 : Téléchargement de toutes les mises à jour du dépôt distant sur GitHub - OK"
+              
+            #--------------------------------------------------------------------------------------------------------
 
-            echo "🧹 Etape 4/8 : Suppression du volume client-kaleidopix-dist"
-            sudo docker volume rm l-atelier_photo_montpellier_client-kaleidopix-dist || true
+            echo "⏳ Etape 2/6 : Mise à jour : Build + redémarrage des containers Docker"
 
-            echo "🔀 Etape 5/8 : Checkout de la bonne branche"
-            git checkout Deploy
+            # Ce que fait cette commande :
+              # 1 - Reconstruit automatiquement les images
+                # - Équivalent de plusieurs docker build
+                # - Respecte les Dockerfile définis dans le docker-compose.yml
+                # - Gère les dépendances entre services (client → server → nginx → db)
+              # 2 - Démarre / redémarre les conteneurs avec les nouvelles images
+                # - En arrière-plan (-d)
+                # - En utilisant les nouvelles images construites
+              # 3 - Supprime les conteneurs orphelins (liés à des services supprimés)
+                # - --remove-orphans évite les conteneurs "fantômes"
+                # - Très important après des changements de services
+            sudo docker compose up -d --build --remove-orphans
 
-            echo "🚀 Etape 6/8 : Build + redémarrage : Phase 1/2"
-            git pull origin Deploy
-            sudo docker compose up -d --build
+            echo "✅ Etape 2/6 : Mise à jour : Build + redémarrage des containers Docker - OK"
 
-            echo "🛑 Etape 7/8 : Arrêt des containers : Phase 2/2"
-            sudo docker compose down || true
+            #--------------------------------------------------------------------------------------------------------
 
-            echo "🚢 Etape 8/8 : Redémarrage des containers : Phase 2/2"
-            sudo docker compose up -d
+            echo "⏳ Etape 3/6 : Nettoyage du VPS, supression de tous les conteneurs arrêtés"
+            # Supprime TOUS les conteneurs arrêtés, ne touche pas aux conteneurs en cours d’exécution, aux images, aux volumes, aux réseaux.
+            # Supprime les conteneurs dans les états : Exited, Created, Paused, Dead
+            sudo docker container prune -f || true
+
+            echo "✅ Etape 3/6 : Nettoyage du VPS, supression de tous les conteneurs arrêtés - OK"
+
+            #--------------------------------------------------------------------------------------------------------
+
+            echo "⏳ Etape 4/6 : Supression des images Docker non utilisées"
+            # Supprime les images Docker inutilisées.
+            # Une image est considérée inutilisée si : Aucun conteneur (même arrêté) ne l’utilise
+            sudo docker image prune -af || true
+
+            echo "✅ Etape 4/6 : Supression des images Docker non utilisées - OK"
+
+            #--------------------------------------------------------------------------------------------------------
+
+            echo "⏳ Etape 5/6 : Supression du cache BuildKit Docker"
+            # Supprime le cache de build Docker créer lors du build des images Docker.
+            # ⚠️ Ce ne sont PAS des images finales, mais des fichiers temporaires utilisés uniquement pendant le processus de construction.
+            sudo docker builder prune -af || true
+
+            echo "✅ Etape 5/6 : Supression du cache BuildKit Docker - OK"
+
+            #--------------------------------------------------------------------------------------------------------
+
+            echo "⏳ Etape 6/6 : Supression des réseaux Docker inutilisés"
+
+            # Supprime tous les réseaux Docker inutilisés.
+            sudo docker network prune -f || true
+
+            echo "✅ Etape 6/6 : Supression des réseaux Docker inutilisés - OK"
+            
+            #--------------------------------------------------------------------------------------------------------
 
             echo "✅ Déploiement terminé"
           EOF
