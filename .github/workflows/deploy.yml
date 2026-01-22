@@ -11,101 +11,102 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      #--------------------------------------------------------------------------------------------------------
+      # 📥 Récupération du code (utile surtout pour logs / cohérence du workflow)
+      #--------------------------------------------------------------------------------------------------------
       - name: 📥 Checkout du code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      #--------------------------------------------------------------------------------------------------------
+      # 🔐 Chargement de la clé SSH privée (connexion GitHub Actions → VPS)
+      #--------------------------------------------------------------------------------------------------------
       - name: 🔐 Connexion SSH via clé privée
-        uses: webfactory/ssh-agent@v0.7.0
+        uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: 🚀 Déployer sur le VPS
+      #--------------------------------------------------------------------------------------------------------
+      # 🔒 Sécurisation SSH : ajout de la clé du VPS dans known_hosts
+      # Évite StrictHostKeyChecking=no (bonne pratique sécurité)
+      #--------------------------------------------------------------------------------------------------------
+      - name: 🔒 Enregistrement du VPS dans known_hosts
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << EOF
-            set -e  # Stoppe à la moindre erreur
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts
+
+      #--------------------------------------------------------------------------------------------------------
+      # 🚀 Déploiement sur le VPS
+      #--------------------------------------------------------------------------------------------------------
+      - name: 🚀 Déployer sur le VPS
+        env:
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          PROJECT_PATH: ${{ secrets.PROJECT_PATH }}
+        run: |
+          ssh "$VPS_USER@$VPS_HOST" "export PROJECT_PATH='$PROJECT_PATH'; bash -s" << 'EOF'
+            set -e  # Stoppe immédiatement à la moindre erreur
 
             echo "🚀 Début du déploiement sur le VPS"
 
             #--------------------------------------------------------------------------------------------------------
 
             echo "📁 Accès au dossier du projet"
-
-            cd ${{ secrets.PROJECT_PATH }}
-
+            cd "$PROJECT_PATH"
             echo "✅ Accès au dossier du projet : OK"
 
             #--------------------------------------------------------------------------------------------------------
-              
-            echo "⏳ Etape 1/6 : Téléchargement de toutes les mises à jour du dépôt distant sur GitHub"
-              
-            # Télécharge toutes les mises à jour depuis le dépôt distant de toutes les branches sans modifier le code actuel local
+
+            echo "⏳ Etape 1/6 : Synchronisation du dépôt Git"
+
+            # Télécharge toutes les mises à jour du dépôt distant
             git fetch --all
-              
-            # Partie 1 : Se déplace sur la branche deploy
-            # Partie 2 : Si la commande partie 1 échoue (branche absente localement), crée la branche locale 'deploy' en se basant sur la branche distante 'origin/deploy'
+
+            # Se positionne sur la branche deploy
+            # Si elle n'existe pas localement, elle est recréée depuis origin/deploy
             git checkout deploy || git checkout -b deploy origin/deploy
-              
-            # Force la branche locale à être STRICTEMENT identique à origin/deploy
+
+            # Force l'état local à être strictement identique au distant
             git reset --hard origin/deploy
 
-            echo "✅ Etape 1/6 : Téléchargement de toutes les mises à jour du dépôt distant sur GitHub - OK"
-              
+            echo "✅ Etape 1/6 : Synchronisation Git - OK"
+
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 2/6 : Mise à jour : Build + redémarrage des containers Docker"
+            echo "⏳ Etape 2/6 : Build + redémarrage des containers Docker"
 
-            # Ce que fait cette commande :
-              # 1 - Reconstruit automatiquement les images
-                # - Équivalent de plusieurs docker build
-                # - Respecte les Dockerfile définis dans le docker-compose.yml
-                # - Gère les dépendances entre services (client → server → nginx → db)
-              # 2 - Démarre / redémarre les conteneurs avec les nouvelles images
-                # - En arrière-plan (-d)
-                # - En utilisant les nouvelles images construites
-              # 3 - Supprime les conteneurs orphelins (liés à des services supprimés)
-                # - --remove-orphans évite les conteneurs "fantômes"
-                # - Très important après des changements de services
+            # Reconstruit les images Docker
+            # Redémarre les services
+            # Supprime les conteneurs orphelins
             sudo docker compose up -d --build --remove-orphans
 
-            echo "✅ Etape 2/6 : Mise à jour : Build + redémarrage des containers Docker - OK"
+            echo "✅ Etape 2/6 : Build + redémarrage Docker - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 3/6 : Nettoyage du VPS, supression de tous les conteneurs arrêtés"
-            # Supprime TOUS les conteneurs arrêtés, ne touche pas aux conteneurs en cours d’exécution, aux images, aux volumes, aux réseaux.
-            # Supprime les conteneurs dans les états : Exited, Created, Paused, Dead
+            echo "⏳ Etape 3/6 : Nettoyage des conteneurs arrêtés"
             sudo docker container prune -f || true
-
-            echo "✅ Etape 3/6 : Nettoyage du VPS, supression de tous les conteneurs arrêtés - OK"
+            echo "✅ Etape 3/6 : Nettoyage conteneurs - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 4/6 : Supression des images Docker non utilisées"
-            # Supprime les images Docker inutilisées.
-            # Une image est considérée inutilisée si : Aucun conteneur (même arrêté) ne l’utilise
+            echo "⏳ Etape 4/6 : Suppression des images Docker non utilisées"
             sudo docker image prune -af || true
-
-            echo "✅ Etape 4/6 : Supression des images Docker non utilisées - OK"
+            echo "✅ Etape 4/6 : Nettoyage images - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 5/6 : Supression du cache BuildKit Docker"
-            # Supprime le cache de build Docker créer lors du build des images Docker.
-            # ⚠️ Ce ne sont PAS des images finales, mais des fichiers temporaires utilisés uniquement pendant le processus de construction.
+            echo "⏳ Etape 5/6 : Nettoyage du cache BuildKit"
             sudo docker builder prune -af || true
-
-            echo "✅ Etape 5/6 : Supression du cache BuildKit Docker - OK"
+            echo "✅ Etape 5/6 : Nettoyage BuildKit - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 6/6 : Supression des réseaux Docker inutilisés"
-
-            # Supprime tous les réseaux Docker inutilisés.
+            echo "⏳ Etape 6/6 : Nettoyage des réseaux Docker inutilisés"
             sudo docker network prune -f || true
+            echo "✅ Etape 6/6 : Nettoyage réseaux - OK"
 
-            echo "✅ Etape 6/6 : Supression des réseaux Docker inutilisés - OK"
-            
             #--------------------------------------------------------------------------------------------------------
 
-            echo "✅ Déploiement terminé"
+            echo "✅ Déploiement terminé avec succès"
           EOF
