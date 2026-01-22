@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import ListDataRouter from "../../router/router";
+import router from "../../router/router";
 
 /* Import des Types */
 import type { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
@@ -25,7 +25,7 @@ function dataSEO_Home_data_SEO(): DataSEOTargetOne_Type {
     
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/page/home/homePCPowerWatt34.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[0].path}#home`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${router[0].path}#home`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Découverte des prestations de réparation et d’entretien de deux-roues électriques proposées par PowerWatt34",
     };
 
