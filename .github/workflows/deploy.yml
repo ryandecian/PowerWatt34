@@ -20,8 +20,12 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: 🚀 Déployer sur le VPS
+        env:
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          PROJECT_PATH: ${{ secrets.PROJECT_PATH }}
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << EOF
+          ssh -o StrictHostKeyChecking=no "$VPS_USER@$VPS_HOST" "PROJECT_PATH='$PROJECT_PATH' bash -s" << 'EOF'
             set -e  # Stoppe à la moindre erreur
 
             echo "🚀 Début du déploiement sur le VPS"
@@ -30,7 +34,7 @@ jobs:
 
             echo "📁 Accès au dossier du projet"
 
-            cd ${{ secrets.PROJECT_PATH }}
+            cd "$PROJECT_PATH"
 
             echo "✅ Accès au dossier du projet : OK"
 
