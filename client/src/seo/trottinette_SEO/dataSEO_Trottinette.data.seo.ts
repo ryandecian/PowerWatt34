@@ -13,7 +13,7 @@ function dataSEO_Trottinette_data_SEO(): DataSEOTargetOne_Type {
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${router[4].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Marques de trottinettes", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
-        name_Service: "Marques de trottinettes", /* Nom du service, utilisé dans le JSON-LD Service */
+        name_Service: "Marques de trottinettes - PowerWatt34", /* Nom du service, utilisé dans le JSON-LD Service */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "PowerWatt34", /* 1 mot clés */

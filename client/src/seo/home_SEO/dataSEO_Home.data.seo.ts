@@ -13,7 +13,7 @@ function dataSEO_Home_data_SEO(): DataSEOTargetOne_Type {
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}`, /*URL de la page*/
         position: 1, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Accueil", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
-        name_HomePage: "Accueil - PowerWatt34", /* Nom de la page d'accueil, utilisé dans le JSON-LD HomePage */
+        name_Service: "Accueil - PowerWatt34", /* Nom du service, utilisé dans le JSON-LD Service */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "PowerWatt34", /* 1 mot clés */
