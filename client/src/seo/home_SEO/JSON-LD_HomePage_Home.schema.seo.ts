@@ -18,7 +18,7 @@ function JSON_LD_HomePage_Home_schema_SEO() : string {
         "url": dataSEO_Home.url, /* (Obligatoire) URL de la page */
         "about": {
             "@type": dataSEORoot["@type"].Local,
-            "name": dataSEO_Home.name_HomePage, /* (Obligatoire) Nom de la page d'accueil */
+            "name": dataSEO_Home.name_PageGoogle, /* (Obligatoire) Nom de la page d'accueil */
         },
         "image": dataSEO_Home.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": dataSEO_Home.description,
