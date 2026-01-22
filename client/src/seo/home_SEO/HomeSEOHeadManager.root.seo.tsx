@@ -23,11 +23,9 @@ function HomeSEOHeadManager_root_SEO() {
         img: dataSEO_Home.img_JSON_LD,
         twitterUrlImg: dataSEO_Home.twitterUrlImg || dataSEO_Home.img_JSON_LD, // fallback
         twitterCompte: dataSEORoot.twitterCompte,
-        keywords: dataSEO_Home.keywords,
         type: dataSEO_Home.type,
     };
 
-    const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
     return (
         <>
@@ -53,7 +51,6 @@ function HomeSEOHeadManager_root_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
             <meta name="robots" content="index, follow" />

@@ -5,7 +5,7 @@ type DataSEOHeadManager_Type = {
     img: string;
     twitterUrlImg?: string; // fallback
     twitterCompte: string;
-    keywords: {
+    keywords?: {
         1?: string; // 1 mot clé
         2?: string; // 2 mots clés
         3?: string; // 3 mots clés
