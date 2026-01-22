@@ -9,7 +9,6 @@ services:
       - "443:443"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro                  # Fichier de configuration Nginx personnalisé
-      - ./nginx/certs:/etc/nginx/certs                               # Certificats TLS (Let's Encrypt)
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - ./nginx/html:/usr/share/nginx/html                           # Page HTML statique (optionnel, ex: page maintenance)
       - client-dist:/usr/share/nginx/html/powerwatt34:ro             # Volume monté contenant les fichiers buildés du frontend. (:ro signifier que le service est en lecture seule)
