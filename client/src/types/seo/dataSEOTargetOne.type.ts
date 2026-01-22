@@ -4,7 +4,7 @@ type DataSEOTargetOne_Type = {
     url: string;
     position: number;
     name_Breadcrumb: string; /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
-    name_PageGoogle?: string; /* Nom de la page affichée dans les résultats Google */
+    name_PageGoogle: string; /* Nom de la page affichée dans les résultats Google */
     twitterUrlImg?: string; /* fallback */
     type: {
         website: string;
