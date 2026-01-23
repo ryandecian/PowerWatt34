@@ -14,6 +14,7 @@ type DataSEORoot_Type = {
         CollectionPage: string;
         ImageGallery: string;
         ItemList: string;
+        ListItem: string;
         Person: string;
         Blog: string;
         BlogPosting: string;

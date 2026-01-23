@@ -25,6 +25,7 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
             CollectionPage: "CollectionPage",
             ImageGallery: "ImageGallery",
             ItemList: "ItemList",
+            ListItem: "ListItem",
             Person: "Person",
             Blog: "Blog",
             BlogPosting: "BlogPosting",
