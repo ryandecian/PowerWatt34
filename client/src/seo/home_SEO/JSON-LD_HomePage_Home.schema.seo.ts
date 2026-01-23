@@ -6,11 +6,11 @@ import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
 import type { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import type { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_HomePage_Home_schema_SEO() : string {
+function JSON_LD_HomePage_Home_schema_SEO() : object {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Home: DataSEOTargetOne_Type = dataSEO_Home_data_SEO(); /* Récupération des données SEO */
 
-    const JSON_LD = JSON.stringify({
+    const JSON_LD = {
         "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": dataSEORoot["@type"].HomePage, /* (Obligatoire) Type de la donnée */
         "@id": dataSEO_Home.id_Service,
@@ -18,7 +18,7 @@ function JSON_LD_HomePage_Home_schema_SEO() : string {
         "url": dataSEO_Home.url, /* (Obligatoire) URL de la page */
         "about": {
             "@type": dataSEORoot["@type"].Local,
-            "name": dataSEO_Home.name_HomePage, /* (Obligatoire) Nom de la page d'accueil */
+            "name": dataSEO_Home.name_PageGoogle, /* (Obligatoire) Nom de la page d'accueil */
         },
         "image": dataSEO_Home.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": dataSEO_Home.description,
@@ -44,7 +44,7 @@ function JSON_LD_HomePage_Home_schema_SEO() : string {
             "height": 200
             },
         },
-    });
+    };
 
     return (
         JSON_LD
