@@ -12,6 +12,9 @@ import type { DataSEOHeadManager_Type } from "../../types/seo/dataSEOHeadManager
 import type { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import type { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
+/* Import Utils */
+import { jsonString_Utils } from "../../utils/seo/jsonString.utils";
+
 function HomeSEOHeadManager_root_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Home: DataSEOTargetOne_Type = dataSEO_Home_data_SEO(); /* Récupération des données SEO de la page */
@@ -23,26 +26,24 @@ function HomeSEOHeadManager_root_SEO() {
         img: dataSEO_Home.img_JSON_LD,
         twitterUrlImg: dataSEO_Home.twitterUrlImg || dataSEO_Home.img_JSON_LD, // fallback
         twitterCompte: dataSEORoot.twitterCompte,
-        keywords: dataSEO_Home.keywords,
         type: dataSEO_Home.type,
     };
 
-    const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
     return (
         <>
             {/* JSON-LD */}
             <script 
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON_LD_LocalBusiness_Root_schema_SEO() }}
+                dangerouslySetInnerHTML={{ __html: jsonString_Utils(JSON_LD_LocalBusiness_Root_schema_SEO()) }}
             />
             <script 
                 type="application/ld+json" 
-                dangerouslySetInnerHTML={{ __html: JSON_LD_HomePage_Home_schema_SEO() }}
+                dangerouslySetInnerHTML={{ __html: jsonString_Utils(JSON_LD_HomePage_Home_schema_SEO()) }}
             />
             <script 
                 type="application/ld+json" 
-                dangerouslySetInnerHTML={{ __html: JSON_LD_Breadcrumb_Home_schema_SEO() }}
+                dangerouslySetInnerHTML={{ __html: jsonString_Utils(JSON_LD_Breadcrumb_Home_schema_SEO()) }}
             />
 
             {/* Langue principale du document */}
@@ -53,7 +54,6 @@ function HomeSEOHeadManager_root_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
             <meta name="robots" content="index, follow" />
