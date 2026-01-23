@@ -9,10 +9,10 @@ import type { DataSEORoot_Type } from "../types/seo/dataSEORoot.type";
 import { generateAverageRatingSEO_Utils } from "../utils/seo/generateAverageRatingSEO.utils";
 import { generateReviewArraySEO_Utils } from "../utils/seo/generateReviewArraySEO.utils";
 
-function JSON_LD_LocalBusiness_Root_schema_SEO(): string {
+function JSON_LD_LocalBusiness_Root_schema_SEO(): object {
     const dataSEO_Root: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
 
-    const JSON_LD = JSON.stringify({
+    const JSON_LD = {
         "@context": dataSEO_Root["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": dataSEO_Root["@type"].Local, /* (Obligatoire) Type de la donnée */
         "@id": dataSEO_Root.id_LocalBusiness,
@@ -44,7 +44,7 @@ function JSON_LD_LocalBusiness_Root_schema_SEO(): string {
 
         "aggregateRating": generateAverageRatingSEO_Utils(avisClientGlobal_data_SEO), /* Note moyenne et nb d'avis clients */
         "review": generateReviewArraySEO_Utils(avisClientGlobal_data_SEO) /* Tableau des avis clients spécifique a google. */
-    });
+    };
     
     return (
         JSON_LD
