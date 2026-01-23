@@ -6,11 +6,11 @@ import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
 import type { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import type { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_Breadcrumb_Home_schema_SEO() : string {
+function JSON_LD_Breadcrumb_Home_schema_SEO() : object {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Home: DataSEOTargetOne_Type = dataSEO_Home_data_SEO(); /* Récupération des données SEO de la page */
 
-    const JSON_LD = JSON.stringify({
+    const JSON_LD = {
         "@context": dataSEORoot["@context"],
         "@type": dataSEORoot["@type"].BreadcrumbList,
         "itemListElement": [
@@ -26,7 +26,7 @@ function JSON_LD_Breadcrumb_Home_schema_SEO() : string {
                 }
             },
         ],
-    });
+    };
 
     return (
         JSON_LD
