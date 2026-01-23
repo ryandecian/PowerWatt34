@@ -18,7 +18,7 @@ function JSON_LD_Breadcrumb_Trottinette_schema_SEO(): JsonLDBreadcrumb_seo_Type 
         "@context": dataSEORoot["@context"],
         "@type": dataSEORoot["@type"].BreadcrumbList,
         "itemListElement": [
-            JSON_LD_Breadcrumb_Home_schema_SEO().itemListElement[0],
+            JSON_LD_Breadcrumb_Home_schema_SEO().itemListElement[0], /* Breadcrumb de la page précédente */
             {
                 "@type": dataSEORoot["@type"].ListItem,
                 "position": dataSEO_Trottinette.position,
