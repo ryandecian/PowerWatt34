@@ -1,8 +1,8 @@
 type JsonLDBreadcrumb_seo_Type = {
     "@context": string;
-    "@type": "BreadcrumbList";
+    "@type": string;
     itemListElement: {
-        "@type": "ItemList";
+        "@type": string;
         position: number;
         name: string;
         item: {

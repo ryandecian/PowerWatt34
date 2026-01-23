@@ -24,8 +24,8 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
             HomePage: "HomePage",
             CollectionPage: "CollectionPage",
             ImageGallery: "ImageGallery",
-            ItemList: "ItemList",
-            ListItem: "ListItem",
+            ItemList: "ItemList", /* = Un conteneur de liste */
+            ListItem: "ListItem", /* = Un élément dans une liste, utilisé dans les JSON-LD_Breadcrumb */
             Person: "Person",
             Blog: "Blog",
             BlogPosting: "BlogPosting",
