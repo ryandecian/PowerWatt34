@@ -1,7 +1,10 @@
-Il faut créer des sous router pour chaque type de produit et de service et mettre a jour
-le router principale. Il faudra également développer et tester la page dualtron x ldt
+Je suis en plein développement du SEO de la page Trottinette. Plusieurs JSON-LD sont a faire : 
+- Manager
+- Breadcrumnb : Ok
+- CollectionPage
+- ListItem (Le plus important)
 ----------------------------------------------------------------
-Faire le déploiement 
+
 ----------------------------------------------------------------
 
 ----------------------------------------------------------------
