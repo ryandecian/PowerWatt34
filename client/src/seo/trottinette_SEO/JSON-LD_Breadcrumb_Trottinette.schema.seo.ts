@@ -20,7 +20,7 @@ function JSON_LD_Breadcrumb_Trottinette_schema_SEO(): JsonLDBreadcrumb_seo_Type 
         "itemListElement": [
             JSON_LD_Breadcrumb_Home_schema_SEO().itemListElement[0],
             {
-                "@type": "ListItem",
+                "@type": dataSEORoot["@type"].ListItem,
                 "position": dataSEO_Trottinette.position,
                 "name": dataSEO_Trottinette.name_Breadcrumb,
                 "item": {

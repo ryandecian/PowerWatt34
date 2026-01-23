@@ -16,7 +16,7 @@ function JSON_LD_Breadcrumb_Home_schema_SEO() : JsonLDBreadcrumb_seo_Type {
         "@type": dataSEORoot["@type"].BreadcrumbList,
         "itemListElement": [
             {
-                "@type": "ListItem",
+                "@type": dataSEORoot["@type"].ListItem,
                 "position": dataSEO_Home.position,
                 "name": dataSEO_Home.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane */
                 "item": {
