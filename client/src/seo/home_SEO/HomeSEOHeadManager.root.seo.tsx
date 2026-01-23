@@ -12,6 +12,9 @@ import type { DataSEOHeadManager_Type } from "../../types/seo/dataSEOHeadManager
 import type { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import type { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
+/* Import Utils */
+import { jsonString_Utils } from "../../utils/seo/jsonString.utils";
+
 function HomeSEOHeadManager_root_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Home: DataSEOTargetOne_Type = dataSEO_Home_data_SEO(); /* Récupération des données SEO de la page */
@@ -32,15 +35,15 @@ function HomeSEOHeadManager_root_SEO() {
             {/* JSON-LD */}
             <script 
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON_LD_LocalBusiness_Root_schema_SEO() }}
+                dangerouslySetInnerHTML={{ __html: jsonString_Utils(JSON_LD_LocalBusiness_Root_schema_SEO()) }}
             />
             <script 
                 type="application/ld+json" 
-                dangerouslySetInnerHTML={{ __html: JSON_LD_HomePage_Home_schema_SEO() }}
+                dangerouslySetInnerHTML={{ __html: jsonString_Utils(JSON_LD_HomePage_Home_schema_SEO()) }}
             />
             <script 
                 type="application/ld+json" 
-                dangerouslySetInnerHTML={{ __html: JSON_LD_Breadcrumb_Home_schema_SEO() }}
+                dangerouslySetInnerHTML={{ __html: jsonString_Utils(JSON_LD_Breadcrumb_Home_schema_SEO()) }}
             />
 
             {/* Langue principale du document */}
